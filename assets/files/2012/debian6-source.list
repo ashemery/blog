@@ -1,0 +1,28 @@
+#
+# Binary added repos
+#
+
+# NON FREE REPOS
+deb http://ftp.de.debian.org/debian/ squeeze main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ squeeze main contrib non-free
+
+deb http://security.debian.org/ squeeze/updates main contrib non-free
+deb-src http://security.debian.org/ squeeze/updates main contrib non-free
+
+# Opera | Google | SKYPE
+deb http://deb.opera.com/opera/ squeeze non-free
+deb http://dl.google.com/linux/deb/ stable main
+deb http://download.skype.com/linux/repos/debian/ stable non-free
+
+# Multimedia - NOT RECOMMENDED DUE TO PROBLEMS IN MMPEG
+#deb http://debian-multimedia.informatik.uni-erlangen.de/debian-multimedia stable main
+#deb-src http://debian-multimedia.informatik.uni-erlangen.de/debian-multimedia stable main
+#deb http://ftp-stud.hs-esslingen.de/pub/Mirrors/debian-multimedia/ squeeze main non-free
+#deb-src http://ftp-stud.hs-esslingen.de/pub/Mirrors/debian-multimedia/ squeeze main non-free
+
+# MIRRORS
+#deb http://security.debian.org/ squeeze/updates main
+#deb-src http://security.debian.org/ squeeze/updates main
+
+#deb http://ftp.de.debian.org/debian/ squeeze-updates main contrib non-free
+#deb-src http://ftp.de.debian.org/debian/ squeeze-updates main contrib non-free

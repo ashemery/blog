@@ -1,0 +1,150 @@
+#!/bin/bash
+#################################################################################################################
+#					   							 		#
+# 		B!n@ry kcompile [Kernel Compilation Script] v0.1 :-D					 	#
+#					   							 		#
+#					   							 		#
+# 	1- Downloads a required Kernel version from: http://www.kernel.org/pub/linux/kernel/v2.6/ 		#
+#	2- Select weather to create your own config file or use the old config file to Compile the new Kernel	#
+#	3- Compile the new Kernel and its Modules								#
+#	4- Install the new Kernel or Add entries to the Grub configuration file				  	#
+#														#
+# Back2Track, as I always say: Linux rul3z ...			 						#
+# 				Binary@linuxac.org		 						#
+#					   							 		#
+#	Script Debugged by: Dj.r4iDeN   			 						#
+#														#
+#################################################################################################################
+# Howto use:							 						#
+# ----------						 	 						#
+# 1- Add kcompile to ~/HOME/bin					 						#
+# 2- Run chmod u+x kcompile					 						#
+# 3- Open ~/HOME/.bashrc and ADD PATH=~/HOME/bin:$PATH	 	 						#
+# 4- If you do not want to logout run source ~/HOME/.bashrc	 						#
+#    Note: If you logout no need for previous step						 		#
+# 5- run from Terminal by printing kcompile							 		#
+#################################################################################################################
+
+# Function to copy old configuration file
+function configfile()
+{
+	# Use current Config to Build new KERNEL
+	CURRENTCONFIG = uname -r;
+
+	# Copy current config file
+	cp /boot/config-$CURRENTCONFIG .config
+
+}; # End Of Funtion configfile
+
+# Create RAMDisk function
+function ramdisk()
+{
+# Create Initial RAMDisk
+# Check which tool is installed? 
+# mkinitrd or mkinitramfs
+echo "What is your systems package manager?";
+echo "Select (1) for RPM";
+echo "Select (2) for DEB ?";
+read PKGMAN;
+if test $PKGMAN -eq 1
+then
+	mkinitramfs -o /boot/initrd.img-$KERNELVERSION;
+elif test $PKGMAN -eq 2
+then
+	mkinitrd /boot/initrd.img-$KERNELVERSION $KERNELVERSION
+else
+	echo "Sorry NO such selection";
+	ramdisk;
+fi;
+}; # End Of Funtion ramdisk
+
+
+# Goto source directory
+#cd /usr/src;
+
+echo "Please enter kernel version to download";
+read KERNELVERSION;
+
+# Get the latest Linux from here: http://www.kernel.org/pub/linux/kernel/v2.6/
+# example: http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.19.2.tar.gz;
+
+echo "What file archive do you want to download?";
+echo "(1) bz2 archive (less size)";
+echo "(2) gz archive (bigger size)";
+read CHOICE;
+
+if $CHOICE = 1
+then
+	# Download the kernel source file	
+	wget -c http://www.kernel.org/pub/linux/kernel/v2.6/$KERNELVERSION.bz2;
+	# Extract Kernel Source files
+	tar jxvf $KERNELVERSION;
+	# Enter kernel source directory
+	cd $KERNELVERSION;
+else
+	# Download the kernel source file		
+	wget -c http://www.kernel.org/pub/linux/kernel/v2.6/$KERNELVERSION.gz;
+	# Extract Kernel Source files
+	tar zxvf $KERNELVERSION.gz;
+	# Enter kernel source directory
+	cd $KERNELVERSION;
+fi;
+
+#####################################################
+# Check what config file to use during the Kernel Compilation
+echo "Do you want to use current config file";
+echo "(Y)es 	or 	(N)o	?";
+read CHOICE2;
+if $CHOICE2 == [Y|y]
+then
+	# Read current config file	
+	configfile;
+	# Start Kernel Compilation using old config file
+	make oldconfig;
+else
+	# Start menuconfig to build your own config file used for Compilation	
+	make menuconfig;
+	# Start Kernel Compilation using your build config file
+	make;
+fi;
+
+#####################################################
+
+# Clean miscellaneous object files
+clear; 
+echo "Now we shall clean miscellaneous object files";
+sleep 2;
+make clean;
+
+# Start the actual Kernel Build
+clear;
+echo "Now we shall Start the actual Kernel Build";
+sleep 2;
+make bzImage;
+
+# To build the modules
+clear;
+echo "Now we shall build the modules";
+sleep 2;
+make modules;
+
+# Install the new modules
+clear;
+echo "Now we shall Install the new modules";
+sleep 2;
+make modules_install;
+
+# Install the new kernel
+clear;
+echo "Now we shall Install the new kernel";
+sleep 2;
+make install;
+
+# Create RAMDisk
+clear;
+echo "Now we shall Create RAMDisk";
+sleep 2;
+ramdisk;
+
+exit 0;
+# EOF

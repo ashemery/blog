@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>
+Kernel Hardening using Grsecurity &#038; RBAC System | B!n@ry	</title>
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="https://www.binary-zone.com/wp-content/themes/twentyten/style.css?ver=20251202" />
+<link rel="pingback" href="https://www.binary-zone.com/xmlrpc.php">
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.binary-zone.com' />
+<link rel="alternate" type="application/rss+xml" title="B!n@ry &raquo; Feed" href="https://www.binary-zone.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="B!n@ry &raquo; Comments Feed" href="https://www.binary-zone.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="B!n@ry &raquo; Kernel Hardening using Grsecurity &#038; RBAC System Comments Feed" href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.binary-zone.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.binary-zone.com%2F2009%2F05%2F30%2Fkernel-hardening-using-grsecurity-rbac-system%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.binary-zone.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.binary-zone.com%2F2009%2F05%2F30%2Fkernel-hardening-using-grsecurity-rbac-system%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blue: #0066cc;--wp--preset--color--medium-gray: #666;--wp--preset--color--light-gray: #f1f1f1;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='twentyten-block-style-css' href="https://www.binary-zone.com/wp-content/themes/twentyten/blocks.css?ver=20250220" type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://www.binary-zone.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.binary-zone.com/wp-json/wp/v2/posts/1845" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.binary-zone.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<link rel="canonical" href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/" />
+<link rel='shortlink' href="https://www.binary-zone.com/?p=1845" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #0a0a0a; background-image: url("http://www.binary-zone.com/wp-content/uploads/2020/04/bg11.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+	</head>
+
+<body class="wp-singular post-template-default single single-post postid-1845 single-format-standard custom-background wp-theme-twentyten">
+<div id="wrapper" class="hfeed">
+		<a href="#content" class="screen-reader-text skip-link">Skip to content</a>
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+									<div id="site-title">
+						<span>
+							<a href="https://www.binary-zone.com/" rel="home">B!n@ry</a>
+						</span>
+					</div>
+										<div id="site-description">[Between Teams of Red and Blue, I&#039;m with the Purple Team]</div>
+					<img src="https://www.binary-zone.com/wp-content/uploads/2023/12/cropped-cropped-mybanner_02.jpg" width="940" height="198" alt="B!n@ry" decoding="async" fetchpriority="high" />			</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+				<div class="menu"><ul>
+<li ><a href="https://www.binary-zone.com/">Home</a></li><li class="page_item page-item-3116 page_item_has_children"><a href="https://www.binary-zone.com/courses/">Courses</a>
+<ul class='children'>
+	<li class="page_item page-item-2886"><a href="https://www.binary-zone.com/courses/htid-arabic/">HTID Arabic</a></li>
+	<li class="page_item page-item-3124"><a href="https://www.binary-zone.com/courses/htid-english/">HTID English</a></li>
+	<li class="page_item page-item-3153"><a href="https://www.binary-zone.com/courses/dfi/">Digital Forensic Investigations</a></li>
+</ul>
+</li>
+<li class="page_item page-item-3274 page_item_has_children"><a href="https://www.binary-zone.com/misc/">Misc</a>
+<ul class='children'>
+	<li class="page_item page-item-327 page_item_has_children"><a href="https://www.binary-zone.com/misc/projects/">Projects</a>
+	<ul class='children'>
+		<li class="page_item page-item-2193"><a href="https://www.binary-zone.com/misc/projects/tariq/">Tariq</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-2248"><a href="https://www.binary-zone.com/publications/">Publications</a></li>
+<li class="page_item page-item-2"><a href="https://www.binary-zone.com/whoami/">Whoami</a></li>
+<li class="page_item page-item-3"><a href="https://www.binary-zone.com/contact/">Contact</a></li>
+</ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="https://www.binary-zone.com/2009/05/30/howto-install-libgksu2-gksu-gksudo-on-ojubafedora/" rel="prev"><span class="meta-nav">&larr;</span> HOWTO Install libgksu2, gksu, &#038; gksudo, on Ojuba/Fedora</a></div>
+					<div class="nav-next"><a href="https://www.binary-zone.com/2009/06/18/%d9%86%d8%b5%d8%b1-%d8%a8%d8%b7%d8%b9%d9%85-%d9%83%d8%a3%d8%b3-%d8%a7%d9%84%d8%b9%d8%a7%d9%84%d9%85-%d9%85%d8%a8%d8%b1%d9%88%d9%83-%d9%85%d9%86-%d8%a7%d9%84%d9%82%d9%84%d8%a8-%d9%84%d9%80-%d9%85/" rel="next">نصر بطعم كأس العالم &#8230; مبروك من القلب لـ مصر !!! <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-1845" class="post-1845 post type-post status-publish format-standard hentry category-64 category-footprinting category-kernel category-linux-security category-security tag-bios tag-c99 tag-compile tag-fingerprinting tag-gradmn tag-grsecurity tag-grub tag-kernel tag-kernel-panic tag-make tag-menuconfig tag-nmap tag-patch tag-policy tag-rbac tag-role-based-access-control tag-root tag-tcp-stack tag-uname tag-xprobe2">
+					<h1 class="entry-title">Kernel Hardening using Grsecurity &#038; RBAC System</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/" title="8:12 pm" rel="bookmark"><span class="entry-date">30 May 2009</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="https://www.binary-zone.com/author/admin/" title="View all posts by [email protected]">[email protected]</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p>السلام عليكم ورحمة الله وبركاته</p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/fingerprint.jpg" width=550 alt="" /></p>
+<p>قبل فترة طويلة من الزمن الكثير من الأخوة الأصدقاء المقربين كانوا يستغربون كيف كنت أقوم بإعطاءهم المستخدم root الى خادم <a href="http://arabnix.com">عرب نيكس</a> ولم يعرف أحدهم من عمل أي شيء على الخادم (ملاحظة، الموقع حالياً ليس على نفس الخادم السابق، تم نقله لأسباب كثيرة ربما أذكرها لاحقاً) !!! وأيضاً البعض كان يحاول معرفة ما هو النظام الذي يعمل عليه موقع عرب نيكس من خلال عمليات الـ fingerprinting للنظام ولم يعرفوا أيضاً صح يا صبري؟ :) والسبب بإننا سنقوم بعملية التلاعب بالـ TCP Stack أيضاً وبالتالي برامج مثل Xprobe2 أو nmap أو غيرها لن تستطيع معرفة ما هو النظام وما هي نواته !!!</p>
+<p>السبب هو الطريقة التي كنت أستعملها على النظام وقتها والتي سأقوم بشرحها بالأسفل بالتفصيل الممل إن شاء الله &#8230; هذه الطريقة ستقوم بعملية حماية نظامك حتى من المستخدم root نفسه وبالتالي من يحصل على root على نظامك لن يعرف أن يعمل اي شيء سوى الدهشة والإستغراب والمسائلة لنفسه &#8220;ما الذي يحدث؟&#8221; :) طبعاً العلم لم يتوقف هنا وربما هناك طرق لإختراق مثل هذه الحماية &#8220;المعقدة&#8221; جداً جداً جداً ولكني أؤكد لكم بإنها بدون شك ستكون سداً منيعاً أمام هؤلاء أصحاب c99 والذي لن يعرف أحدهم أن يعمل شيء سوى تغيير أندكس !!! يعني حتى لو حصل على root لن يكون قادراً على تدمير الخادم لك، وكما قلت أقصى شي سيقوم به هو &#8220;أسلوب الأطفال&#8221; تغيير الأندكس !!!</p>
+<p>وقبل أن أبدأ بالشرح، ولأنني أؤمن بإنه كلما أعطيت أكثر ونشرت مواضيع أكثر، كلما زادت معرفتك &#8230; فمن ظن بإن العلم عنده فقط؟ فهو جاهل &#8230; ومن ظن بإنه وصل الى كل شيء؟ فهو جاهل أيضاً &#8230; العلم إن نشرته فأنت فعلياً قمت بزكاته &#8230; وكما يقول <strong>علي بن أبي طالب (رضي الله عنه)</strong>: زكاة العلم نشره &#8230; ولأنني أتمنى أن تكف عمليات التخريب التي أسمع بها هنا وهناك لهذه الجهة أو تلك ولأسباب شخصية بين أفراد يظلم على ضوئها المئات وربما الآلاف من الناس بدون ذنب &#8230; فمنهم من يخترق فقط لكي يقول أنا وأنا ونسي حتى أن يقول &#8220;أعوذ بالله من كلمة أنا&#8221; ومنهم من يخترق لغرض الضرر بالطرف الآخر ويؤذيه سواءاً بشكل مادي، معنوي أو حتى نفسي &#8230; ولهذا الموضوع هذا سيكون كما أمرنا رسولنا الكريم، <strong>محمد (صلى الله عليه وسلم)</strong>: &#8220;المسلم أخو المسلم، لا يظلمه ولا يسلمه، من كان في حاجة أخيه، فإن الله في حاجته، ومن فرج عن مسلم كربة، فرج الله عنه بها كربة من كرب يوم القيامة، ومن ستر مسلما، ستره الله يوم القيامة&#8221;. الرسالة أظنها وصلت ولا حاجة لي لكتابة المزيد فالـ لبيب من الإشارة يفهموا &#8230;</p>
+<p>لندخل الى الموضوع الآن &#8230;</p>
+<p>سنقوم بتركيب patch الـ grsecurity وبناء النواة، وتنصيبها &#8230; وبعد ذلك سنقوم بتفعيل الـ RBAC System على النظام &#8230;<br />
+<span id="more-1845"></span><br />
+أول شيء لنقوم بعملية الترقيع مع البناء &#8230; أدخل المجلد التالي:<br />
+<code>cd /usr/local/src</code></p>
+<p>الآن لنقوم بتحميل النواة والترقيع الخاص بالـ grsecurity من خلال الأوامر التالية:<br />
+<code>wget -c http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.27.10.tar.bz2<br />
+wget -c http://www.grsecurity.com/grsecurity-2.1.12-2.6.27.10-200812271347.patch.gz<br />
+</code></p>
+<p>الآن لنفك ضغطهم:<br />
+<code>tar xjvf linux-2.6.27.10.tar.bz2<br />
+gunzip grsecurity-2.1.12-2.6.27.10-200812271347.patch.gz</code></p>
+<p>الآن لنقوم بعملية الترقيع:<br />
+<code>patch -p0 < grsecurity-2.1.12-2.6.27.10-200812271347.patch</code></p>
+<p>الآن قم بعمل التالي:<br />
+<code>mv linux-2.6.27.10 linux-2.6.27.10-grsec<br />
+ln -s linux-2.6.27.10-grsec/ linux<br />
+cd linux</code></p>
+<p>والآن قم بنسخ ملف الـ config الخاص بالنواة التي تعمل عندك حالياً، لكي نستعملها في عملية بناء النواة بدل من عملها من الصفر:<br />
+<code>cp /boot/config-`uname -r` .</code></p>
+<p>الآن لندخل الى مرحلة بناء النواة:<br />
+<code>make menuconfig</code></p>
+<p>الآن من خلال القائمة بإختيار ملف الـ config هذا الذي نسخناه قبل قليل ...</p>
+<p>الآن أدخل الى قائمة GrSecurity لكي نقوم ببعض التعديلات والتفعيلات ... وأرجوا أن تقوموا بإتباع الصور التالية في الإعداد:<br />
+<img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec1.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec2.jpeg" width=550 alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec3.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec4.jpeg" width=550 alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec5.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec6.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec7.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec8.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec9.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec10.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec11.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec12.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec13.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec14.jpeg" alt="" /></p>
+<p><img decoding="async" src="https://www.binary-zone.com/images/kernel/grsec15.jpeg" alt="" /></p>
+<p>ملاحظة مهمة: هناك خيارات كثيرة جداً ومتعددة جداً ... لا أستطيع شرح وتوضيح جميعها، ويوجد كتاب رائع في هذا المجال ممكن يفيدكم لمن يود المزيد من المعرفة: <a href="https://www.amazon.com/Role-Based-Access-Control-David-Ferraiolo/dp/1580533701">أضغط هنا</a></p>
+<p>الآن قم بحفظ الإعدادات والخروج لنذهب لعملية بناء وتثبيت النواة الجديدة ... والتي يمكن عملها بالخطوات التالية:<br />
+<code>make bzImage<br />
+make modules<br />
+make modules_install<br />
+make install<br />
+</code><br />
+الآن قبل ان تقوم بإعادة تشغيل الجهاز للعمل على النواة الجديدة grsec لنقوم ببعض الأمور ... أولاً قم بتحرير ملف grub:<br />
+<code>vim /boot/grub/grub.conf</code></p>
+<p>أذهب الى السطور الجديدة التي تخص النواة الجديدة والتي ستكون كهذه:<br />
+<code>title CentOS (2.6.27.10-grsec)<br />
+root (hd1,0)<br />
+kernel /vmlinuz-2.6.27.10-grsec ro root=LABEL=/<br />
+initrd /initrd-2.6.27.10-grsec.img</code></p>
+<p>وضع بآخر السطر الثالث (الذي يبدأ بكلمة kernel) التالي:<br />
+<code>panic=4</code></p>
+<p>لكي يصبح هكذا:<br />
+<code>title CentOS (2.6.27.10-grsec)<br />
+root (hd1,0)<br />
+kernel /vmlinuz-2.6.27.10-grsec ro root=LABEL=/ panic=4<br />
+initrd /initrd-2.6.27.10-grsec.img</code></p>
+<p>هذه لكي نظمن في حالة حصل خلل في النواة الجديدة (Kernel Panic) سيعيد تشغيل النظام لك بعد 4 ثواني (على إعتبار إنك تطبق هذه العمليات على خادم عن بعد وليس لديك إتصال مباشر على BIOS الخادم) ... الآن لندخل الى طرفية grub لكي نقوم بتثبيت عملية إعادة الإقلاع من هذه النواة لمرة واحدة خوفاً من حدوث مشكلة ما ولكي يقوم بعملية الإقلاع من النواة الأخرى في المرة القادمة ...</p>
+<p>نفذ التالي:<br />
+<code>grub<br />
+savedefault --default=0 --once<br />
+quit</code></p>
+<p>هكذا ثبتنا لبرنامج الإقلاع grub بإنه يقوم بعملية الإقلاع من النواة الجديدة والتي هي default=0 مرة واحدة فقط ... الآن أعد تشغيل النظام وأنتظر الى أن يعود للعمل وقم بالدخول على النظام وتأكد ما هي النواة التي تعمل الآن من خلال الأمر:<br />
+<code>uname -r</code></p>
+<p>إذا كان الجواب هو:<br />
+<code>2.6.27.10-grsec</code></p>
+<p>هذا يعني بإنه الأمور تمت بنجاح والنواة الجديدة تعمل بشكل سليم ... إن ظهرت لك النواة القديمة، هذا يعني بإن هناك خلل ما في النواة وعليك حلها ... أو ربما إعادة عملية بناء النواة وتثبيتها من جديد ... الآن كل شيء تمام؟ قم بتحرير ملف grub.conf وأحذف منه panic=4 ...</p>
+<p>الى هنا أنتهينا من تثبيت النواة والباتش Grsecurity الجديدة ... مبروك الخطوة الأولى :)</p>
+<p>الآن وبعد أن قمنا بتركيب النواة الجديدة، لنقوم بالإستفادة من نظام الـ RBAC والذي هو إختصار لـ Role Based Access Control الموجود مع Grsecurity وذلك لكي تتم عملية إحتواء الهجمات والمخاطر التي ممكن أن توجه على الخادم ...</p>
+<p>الأمر بسيط إن شاء الله، لنقم بتحميل برنامج gradmn بالبداية:<br />
+<code>wget -c http://www.grsecurity.com/gradm-2.1.12-200812271437.tar.gz</code></p>
+<p>بعد ذلك لنفك الضغط عنه وندخل المجلد الناتج:<br />
+<code>tar xvfz gradm-2.1.12-200812271437.tar.gz</code></p>
+<p>بعد ذلك نفذ التالي:<br />
+<code>cd gradm2<br />
+make<br />
+make install</code></p>
+<p>جميل جميل الأمور تسير بشكل ممتاز "على الأقل عندي :)" ... الآن أرجوا أن تركزوا على الجمل التي سأقولها هنا:<br />
+الآن برنامج gradm هو للتحكم بالـ RBAC الموجود، ولكن بالبداية يجب أن نقوم بعملية تعليم الـ RBAC ما هي إحتياجاتنا وما هي الأمور التي يجب أن يقوم بعملية حماية لها ... هي تشبه الى حد كبير أنظمة الذكاء الإصطناعي والأنظمة الخبيرة التي تتعلم من ذاتها من خلال العمليات التي تعمل بداخل النظام ... ولهذا نحتاج بالبداية قبل أن نقوم بتفعيل النظام بتعليمه أي ندخل مرحلة تعليمه Learning Phase ... في هذه المرحلة يا أخوان "لا" تقوم بأي عملية تنفيذية تستوجب إستعمال مدير النظام ... اي لا تقوم بأي عملية هي عبارة عن Administrative task ... الرجاء أكرر "لا" تقوم بأي عملية Administrative خلال مرحلة التعليم هذه ... لأن النظام سيتعلمها وسيتعرف عليها بإنها عملية عادية (عمل يومي أو أجراء روتيني مثلاً) وبالتالي لن يقوم بعملية حمايتها ... لن نثق بالمستخدم root بعد اليوم :)</p>
+<p>يعني أمثلة على ذلك في مرحلة التعليم:<br />
+- لا تقوم بإنشاء حساب مستخدم<br />
+- لا تقوم بعملية mount أو umount لبارتشنات<br />
+- لا تقوم بعملية إيقاف أو تشغيل خدمة ما<br />
+- لا تقوم بعملية التعديل على الجدار الناري<br />
+- لا تقوم بعملية إدخال أو إخراج لموديول للنواة<br />
+- لا تقوم "أكرر" بأي عمل تنفيذي يستوجب تدخل مدير النظام<br />
+- المستخدم root لم يعد محل ثقة فأنتبه</p>
+<p><strong>ملاحظة:</strong> حتى عملية إستعمال الأمر w و top وغيرها من الأدوات إن لم يتعلم عليها النظام؟ فلن يسمح لك بإستعمالها !!!</p>
+<p>الآن لدخول مرحلة التعليم نفذ الأمر التالي:<br />
+<code>gradm -F -L /etc/grsec/learned_tasks.log</code></p>
+<p>الآن أترك النظام يعمل ليوم أو يومين حسب طبيعة عملك على النظام هذا لكي يقوم نظام الـ RBAC بالتعلم ودراسة النظام بشكل صحيح وأيضاً لكي تكون عندك فرصة كبيرة لتشغيل جميع ما تحتاجهم بشكل إعتيادي قبل أن تنهي مرحلة الدراسة للنظام ...</p>
+<p>بعد يوم أو يومين أنتهيت وتقول كل شيء تمام؟ الآن لنوقف مرحلة التعليم من خلال الأمر:<br />
+<code>gradm -F -L /etc/grsec/learned_tasks.log -O /etc/grsec/acl</code></p>
+<p>الآن هكذا الـ Policy العامة التي سيسير عليها النظام أصبحت معروفة له وتستطيع تفعيلها له من خلال الأمر:<br />
+<code>gradm -E</code></p>
+<p>الآن أصبح نظام الـ RBAC يعمل وشغال على الـ Policy التي حددتها له ... </p>
+<p>الآن نحتاج لعمل كلمة سرية للمستخدم الذي قادر على تشغيل نظام الحماية هذا أو إيقافه من خلال تنفيذ الأمر:<br />
+<code>gradm -P</code></p>
+<p>نصيحة لله ضع كلمة سرية معقدة وطويلة عليه ...</p>
+<p><strong>الآن ماذا لو أردت إيقاف نظام الـ RBAC ماذا أفعل؟</strong><br />
+الجواب: نفذ الأمر<br />
+<code>gradm -D</code></p>
+<p>سيطلب منك إدخال كلمة السر التي عملتها بالأعلى ...</p>
+<p><strong>طيب الآن أنا محتاج لإجراء عمل administrative ماذا أفعل؟</strong><br />
+الجواب: قم بالدخول الى admin role الخاص بالنظام من خلال تنفيذ الأمر:<br />
+<code>gradm -a admin</code></p>
+<p><strong>طيب الآن أنتهيت من ما أريد القيام به، كيف أخرج من admin role؟</strong><br />
+الجواب: قم بالخروج من خلال تنفيذ الأمر:<br />
+<code>gradm -u admin</code></p>
+<p>طيب الآن قمت بتنفيذ مرحلة التعليم ولكن هناك برنامج binary أريد أسمح بإستعماله، ماذا أفعل؟<br />
+الجواب: أستعمل برنامج chpax الذي طوروه جماعة الـ PaX ...</p>
+<p><strong>طيب سؤال، بما إنه النظام يقوم بحفظ كلمة السر الخاصة بالـ admin role في الملف</strong><br />
+<code>/etc/grsec/pw</code><br />
+<strong>إذن يستطيع root من قراءة محتواه ومن ثم أخذه ومحاولة فك تشفيره؟</strong><br />
+الجواب: عندما يتم تفعيل الـ RBAC فإنه حتى الـ admin role لا يستطيع قراءة محتوى هذا الملف، ولا حتى محتوى المجلد الذي هو فيه ... وأيضاً لو قمت بالتلاعب بالـ policy من أجل السماح بعملية قراءة هذا المجلد؟ فإن الـ RBAC System لن يعمل ولن يسمح لك بذلك ولهذا لا تقلق ... </p>
+<p><strong>الموضوع إهداء خاص لأخوي العزيز صبري (KING SABRI) وأعذرني تأخرت عليك شهور :$ وإهداء لكل أعضاء وزوار <a href="http://linuxac.org">مجتمع لينوكس العربي</a> ولكل الأخوة أصحاب المواقع العربية المفيدة لنا كعرب ... وإن شاء الله سترون مفاجئات أخرى بإذن الله في أقرب فرصة ممكنة ...</strong></p>
+<p>مصادر مفيدة جداً:<br />
+<a href="https://en.wikipedia.org/wiki/Role-based_access_control">الأول</a> | <a href="http://csrc.nist.gov/groups/SNS/rbac/documents/design_implementation/Intro_role_based_access.htm">الثاني</a> | <a href="https://www.amazon.com/Role-Based-Access-Control-David-Ferraiolo/dp/1580533701">الثالث</a> | <a href="https://pax.grsecurity.net/">الرابع</a> | <a href="http://www.grsecurity.com/">الخامس</a></p>
+<p>بالتوفيق للجميع ...</p>
+											</div><!-- .entry-content -->
+
+							<div id="entry-author-info">
+						<div id="author-avatar">
+							<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=60&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' decoding='async'/>							</div><!-- #author-avatar -->
+							<div id="author-description">
+							<h2>
+							About [email protected]							</h2>
+							[Between Teams of Red and Blue, I'm with the Purple Team]							<div id="author-link">
+								<a href="https://www.binary-zone.com/author/admin/" rel="author">
+									View all posts by [email protected] <span class="meta-nav">&rarr;</span>								</a>
+							</div><!-- #author-link	-->
+							</div><!-- #author-description -->
+						</div><!-- #entry-author-info -->
+	
+						<div class="entry-utility">
+							This entry was posted in <a href="https://www.binary-zone.com/category/%d8%b4%d8%b1%d9%83%d8%a9-%d8%b9%d8%b1%d8%a8-%d9%86%d9%8a%d9%83%d8%b3/" rel="category tag">Arabnix</a>, <a href="https://www.binary-zone.com/category/footprinting/" rel="category tag">Footprinting</a>, <a href="https://www.binary-zone.com/category/kernel/" rel="category tag">Kernel</a>, <a href="https://www.binary-zone.com/category/linux-security/" rel="category tag">Linux Security</a>, <a href="https://www.binary-zone.com/category/security/" rel="category tag">Security</a> and tagged <a href="https://www.binary-zone.com/tag/bios/" rel="tag">BIOS</a>, <a href="https://www.binary-zone.com/tag/c99/" rel="tag">c99</a>, <a href="https://www.binary-zone.com/tag/compile/" rel="tag">Compile</a>, <a href="https://www.binary-zone.com/tag/fingerprinting/" rel="tag">fingerprinting</a>, <a href="https://www.binary-zone.com/tag/gradmn/" rel="tag">gradmn</a>, <a href="https://www.binary-zone.com/tag/grsecurity/" rel="tag">Grsecurity</a>, <a href="https://www.binary-zone.com/tag/grub/" rel="tag">Grub</a>, <a href="https://www.binary-zone.com/tag/kernel/" rel="tag">Kernel</a>, <a href="https://www.binary-zone.com/tag/kernel-panic/" rel="tag">Kernel Panic</a>, <a href="https://www.binary-zone.com/tag/make/" rel="tag">make</a>, <a href="https://www.binary-zone.com/tag/menuconfig/" rel="tag">menuconfig</a>, <a href="https://www.binary-zone.com/tag/nmap/" rel="tag">nmap</a>, <a href="https://www.binary-zone.com/tag/patch/" rel="tag">Patch</a>, <a href="https://www.binary-zone.com/tag/policy/" rel="tag">Policy</a>, <a href="https://www.binary-zone.com/tag/rbac/" rel="tag">RBAC</a>, <a href="https://www.binary-zone.com/tag/role-based-access-control/" rel="tag">Role Based Access Control</a>, <a href="https://www.binary-zone.com/tag/root/" rel="tag">root</a>, <a href="https://www.binary-zone.com/tag/tcp-stack/" rel="tag">TCP Stack</a>, <a href="https://www.binary-zone.com/tag/uname/" rel="tag">uname</a>, <a href="https://www.binary-zone.com/tag/xprobe2/" rel="tag">Xprobe2</a>. Bookmark the <a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/" title="Permalink to Kernel Hardening using Grsecurity &#038; RBAC System" rel="bookmark">permalink</a>.													</div><!-- .entry-utility -->
+					</div><!-- #post-1845 -->
+
+					<div id="nav-below" class="navigation">
+						<div class="nav-previous"><a href="https://www.binary-zone.com/2009/05/30/howto-install-libgksu2-gksu-gksudo-on-ojubafedora/" rel="prev"><span class="meta-nav">&larr;</span> HOWTO Install libgksu2, gksu, &#038; gksudo, on Ojuba/Fedora</a></div>
+						<div class="nav-next"><a href="https://www.binary-zone.com/2009/06/18/%d9%86%d8%b5%d8%b1-%d8%a8%d8%b7%d8%b9%d9%85-%d9%83%d8%a3%d8%b3-%d8%a7%d9%84%d8%b9%d8%a7%d9%84%d9%85-%d9%85%d8%a8%d8%b1%d9%88%d9%83-%d9%85%d9%86-%d8%a7%d9%84%d9%82%d9%84%d8%a8-%d9%84%d9%80-%d9%85/" rel="next">نصر بطعم كأس العالم &#8230; مبروك من القلب لـ مصر !!! <span class="meta-nav">&rarr;</span></a></div>
+					</div><!-- #nav-below -->
+
+					
+			<div id="comments">
+
+
+			<h3 id="comments-title">
+			32 Responses to <em>Kernel Hardening using Grsecurity &#038; RBAC System</em>			</h3>
+
+	
+			<ol class="commentlist">
+						<li class="comment even thread-even depth-1" id="li-comment-4720">
+		<div id="comment-4720">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/520c2ec6d0aeaa283fe3611eabaf1e7af2e047a7b7ef7f5fa6785210e3d4c9b4?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/520c2ec6d0aeaa283fe3611eabaf1e7af2e047a7b7ef7f5fa6785210e3d4c9b4?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' decoding='async'/>				<cite class="fn"><a href="http://www.tslya.com" class="url" rel="ugc external nofollow">OMLX</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4720">
+				30 May 2009 at 8:53 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>رائع رائع درس في قمة الروعة ، جزاك الله ألف خير عليه سأقوم بنشره عنك قليلا :)</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-4721">
+		<div id="comment-4721">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4721">
+				30 May 2009 at 8:59 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>OMLX @ ويجزيك الخير أخوي فهد &#8230; خذ راحتك وأنشره مثل ما تحب إن شاء الله يكون محل فائدة للجميع &#8230; شكراً يا خوي لدوام دعمك وتشجيعك &#8230;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4722">
+		<div id="comment-4722">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/811c8e7184bd0fecf79bb39f4e4be4eeec691f9625319461878e2ba3dc1fdc73?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/811c8e7184bd0fecf79bb39f4e4be4eeec691f9625319461878e2ba3dc1fdc73?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">abdessamad</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4722">
+				30 May 2009 at 11:15 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>جزاك الله خيرا على الدرس الرائع وجعله الله في ميزان حسناتك</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4723">
+		<div id="comment-4723">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/fabea8f2aeb305b02fd9ae6c36a2b6828b92f1a16e36b104fd323827a6d4b0f1?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/fabea8f2aeb305b02fd9ae6c36a2b6828b92f1a16e36b104fd323827a6d4b0f1?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://www.mtafran.com" class="url" rel="ugc external nofollow">باحث عن المعرفة</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4723">
+				31 May 2009 at 12:27 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>وحش أخي أبو محمد الله يحفظك&#8230;الصّراحة شرح رائع جدّاً لطريقة أكثر من روعة للحماية.</p>
+<p>دمت بود ونفعني الله وإخواني بعلمك.</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4724">
+		<div id="comment-4724">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/ad32e7b578fe9ecb8b26ab81eea5f636dc1f57fcbc5afd0ca7682803f1471bb4?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ad32e7b578fe9ecb8b26ab81eea5f636dc1f57fcbc5afd0ca7682803f1471bb4?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">unex</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4724">
+				31 May 2009 at 3:50 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>السلام عليكم<br />
+طحت على بالي اليوم يا ابو محمد والله .. كنت ناوي اطرح سؤال عليك بخصوص النواة التي يعدلها اصحاب التوزيعات الحماية و الهاكين و عن الموديلز و المكتبات التي يحبدونها و التي يتخلون عليها .. فوجدتك ابدعت في هذا الموضو ع<br />
+ ::teeth::  الشيق .. هل يمكن استعمال اونواع الاخرة من access controles .</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4725">
+		<div id="comment-4725">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/641c1f8890ea259d9b39530bb1ecce436b124b19e978b99fa9b1ef7a23dce6b0?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/641c1f8890ea259d9b39530bb1ecce436b124b19e978b99fa9b1ef7a23dce6b0?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">mrloong</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4725">
+				31 May 2009 at 7:55 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>شـكــ وبارك الله فيك ـــرا لك &#8230; لك مني أجمل تحية .</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4728">
+		<div id="comment-4728">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/3279b74fdef6d2087c4a89725dcd07200ff43b425f431d9989b1f5bdf1847872?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/3279b74fdef6d2087c4a89725dcd07200ff43b425f431d9989b1f5bdf1847872?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">ايمن العوادي</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4728">
+				31 May 2009 at 10:41 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>ابداً مو جديدة عليك يا ابو محمد نشر العلم وتعليمة&#8230;جعله الله لك صدقة جارية في ميزان حسناتك فقد قالرسول الله ‏ ‏(صلى الله عليه واله وسلم)  ‏إذا مات الإنسان انقطع عنه عمله إلا من ثلاثة إلا من صدقة جارية أو علم ينتفع به أو ولد صالح يدعو له&#8230;&#8230;ربنا يعطيك الصحة والعافية وطولة العمر لفائدة المجتمع. بالنسبة للموضوع كان على بالي البارحة وهي كيفية منع اخذ معلومات عن نوع نظام تشغيل السيرفر لدي وما هي الخدمات التي تعمل عليه, فكان الرد منك بهذا الموضوع الراقي جداً. حقيقة اشكرك جزيل الشكر, تقبل مروري</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4730">
+		<div id="comment-4730">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/f05391834a55168df5510a31df02d9daee5dbc18794a681b691fdc96188c1148?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f05391834a55168df5510a31df02d9daee5dbc18794a681b691fdc96188c1148?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">yehdev_cc</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4730">
+				31 May 2009 at 12:48 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>السلام عليكم و رحمة الله وبركاته،<br />
+أول مرة أسمع عنه .. لكنه مقال رائع .. بارك الله فيك و زادك علماً .. كنت أود أن أضع اثنين thank post في المجتمع لكن لم يفلح :) .. عموماً جزاك الله خيراً .. فكما قال رسول الله صلى الله عليه و سلم :&#8221;إذا قال الرجل لأخيه : جزاك الله خيرا ، فقد أبلغ في الثناء&#8221;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4731">
+		<div id="comment-4731">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/f5e3d0f8e2b2e5885ee3936effbcf52a142f8bf29ee03e638aeec99e8b047ba7?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f5e3d0f8e2b2e5885ee3936effbcf52a142f8bf29ee03e638aeec99e8b047ba7?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.alsadk.blogspot.com" class="url" rel="ugc external nofollow">الصادق</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4731">
+				31 May 2009 at 3:59 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>جزاك الله خيرا </p>
+<p>هل تفكر في أن تضع كتب تتدرج من مستوى المبتدئ و حتى مستوى متقدم في مجال الأمن؟</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-4732">
+		<div id="comment-4732">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4732">
+				31 May 2009 at 6:26 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>abdessamad @ ويجزيك الخير اخوي عبد الصمد … أتمنى إنك تستفيد من الموضوع … شكراً لمرورك ودعواتك الطيبة …</p>
+<p>باحث عن المعرفة @ الله يحفظك يارب أخوي باحث … هذا من لطفك وذوقك والحمد لله نال على إعجابك … أشكرك يا خوي على مرورك ودعواتك الطيبة …</p>
+<p>unex @ وعليكم السلام ورحمة الله وبركاته<br />
+الحمد لله إني على بالك يا خوي هذا شيء كبير صراحة بالنسبة لي أن تتذكرني في مثل هذه المواقف الحمد لله نال الموضوع على إعجابك وإن شاء الله يفيدك … بخصوص باقي الأنواع هل تقصد مثلاً SELinux و AppArmor وغيرها ؟</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4733">
+		<div id="comment-4733">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/7b15aecea6f745114be03e7b47c577ac75052da6743e246ff1340ac516d5ec36?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7b15aecea6f745114be03e7b47c577ac75052da6743e246ff1340ac516d5ec36?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">د/أحمد شولح</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4733">
+				31 May 2009 at 9:12 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>السلام عليكم ورحمة الله<br />
+اعتقد هو ده مستوى الحماية التى اشتهرى به عالم اللينكس والذى طالما سمعنا عنه وليس المستوى الذى ياتى مع التوزيعات المختلفة<br />
+يعينى عليك يا root راحت عليك يا ابنى<br />
+وبعدين المفروض ان دى من الاسرار الحربية والعسكرية الهامة وانت بتنشرها كدة ولا همك ربنا يستر<br />
+شكرا ابو محمد تسلم ايدك ودمت بكل ود</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4734">
+		<div id="comment-4734">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/8833630f009dfcdcce15f4132126f0ec28ef7e70ebfe7a10c6a6effbe23a6c31?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/8833630f009dfcdcce15f4132126f0ec28ef7e70ebfe7a10c6a6effbe23a6c31?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">warm-color</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4734">
+				31 May 2009 at 9:18 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>الله عليك&#8230; كبير يابو محمد جزاك الله خير</p>
+<p>مجتمع لينكس هو الدافع الكبير لـ تعلمي على هالنظام</p>
+<p>بُركت</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4735">
+		<div id="comment-4735">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/346d6f70ed7b5588cb90e38c2cbfa6c47afa812cc6da600d1fb247e44fd7e2c2?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/346d6f70ed7b5588cb90e38c2cbfa6c47afa812cc6da600d1fb247e44fd7e2c2?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://gnom.cc" class="url" rel="ugc external nofollow">GNOM</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4735">
+				31 May 2009 at 10:45 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>بارك الرحمن بك </p>
+<p>فعلاً شرح وافي</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-4743">
+		<div id="comment-4743">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4743">
+				1 June 2009 at 6:14 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>mrloong @ حياك الله أخوي وشكراً لمرورك  &#8230;</p>
+<p>ايمن العوادي @ الله يخليك يارب أخوي ايمن هذا من لطفك وذوقك &#8230; وإن شاء الله يكون ما ننشره صدقة جارية لعلها تشفع لنا وتغطي على سيئاتنا وعيوبنا &#8230; الحمد لله على كل حال والحمد لله إن الموضوع عجبك ونال على إعجابك وإن شاء الله يكون محل فائدة لك &#8230; أشكرك أخوي لدوام دعمك وتشجيعك لي  ::17</p>
+<p>yehdev_cc @ وعليكم السلام ورحمة الله وبركاته<br />
+ويجزيك الخير أخوي يحيى &#8230; مرورك وكلامك الطيب هذا هو أفضل من أي ردود شكر لم تتمكن من إضافتها  ::wink:: إن شاء الله تكون أستفدت منه ويكون إضافة الى معلوماتك &#8230; شكراً لمرورك أخوي العزيز &#8230;</p>
+<p>الصادق @ ويجزيك الخير أخوص الصادق &#8230;<br />
+بخصوص الكتب أنا لست مؤهل لفعل ذلك يا خوي &#8230; ولكن سأنشر جميع ما يمر أمامي ويكون لي تجربة معه بإذن الله &#8230; ولن أقوم بإخفاء حاجة عن أحد &#8230; هناك أمور بإذن الله ستسركم قريباً  ::wink::</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-4744">
+		<div id="comment-4744">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4744">
+				1 June 2009 at 6:15 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>د/أحمد شولح @ وعليكم السلام ورحمة الله وبركاته<br />
+أهلا دكتور أحمد &#8230; نعم هذا هو مستوى حماية جنو/لينوكس وأتحدى الويندوز يصل لربع إمكانياته &#8230; وفعلاً حلوة هذي &#8220;root راحت عليك ابني&#8221;  ::hehe::<br />
+أنا ما عندي أسرار يا خوي احمد، وأيضاً لم آتي بشيء جديد، هذه معلومات وأمور منشورة نشروها غيري الكثير ولكني ربما كل الذي قمت به هو لفت إنتباهكم الى حقائق لم يكن الجميع منتبه لها &#8230; شكراً لمرورك أخوي ودوام دعمك وتشجيعك لي &#8230;</p>
+<p>warm-color @ ويجزيك الخير اخي الكريم &#8230; مجتمع لينوكس العربي هو الذي جعلنا كلنا نرتقي ونتطور أكثر وأكثر ولله الحمد &#8230; والحمد لله إنه أصبح مكان لإلتقاء الأحبة ومحبي نشر المعرفة جميعاً &#8230; شكراً يا خوي لمرورك وكلامك الطيب &#8230;</p>
+<p>GNOM @ ويبارك بيك أخوي عبد الرحمن &#8230; شكراً يا خوي لمرورك والحمد لله نال على إعجابك الموضوع &#8230;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4746">
+		<div id="comment-4746">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/d2831c391418682330a2cf60c8b55cd5f7943a7808dd701b7ba7e5b3767eee07?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d2831c391418682330a2cf60c8b55cd5f7943a7808dd701b7ba7e5b3767eee07?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://king-sabri.net" class="url" rel="ugc external nofollow">KING SABRI</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4746">
+				1 June 2009 at 10:55 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>الله يسلم هالإيدين يا أبو محمد و الله هذا كثير علي و ربي يجعله في ميزان حسناتك يا رب ::love::</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4747">
+		<div id="comment-4747">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/0df90bd34dfccd599eca81522db2aed3be3006e61bd892a009d2e43366c10464?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/0df90bd34dfccd599eca81522db2aed3be3006e61bd892a009d2e43366c10464?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://noyet" class="url" rel="ugc external nofollow">بلال</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4747">
+				1 June 2009 at 11:34 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>السلام عليكم<br />
+يعطيك الصحة :) مقال رائع,,, أغلبية مواضيعك رائعة و انا اعد نفسي من الزوار الاوفياء الزون و لكن هذا اول تعليق لي &#8230;<br />
+الحقيقة ليست روعة الموضوع وحدها التي دفعتني للتعليق و لكن أيضا قولك  ****أمام هؤلاء أصحاب c99 والذي لن يعرف أحدهم أن يعمل شيء سوى تغيير أندكس !!! **** أردت ان اضم صوتي لصوتك لمحاربة هذا النوع ن **الحمقى** و الله لقد ذقت ذرعا منهم :(</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-4749">
+		<div id="comment-4749">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4749">
+				2 June 2009 at 1:09 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>KING SABRI @ الله يسلمك يارب أخوي صبري &#8230; لا كثير ولا حاجة أنت تعرف ذلك جيداً &#8230; شكراً لمرورك ودعواتك يا خوي &#8230;</p>
+<p>بلال @ وعليكم السلام ورحمة الله وبركاته<br />
+الله يعافيك يارب أخوي بلال &#8230; يشرفني تكون من زوار الزون وإن شاء الله لا يكون آخر تعليق لك هنا  ::17<br />
+إن شاء الله يكفوا هؤلاء عن هذه العمليات وإن شاء الله أهم شي الموضوع عجبك &#8230; نورت الزون يا بلال &#8230;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4750">
+		<div id="comment-4750">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/6c4d7243b069e20076efcd2c10b7496b31ab6d01a524bb6afd7ed32bd49d24dc?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6c4d7243b069e20076efcd2c10b7496b31ab6d01a524bb6afd7ed32bd49d24dc?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://www.casafire.com/ar" class="url" rel="ugc external nofollow">محمد امين</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4750">
+				2 June 2009 at 10:25 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>شكرا أستاذ على الموضوع، و ياريث تضيفه لصفحة Docs<br />
+جزاك الله خيرا</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4751">
+		<div id="comment-4751">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/fabea8f2aeb305b02fd9ae6c36a2b6828b92f1a16e36b104fd323827a6d4b0f1?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/fabea8f2aeb305b02fd9ae6c36a2b6828b92f1a16e36b104fd323827a6d4b0f1?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://www.mtafran.com" class="url" rel="ugc external nofollow">باحث</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4751">
+				2 June 2009 at 11:13 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>اثناء بحثي وجدّت ان هذه الطريقة لن تحمي من يستخدم الكرنل التي تحتوي على ثغرة vmslice</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-4753">
+		<div id="comment-4753">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4753">
+				3 June 2009 at 7:43 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>محمد امين @ حياك الله أخوي محمد، إن شاء الله أقوم بعمله على شكل Doc ولا يهمك &#8230; نورت &#8230;</p>
+<p>باحث @ ممكن ياخوي رابط لكلامك؟ وهل النواة 2.6.27.10 فيها هذا الخلل ؟</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4755">
+		<div id="comment-4755">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/371ea4a8ec386e98f7ddea58bbb44e835a01150bd2460fd9ac2ebd04a32ab3bc?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/371ea4a8ec386e98f7ddea58bbb44e835a01150bd2460fd9ac2ebd04a32ab3bc?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://www.sec-geeks.com" class="url" rel="ugc external nofollow">Error Code</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4755">
+				4 June 2009 at 2:12 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>ما شاء الله عليك اخي بيناري..<br />
+طريقة عبقرية و قوية جدا<br />
+انا سمعت من اصدقاء لي عن من اعطتهم رووت و لم يستطيعوا التحكم في السيرفر و كان نفسي اعرف الطريقة هذه<br />
+جزاك الله خيرا</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4756">
+		<div id="comment-4756">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/8f6283408cd981739ef0b56cd09283cc47c24f65ed1d4c3fff633d9c4cc0d0ef?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/8f6283408cd981739ef0b56cd09283cc47c24f65ed1d4c3fff633d9c4cc0d0ef?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">essa</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4756">
+				4 June 2009 at 10:15 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>السلام عليكم ورحمه الله وبركاته<br />
+اهنئك يا استاذنا العزيز على المجهود الرائع ولى سؤال</p>
+<p>هل لابد من اصدارة التى عليها الشرح أم يمكن استخدام اصدارات أخرى من الكرنل مثل 2.6.27.11  أو 2.6.27.14 </p>
+<p>او حتى اصدارات الحديثة زى 2.6.29</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-4757">
+		<div id="comment-4757">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4757">
+				5 June 2009 at 12:09 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>Error Code @ الله يخليك يارب هذا من لطفك وذوقك &#8230; ياله الحين عرفت الطريقة أستمتع بها إذن :) بالتوفيق لك أخي وشكراً لمرورك &#8230;</p>
+<p>essa @ وعليكم السلام ورحمة الله وبركاته<br />
+الله يخليك يارب هذا من لطفك وذوقك &#8230; بخصوص سؤالك، المفروض نعم تستعمل كل إصدارة مع إصدارتها &#8230; ولا اعتقد ستعمل إلا مع الإصدارة الخاصة بها &#8230; بالنسبة للنواة الجديدة ربما تستطيع إستعمال test منها معهم ولكنها ليست stable &#8230; عليك بالموقع الرسمي إن شاء الله تستفيد اكثر &#8230; بالتوفيق لك وشكراً لمرورك &#8230;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4762">
+		<div id="comment-4762">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/babfab1cecc2e70bb99b03cfacf06c12147734256c0e3e0e4e570d46493b3e2a?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/babfab1cecc2e70bb99b03cfacf06c12147734256c0e3e0e4e570d46493b3e2a?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">ZandeX</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4762">
+				7 June 2009 at 9:35 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>رائع كالعادة يا ابو محمد، جزاك الله خيراً  ::bhappy::</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4763">
+		<div id="comment-4763">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/ed656817d4f6c84d00cd1db657b8c5ed57a05dce70617cd3b26bf7dc29bceff1?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ed656817d4f6c84d00cd1db657b8c5ed57a05dce70617cd3b26bf7dc29bceff1?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">ahmed-araby</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4763">
+				7 June 2009 at 1:40 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>موضوع فى الصميم<br />
+أعرف أنك مشفول جدا بالعمل الجديد فى الشركة ياغالى<br />
+ولكنى كنت أريد ان أكون Security Engineer بحق<br />
+أعرف أن الكلمة كبيرة جدا جدا جدا جدا جدا وربما يكون الامر صعبا لكنك تعرف ان من كان معلمه كتابه فقط فهو بالتأكيد سوف يستغرق الكثير من الوقت ليصل على الدرب الصحيح<br />
+ولهذا أطلب منك أن تخبرنا بما لم تنفعله فى البداية وودت لو ان شخص أخبرك به<br />
+وطبعا لو تكرمت ووضعتلنا لائحة بأفضل 3 كتب &#8211; ثلاثة فقط  ::14 &#8211; تعقد انها الاهم على الاطلاق وياحبذا لو كان احدها يتناول أشياء مثل هذة :D<br />
+أنت قمت بعمل هذا بالفعل ولكن تكراره لن يكون سيئا على الاطلاق  ::6<br />
+تحياتي وسلامي</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4765">
+		<div id="comment-4765">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/d409a6bd32100fb206c931beeda44821be2ace98d22b70183d7db6fc586a8eb9?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d409a6bd32100fb206c931beeda44821be2ace98d22b70183d7db6fc586a8eb9?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http:/3a6l.com" class="url" rel="ugc external nofollow">3a6l</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4765">
+				11 June 2009 at 9:04 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>السلام عليكم ورحمه الله وبركاته ..</p>
+<p>ببداية الموضوع بارك الله بك على الشرح ..</p>
+<p>الحقيقه ليس لدى سيرفر .. حصلت عليه عدة مرات اقوم بحجزه لعدة اشهر ثما اقوم بالالغاء السيرفر ..</p>
+<p>ليس لدي تعليق سواً .. الله يوفقك وبارك الله فيك على  هذا الشرح ..</p>
+<p>اللي جعلنى اضع هنا الرد الله .. لكي اشكرك .. من لا يشكر الناس لا يشكر الله ..</p>
+<p>ثم .. كلامك ببداية الموضوع .. هو من جلعني اضع هنا الرد بعد الشكر لك ..</p>
+<p>اهنئك ع تفكيرك النيـُر واخلاقك العاليه .. إبدعت قبل إن تضع بصمتك بالشرح .. </p>
+<p>احبك بالله   ::happy::</p>
+<p>Security</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4768">
+		<div id="comment-4768">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/de9a87bb8c0fcbf28db586cf4ff75e9b55f0046aade6910459b238c3be7a6ec0?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/de9a87bb8c0fcbf28db586cf4ff75e9b55f0046aade6910459b238c3be7a6ec0?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn">SaRi</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4768">
+				12 June 2009 at 1:43 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>اشكرك شديد الشكر على الإفادة وبعد الاعتماد على مصادر عديدة انت كنت اهمها تم تنصيبه على CentOS 5.3 والامور تعمل بإمتياز.<br />
+المشكلة الوحيدة التي ازعجتني انه بالرغم من انه الروت صلاحياته محدودة لا زال بإمكانه مسح الملفات الخاصة بالمستخدمين داخل مجلداتهم في المجلد /home .</p>
+<p>هل صادفت هذه المشكلة ؟</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-4769">
+		<div id="comment-4769">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4769">
+				13 June 2009 at 12:17 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>ZandeX @ ويجزيك الخير، الله يخليك يارب أخوي حيدر &#8230; إن شاء الله أستفدت من الموضوع &#8230;</p>
+<p>ahmed-araby @ الله يخليك يارب أخوي أحمد &#8230; بخصوص ما تطلبه ربما هذا الموضوع يفيدك:<br />
+<a href="http://pen-tester.dk/pentest.htm" rel="nofollow ugc">http://pen-tester.dk/pentest.htm</a></p>
+<p>فيه كل ما تتسائل حوله وأيضاً فيه العديد من الكتب &#8230; بالنسبة لي صعب أنصح بثلاث كتب فقط، لانه هناك كتب ممكن يكون فيها فصل واحد هو المفيد وهكذا &#8230; راجع صفحة مكتبتي لعل تستفيد منهم وأيضاً هناك اكثر من كتاب قمت بوصفهم وهم رائعين جداً &#8230; سأنزل وصف في كتاب جديد قريباً إن شاء الله حال وجود فراغ لعمل ذلك &#8230; شكراً يا خوي على هذه الثقة الطيبة منك وعسى الله يوفقنا جميعاً لكل ما يحبه ويرضاه &#8230;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-4770">
+		<div id="comment-4770">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4770">
+				13 June 2009 at 12:21 am					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>3a6l @ وعليكم السلام ورحمة الله وبركاته<br />
+ويبارك بيك اخي الكريم يا هلا ومرحبا بك &#8230; أشكرك يا خوي على كلامك ودعواتك الطيبة وهذا والله من لطفك وذوقك &#8230; وإن شاء الله نكون دائماً عند حسن ظن الجميع بنا &#8230; شكراً مرة أخرى أخي على كل كلمة وحرف كتبته بحقي وإن شاء الله يصير عندك خادم وتستفيد من الموضوع &#8230; نورت الزون يا طيب &#8230;</p>
+<p>SaRi @ الله يخليك يارب والحمد لله كان محل فائدة لك ولو بسيطة &#8230; بخصوص المشكلة التي تظهر معك، أكيد هناك مسألة ما حصلت أثناء مرحلة التعلم أو إنه الصلاحيات فيها مشكلة ما &#8230; شكراً لمرورك اخي نورت الزون &#8230;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-4818">
+		<div id="comment-4818">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/a7293b05cedf30438c280f8c02e7de5b0344309877c4054e70e10c8b8f729b99?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/a7293b05cedf30438c280f8c02e7de5b0344309877c4054e70e10c8b8f729b99?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="http://www.linuxac.org" class="url" rel="ugc external nofollow">kalemer0</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4818">
+				29 June 2009 at 3:48 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>اقسم بالله ما قلت استاذي ما كدبت<br />
+كمل ابداعك حبيبي</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-4826">
+		<div id="comment-4826">
+			<div class="comment-author vcard">
+				<img alt='' src='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5be529ad6c71115cf1b95fa59b0e4bfaa692992c424182dbdcbb022279db1175?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/>				<cite class="fn"><a href="https://www.binary-zone.com" class="url" rel="ugc">B!n@ry</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://www.binary-zone.com/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/#comment-4826">
+				3 July 2009 at 4:28 pm					</a>
+									</div><!-- .comment-meta .commentmetadata -->
+
+				<div class="comment-body"><p>kalemer0 @ الله يخليك يارب أخي الكريم وإن شاء الله تكون أستفدت من الموضوع &#8230;</p>
+</div>
+
+				<div class="reply">
+								</div><!-- .reply -->
+			</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+			</ol>
+
+	
+			<p class="nocomments">Comments are closed.</p>
+	
+
+
+</div><!-- #comments -->
+
+	
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="text-6" class="widget-container widget_text">			<div class="textwidget"><center>
+<a href="http://security4arabs.com/" target="_blank"><img src="//www.binary-zone.com/arabnix0/s4a.gif" /></a>
+</center></div>
+		</li>
+		<li id="recent-posts-5" class="widget-container widget_recent_entries">
+		<h3 class="widget-title">Recent Posts</h3>
+		<ul>
+											<li>
+					<a href="https://www.binary-zone.com/2024/04/17/speaking-at-nccc-2024/">Speaking at NCCC 2024</a>
+									</li>
+											<li>
+					<a href="https://www.binary-zone.com/2024/04/05/c5w-certified-malware-analysis-friday-giveway-1/">C5W Certified Malware Analyst (Friday Giveway) #1</a>
+									</li>
+											<li>
+					<a href="https://www.binary-zone.com/2024/04/05/malware-tools-tips-and-tricks/">Malware Tools, Tips and Tricks</a>
+									</li>
+											<li>
+					<a href="https://www.binary-zone.com/2024/04/05/windows-sandbox-scripts/">Windows Sandbox Scripts</a>
+									</li>
+											<li>
+					<a href="https://www.binary-zone.com/2023/12/24/goadv2-in-a-vm/">GOADv2 in a VM</a>
+									</li>
+											<li>
+					<a href="https://www.binary-zone.com/2023/05/21/memory-forensics-ransomcare-investigation-case-1/">Memory Forensics &#8211; RansomCare Investigation Case 1</a>
+									</li>
+											<li>
+					<a href="https://www.binary-zone.com/2023/03/27/challenge-9-encrypt-them-all-case/">Challenge #9 &#8211; Encrypt Them All Case</a>
+									</li>
+					</ul>
+
+		</li><li id="text-13" class="widget-container widget_text">			<div class="textwidget"><center>
+<a href="https://twitter.com/binaryz0ne" target="_blank"><img src="//www.binary-zone.com/wp-content/uploads/2012/12/binaryz0ne.png" /></a>
+</center></div>
+		</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>
+			<ul>
+					<li class="cat-item cat-item-714"><a href="https://www.binary-zone.com/category/academia/">Academia</a> (21)
+</li>
+	<li class="cat-item cat-item-624"><a href="https://www.binary-zone.com/category/android/">Android</a> (1)
+</li>
+	<li class="cat-item cat-item-1080"><a href="https://www.binary-zone.com/category/anti-forensics/">Anti-Forensics</a> (2)
+</li>
+	<li class="cat-item cat-item-1008"><a href="https://www.binary-zone.com/category/antix/">AntiX</a> (4)
+</li>
+	<li class="cat-item cat-item-467"><a href="https://www.binary-zone.com/category/apachetomcat/">Apache/Tomcat</a> (8)
+</li>
+	<li class="cat-item cat-item-64"><a href="https://www.binary-zone.com/category/%d8%b4%d8%b1%d9%83%d8%a9-%d8%b9%d8%b1%d8%a8-%d9%86%d9%8a%d9%83%d8%b3/">Arabnix</a> (6)
+</li>
+	<li class="cat-item cat-item-202"><a href="https://www.binary-zone.com/category/backtrack/">BackTrack</a> (5)
+</li>
+	<li class="cat-item cat-item-98"><a href="https://www.binary-zone.com/category/books/">Books</a> (17)
+</li>
+	<li class="cat-item cat-item-1096"><a href="https://www.binary-zone.com/category/c5w/">C5W</a> (1)
+</li>
+	<li class="cat-item cat-item-987"><a href="https://www.binary-zone.com/category/challenges/">Challenges</a> (5)
+</li>
+	<li class="cat-item cat-item-23"><a href="https://www.binary-zone.com/category/companies/">Companies</a> (16)
+</li>
+	<li class="cat-item cat-item-1099"><a href="https://www.binary-zone.com/category/conferences/">Conferences</a> (1)
+</li>
+	<li class="cat-item cat-item-1083"><a href="https://www.binary-zone.com/category/cyber-5w/">Cyber 5W</a> (2)
+</li>
+	<li class="cat-item cat-item-13"><a href="https://www.binary-zone.com/category/databases/">Database</a> (23)
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.binary-zone.com/category/development/">Development</a> (31)
+</li>
+	<li class="cat-item cat-item-990"><a href="https://www.binary-zone.com/category/dfir/">DFIR</a> (14)
+</li>
+	<li class="cat-item cat-item-900"><a href="https://www.binary-zone.com/category/exploitation/">Exploitation</a> (8)
+</li>
+	<li class="cat-item cat-item-1075"><a href="https://www.binary-zone.com/category/file-systems/">File Systems</a> (1)
+</li>
+	<li class="cat-item cat-item-31"><a href="https://www.binary-zone.com/category/firewall/">Firewalls</a> (20)
+</li>
+	<li class="cat-item cat-item-162"><a href="https://www.binary-zone.com/category/footprinting/">Footprinting</a> (14)
+</li>
+	<li class="cat-item cat-item-938"><a href="https://www.binary-zone.com/category/forensics/">Forensics</a> (22)
+</li>
+	<li class="cat-item cat-item-12"><a href="https://www.binary-zone.com/category/funny/">Fun</a> (28)
+</li>
+	<li class="cat-item cat-item-1"><a href="https://www.binary-zone.com/category/gnulinux/">GNU/Linux</a> (101)
+</li>
+	<li class="cat-item cat-item-991"><a href="https://www.binary-zone.com/category/hdfs/">HDFS</a> (1)
+</li>
+	<li class="cat-item cat-item-492"><a href="https://www.binary-zone.com/category/idsips/">IDS/IPS</a> (4)
+</li>
+	<li class="cat-item cat-item-1048"><a href="https://www.binary-zone.com/category/investigations/">Investigations</a> (13)
+</li>
+	<li class="cat-item cat-item-8"><a href="https://www.binary-zone.com/category/kernel/">Kernel</a> (24)
+</li>
+	<li class="cat-item cat-item-20"><a href="https://www.binary-zone.com/category/life/">Life</a> (161)
+</li>
+	<li class="cat-item cat-item-2"><a href="https://www.binary-zone.com/category/linux-security/">Linux Security</a> (68)
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.binary-zone.com/category/linux-servers-and-services/">Linux Services</a> (37)
+</li>
+	<li class="cat-item cat-item-1002"><a href="https://www.binary-zone.com/category/malware/">Malware</a> (9)
+</li>
+	<li class="cat-item cat-item-1035"><a href="https://www.binary-zone.com/category/memory/">Memory</a> (1)
+</li>
+	<li class="cat-item cat-item-130"><a href="https://www.binary-zone.com/category/metasploit/">Metasploit</a> (6)
+</li>
+	<li class="cat-item cat-item-622"><a href="https://www.binary-zone.com/category/mobile/">Mobile</a> (3)
+</li>
+	<li class="cat-item cat-item-75"><a href="https://www.binary-zone.com/category/networks/">Networks</a> (44)
+</li>
+	<li class="cat-item cat-item-11"><a href="https://www.binary-zone.com/category/linux-free-software-news/">News</a> (75)
+</li>
+	<li class="cat-item cat-item-630"><a href="https://www.binary-zone.com/category/osint/">OSINT</a> (6)
+</li>
+	<li class="cat-item cat-item-441"><a href="https://www.binary-zone.com/category/patch-management/">Patch Management</a> (5)
+</li>
+	<li class="cat-item cat-item-448"><a href="https://www.binary-zone.com/category/pci-compliance/">PCI Compliance</a> (8)
+</li>
+	<li class="cat-item cat-item-89"><a href="https://www.binary-zone.com/category/pentest/">PenTest</a> (52)
+</li>
+	<li class="cat-item cat-item-18"><a href="https://www.binary-zone.com/category/poems/">Poems</a> (9)
+</li>
+	<li class="cat-item cat-item-282"><a href="https://www.binary-zone.com/category/portknocking/">PortKnocking</a> (10)
+</li>
+	<li class="cat-item cat-item-623"><a href="https://www.binary-zone.com/category/privacy/">Privacy</a> (4)
+</li>
+	<li class="cat-item cat-item-884"><a href="https://www.binary-zone.com/category/publications/">Publications</a> (12)
+</li>
+	<li class="cat-item cat-item-593"><a href="https://www.binary-zone.com/category/real-madrid-2/">Real Madrid</a> (17)
+</li>
+	<li class="cat-item cat-item-992"><a href="https://www.binary-zone.com/category/research/">Research</a> (6)
+</li>
+	<li class="cat-item cat-item-32"><a href="https://www.binary-zone.com/category/security/">Security</a> (84)
+</li>
+	<li class="cat-item cat-item-15"><a href="https://www.binary-zone.com/category/snippets/">Snippets</a> (33)
+</li>
+	<li class="cat-item cat-item-679"><a href="https://www.binary-zone.com/category/social-engineering/">Social Engineering</a> (4)
+</li>
+	<li class="cat-item cat-item-17"><a href="https://www.binary-zone.com/category/linux-software/">Software/Tools</a> (53)
+</li>
+	<li class="cat-item cat-item-14"><a href="https://www.binary-zone.com/category/sports/">Sport</a> (78)
+</li>
+	<li class="cat-item cat-item-1019"><a href="https://www.binary-zone.com/category/threathunting/">ThreatHunting</a> (4)
+</li>
+	<li class="cat-item cat-item-19"><a href="https://www.binary-zone.com/category/unix-operating-systems/">Unix</a> (12)
+</li>
+	<li class="cat-item cat-item-28"><a href="https://www.binary-zone.com/category/virtualization/">Virtualization</a> (27)
+</li>
+	<li class="cat-item cat-item-442"><a href="https://www.binary-zone.com/category/vulnerability/">Vulnerability</a> (7)
+</li>
+	<li class="cat-item cat-item-153"><a href="https://www.binary-zone.com/category/web-security/">Web Security</a> (12)
+</li>
+	<li class="cat-item cat-item-63"><a href="https://www.binary-zone.com/category/webapp/">Webapp</a> (4)
+</li>
+	<li class="cat-item cat-item-166"><a href="https://www.binary-zone.com/category/whmcpanel/">WHM/Cpanel</a> (6)
+</li>
+	<li class="cat-item cat-item-396"><a href="https://www.binary-zone.com/category/windows/">Windows</a> (19)
+</li>
+	<li class="cat-item cat-item-1059"><a href="https://www.binary-zone.com/category/workshops/">Workshops</a> (2)
+</li>
+	<li class="cat-item cat-item-258"><a href="https://www.binary-zone.com/category/z0ne/">z0ne</a> (16)
+</li>
+			</ul>
+
+			</li><li id="archives-4" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<label class="screen-reader-text" for="archives-dropdown-4">Archives</label>
+		<select id="archives-dropdown-4" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='http://www.binary-zone.com/2024/04/'> April 2024 &nbsp;(4)</option>
+	<option value='http://www.binary-zone.com/2023/12/'> December 2023 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2023/05/'> May 2023 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2023/03/'> March 2023 &nbsp;(3)</option>
+	<option value='http://www.binary-zone.com/2021/08/'> August 2021 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2021/07/'> July 2021 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2020/09/'> September 2020 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2020/05/'> May 2020 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2020/04/'> April 2020 &nbsp;(2)</option>
+	<option value='http://www.binary-zone.com/2020/03/'> March 2020 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2020/01/'> January 2020 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2019/10/'> October 2019 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2019/06/'> June 2019 &nbsp;(2)</option>
+	<option value='http://www.binary-zone.com/2019/05/'> May 2019 &nbsp;(6)</option>
+	<option value='http://www.binary-zone.com/2016/12/'> December 2016 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2015/09/'> September 2015 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2015/01/'> January 2015 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2014/08/'> August 2014 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2014/05/'> May 2014 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2013/12/'> December 2013 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2013/09/'> September 2013 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2013/08/'> August 2013 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2013/02/'> February 2013 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2013/01/'> January 2013 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2012/12/'> December 2012 &nbsp;(6)</option>
+	<option value='http://www.binary-zone.com/2012/11/'> November 2012 &nbsp;(3)</option>
+	<option value='http://www.binary-zone.com/2012/10/'> October 2012 &nbsp;(9)</option>
+	<option value='http://www.binary-zone.com/2012/09/'> September 2012 &nbsp;(3)</option>
+	<option value='http://www.binary-zone.com/2012/08/'> August 2012 &nbsp;(6)</option>
+	<option value='http://www.binary-zone.com/2012/07/'> July 2012 &nbsp;(3)</option>
+	<option value='http://www.binary-zone.com/2012/06/'> June 2012 &nbsp;(6)</option>
+	<option value='http://www.binary-zone.com/2012/05/'> May 2012 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2012/04/'> April 2012 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2011/12/'> December 2011 &nbsp;(4)</option>
+	<option value='http://www.binary-zone.com/2011/11/'> November 2011 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2011/10/'> October 2011 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2011/09/'> September 2011 &nbsp;(2)</option>
+	<option value='http://www.binary-zone.com/2011/08/'> August 2011 &nbsp;(7)</option>
+	<option value='http://www.binary-zone.com/2011/07/'> July 2011 &nbsp;(12)</option>
+	<option value='http://www.binary-zone.com/2011/06/'> June 2011 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2011/05/'> May 2011 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2011/04/'> April 2011 &nbsp;(8)</option>
+	<option value='http://www.binary-zone.com/2011/03/'> March 2011 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2011/02/'> February 2011 &nbsp;(2)</option>
+	<option value='http://www.binary-zone.com/2011/01/'> January 2011 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2010/12/'> December 2010 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2010/11/'> November 2010 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2010/09/'> September 2010 &nbsp;(2)</option>
+	<option value='http://www.binary-zone.com/2010/08/'> August 2010 &nbsp;(2)</option>
+	<option value='http://www.binary-zone.com/2010/07/'> July 2010 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2010/06/'> June 2010 &nbsp;(2)</option>
+	<option value='http://www.binary-zone.com/2010/05/'> May 2010 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2010/04/'> April 2010 &nbsp;(1)</option>
+	<option value='http://www.binary-zone.com/2010/03/'> March 2010 &nbsp;(4)</option>
+	<option value='http://www.binary-zone.com/2010/02/'> February 2010 &nbsp;(4)</option>
+	<option value='http://www.binary-zone.com/2010/01/'> January 2010 &nbsp;(11)</option>
+	<option value='http://www.binary-zone.com/2009/12/'> December 2009 &nbsp;(8)</option>
+	<option value='http://www.binary-zone.com/2009/11/'> November 2009 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2009/10/'> October 2009 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2009/09/'> September 2009 &nbsp;(3)</option>
+	<option value='http://www.binary-zone.com/2009/08/'> August 2009 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2009/07/'> July 2009 &nbsp;(13)</option>
+	<option value='http://www.binary-zone.com/2009/06/'> June 2009 &nbsp;(4)</option>
+	<option value='http://www.binary-zone.com/2009/05/'> May 2009 &nbsp;(13)</option>
+	<option value='http://www.binary-zone.com/2009/04/'> April 2009 &nbsp;(17)</option>
+	<option value='http://www.binary-zone.com/2009/03/'> March 2009 &nbsp;(11)</option>
+	<option value='http://www.binary-zone.com/2009/02/'> February 2009 &nbsp;(20)</option>
+	<option value='http://www.binary-zone.com/2009/01/'> January 2009 &nbsp;(17)</option>
+	<option value='http://www.binary-zone.com/2008/12/'> December 2008 &nbsp;(29)</option>
+	<option value='http://www.binary-zone.com/2008/11/'> November 2008 &nbsp;(26)</option>
+	<option value='http://www.binary-zone.com/2008/10/'> October 2008 &nbsp;(37)</option>
+	<option value='http://www.binary-zone.com/2008/09/'> September 2008 &nbsp;(19)</option>
+	<option value='http://www.binary-zone.com/2008/08/'> August 2008 &nbsp;(5)</option>
+	<option value='http://www.binary-zone.com/2008/07/'> July 2008 &nbsp;(19)</option>
+	<option value='http://www.binary-zone.com/2008/06/'> June 2008 &nbsp;(7)</option>
+	<option value='http://www.binary-zone.com/2008/05/'> May 2008 &nbsp;(12)</option>
+	<option value='http://www.binary-zone.com/2008/04/'> April 2008 &nbsp;(24)</option>
+	<option value='http://www.binary-zone.com/2008/03/'> March 2008 &nbsp;(16)</option>
+	<option value='http://www.binary-zone.com/2008/02/'> February 2008 &nbsp;(7)</option>
+	<option value='http://www.binary-zone.com/2008/01/'> January 2008 &nbsp;(23)</option>
+	<option value='http://www.binary-zone.com/2007/12/'> December 2007 &nbsp;(18)</option>
+	<option value='http://www.binary-zone.com/2007/11/'> November 2007 &nbsp;(27)</option>
+	<option value='http://www.binary-zone.com/2007/10/'> October 2007 &nbsp;(43)</option>
+	<option value='http://www.binary-zone.com/2007/09/'> September 2007 &nbsp;(19)</option>
+	<option value='http://www.binary-zone.com/2007/08/'> August 2007 &nbsp;(11)</option>
+	<option value='http://www.binary-zone.com/2007/07/'> July 2007 &nbsp;(22)</option>
+	<option value='http://www.binary-zone.com/2007/06/'> June 2007 &nbsp;(10)</option>
+	<option value='http://www.binary-zone.com/2007/05/'> May 2007 &nbsp;(10)</option>
+	<option value='http://www.binary-zone.com/2007/04/'> April 2007 &nbsp;(3)</option>
+	<option value='http://www.binary-zone.com/2007/03/'> March 2007 &nbsp;(21)</option>
+	<option value='http://www.binary-zone.com/2007/02/'> February 2007 &nbsp;(16)</option>
+	<option value='http://www.binary-zone.com/2007/01/'> January 2007 &nbsp;(18)</option>
+	<option value='http://www.binary-zone.com/2006/12/'> December 2006 &nbsp;(23)</option>
+
+		</select>
+
+			<script type="text/javascript">
+/* <![CDATA[ */
+
+( ( dropdownId ) => {
+	const dropdown = document.getElementById( dropdownId );
+	function onSelectChange() {
+		setTimeout( () => {
+			if ( 'escape' === dropdown.dataset.lastkey ) {
+				return;
+			}
+			if ( dropdown.value ) {
+				document.location.href = dropdown.value;
+			}
+		}, 250 );
+	}
+	function onKeyUp( event ) {
+		if ( 'Escape' === event.key ) {
+			dropdown.dataset.lastkey = 'escape';
+		} else {
+			delete dropdown.dataset.lastkey;
+		}
+	}
+	function onClick() {
+		delete dropdown.dataset.lastkey;
+	}
+	dropdown.addEventListener( 'keyup', onKeyUp );
+	dropdown.addEventListener( 'click', onClick );
+	dropdown.addEventListener( 'change', onSelectChange );
+})( "archives-dropdown-4" );
+
+//# sourceURL=WP_Widget_Archives%3A%3Awidget
+/* ]]> */
+</script>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="https://www.binary-zone.com/" rel="home">
+					B!n@ry				</a>
+							</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentyten/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"http://www.binary-zone.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=http://www.binary-zone.com/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+</body>
+</html>

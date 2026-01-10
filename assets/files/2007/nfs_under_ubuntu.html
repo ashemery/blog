@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>السلام عليكم ورحمة الله وبركاته </TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.3  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Ali">
+	<META NAME="CREATED" CONTENT="20071225;12180000">
+	<META NAME="CHANGEDBY" CONTENT="Ali">
+	<META NAME="CHANGED" CONTENT="20071225;12210000">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 8.27in 11.69in; margin-right: 1.25in; margin-top: 1in; margin-bottom: 1in }
+		P { margin-bottom: 0.08in; direction: rtl; color: #000000; text-align: right; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 12pt }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" DIR="RTL">
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA"><FONT COLOR="#0000ff"><FONT SIZE=5>السلام
+عليكم ورحمة الله وبركاته </FONT></FONT></SPAN><FONT COLOR="#0000ff"><FONT SIZE=5>...</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR><BR><SPAN LANG="ar-SA">طبعاً
+كما هو معروف الـ </SPAN><FONT COLOR="#ff0000">NFS</FONT>
+<SPAN LANG="ar-SA">هو عبارة عن </SPAN><FONT COLOR="#ff0000">Network
+File System</FONT> <SPAN LANG="ar-SA">ومن الإسم واضح هو
+لمشاركة الملفات على الشبكة</SPAN>. <SPAN LANG="ar-SA">كيف
+يتم ذلك في بيئة </SPAN>Ubuntu <SPAN LANG="ar-SA">؟ الأمر
+جداً بسيط وسهل، كل ما عليك عمله هو متابعة
+هذه التدوينة فقط </SPAN>... <SPAN LANG="ar-SA">طيب
+ما هي المتطلبات لذلك؟ المتطلبات هي
+التالي</SPAN>:<BR><FONT COLOR="#ff8c00">nfs-kernel-server</FONT>
+- <SPAN LANG="ar-SA">هذا هو السيرفر الخاص بالـ
+</SPAN><FONT COLOR="#ff0000">NFS</FONT><BR><BR><FONT COLOR="#ff8c00">nfs-common</FONT>
+- <SPAN LANG="ar-SA">هذه الحزمة تتظمن بعض البرامج
+الخاصة بالـ </SPAN><FONT COLOR="#ff0000">NFS</FONT><BR><BR><FONT COLOR="#ff8c00">portmap</FONT>
+- <SPAN LANG="ar-SA">هذه هي خدمة معينة لربط الخدمات
+التي تستعمل </SPAN><FONT COLOR="#006400">rpc</FONT> <SPAN LANG="ar-SA">من
+خلال </SPAN><FONT COLOR="#006400">port</FONT> <SPAN LANG="ar-SA">معيين
+حيث تقوم بإعطاء </SPAN><FONT COLOR="#006400">port</FONT>
+<SPAN LANG="ar-SA">معيين لخدمة معينة، ومن دون
+هذه الخدمة لن يعمل الـ </SPAN><FONT COLOR="#ff0000">NFS</FONT><BR><BR><SPAN LANG="ar-SA"><B>الآن
+لنقم بالتنصيب</B></SPAN><B>:</B></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>apt-get install
+nfs-kernel-server portmap nfs-common</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR><SPAN LANG="ar-SA">الآن
+الملف الخاص بالإعدادت حق الـ </SPAN><FONT COLOR="#0000ff">NFS</FONT>
+<SPAN LANG="ar-SA">هو </SPAN>/etc/exports <SPAN LANG="ar-SA">حيث
+يحتوي على الإعدادات الخاصة بالمجلدات
+التي تريد عمل مشاركة </SPAN><FONT COLOR="#0000ff">Share</FONT>
+<SPAN LANG="ar-SA">لها على الشبكة </SPAN>... <SPAN LANG="ar-SA">طيب
+الحين لنفرض لدي المجلد التالي</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>/home/user/Movies</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA">وأريد
+أن أقوم بمشاركته للمستخدمين الموجودين
+على الشبكة المحلية فقط </SPAN>... <SPAN LANG="ar-SA">ماذا
+سنعمل؟ الجواب تابع معي</SPAN>:<BR><BR><SPAN LANG="ar-SA"><B>أول
+حاجة سنقوم بها هي</B></SPAN><B>:</B><BR><SPAN LANG="ar-SA">نحرر
+ملف الإعدادات الخاص بالخدمة </SPAN><FONT COLOR="#0000ff">NFS</FONT>
+<SPAN LANG="ar-SA">من خلال الأمر التالي</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>vi /etc/exports</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA">بعد
+ذلك نقوم بوضع السطر هذا</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>/home/user/Movies
+192.168.0.0/24(rw,sync)</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA">لنوضح
+هنا ماذا يعني كل شيء في هذا السطر </SPAN>...
+<SPAN LANG="ar-SA">لنأخذ كل شيء على
+حدى</SPAN>:<BR><FONT COLOR="#ff0000">/home/user/Movies</FONT> <SPAN LANG="ar-SA">هذا
+هو المجلد المراد عمل مشاركة له</SPAN><BR><FONT COLOR="#ff0000">192.168.0.0/24</FONT>
+<SPAN LANG="ar-SA">هذا يمثل الأي بي حق الشبكة
+الخاصة بي، وضعي للـ </SPAN>/24 <SPAN LANG="ar-SA">تعني
+إني حددت المشاركة ستكون لكل من يقع ما
+بين </SPAN>192.168.0.0 <SPAN LANG="ar-SA">و </SPAN>192.168.0.255<BR><FONT COLOR="#ff0000">rw</FONT>
+<SPAN LANG="ar-SA">تعني السماح للقراءة </SPAN><FONT COLOR="#0000ff">read</FONT>
+<SPAN LANG="ar-SA">والكتابة </SPAN><FONT COLOR="#0000ff">write</FONT>
+<SPAN LANG="ar-SA">على المجلد الذي قمنا بعمل
+مشاركة له</SPAN><BR><FONT COLOR="#ff0000">sync</FONT> <SPAN LANG="ar-SA">تعني
+إنها ستقوم بعمل الإتصال ونقل البيانات
+يتم بشكل تزامني </SPAN><FONT COLOR="#0000ff">Synchronous</FONT><BR><BR><SPAN LANG="ar-SA">مثال
+آخر</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>/home/user/Movies
+rul3z(ro,sync) n3m3siz(rw,sync)</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA">هنا
+قمت بعمل مشاركة لنفس المجلد ولكن ليس
+الى شبكة معينة ولكن الى </SPAN><FONT COLOR="#0000ff">Hostname</FONT>
+<SPAN LANG="ar-SA">معيين</SPAN>. <SPAN LANG="ar-SA">هذه
+الحالة تتطلب من السيرفر </SPAN><FONT COLOR="#0000ff">NFS</FONT>
+<SPAN LANG="ar-SA">قادر على التعرف على الـ
+</SPAN><FONT COLOR="#0000ff">Hostnames</FONT> <SPAN LANG="ar-SA">الموجودة
+على الشبكة وإﻻ لن تعمل ﻷنه لن يتعرف
+ماذا يعني </SPAN><FONT COLOR="#ff0000">rul3z</FONT> <SPAN LANG="ar-SA">أو
+</SPAN><FONT COLOR="#ff0000">n3m3siz</FONT> ...<BR><BR><SPAN LANG="ar-SA">الآن
+قم بحفظ الملف وغلقه وبعدها قم بتنفيذ
+التالي</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>/etc/init.d/nfs-kernel-server
+start</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA">لو
+أخبرك بإن السيرفر يعمل من الأصل قم بتنفيذ
+التالي</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>/etc/init.d/nfs-kernel-server
+restart</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR><SPAN LANG="ar-SA">الآن
+أصبح السيرفر حق الـ </SPAN><FONT COLOR="#ff0000">NFS</FONT>
+<SPAN LANG="ar-SA">يعمل وكل شي تمام </SPAN>... <SPAN LANG="ar-SA">باقي
+نعمل تجربة هل يعمل أم ﻻ</SPAN>. <BR><SPAN LANG="ar-SA">الآن
+لنقم على جهاز آخر بعمل التالي لغرض
+التجربة</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in">mkdir
+/mnt/Movies</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA">حيث
+سنقوم بربط المجلد الموجود على الشبكة
+مع المجلد الموجود على الجهاز الحالي من
+خلال المجلد الذي عملناه في الأعلى</SPAN>.
+<SPAN LANG="ar-SA">الآن لتنفيذ عملية الربط قم
+بالتالي</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>mount
+server-name/ip:/home/user/Movies /mnt/Movies</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR><SPAN LANG="ar-SA">كل
+ما عليك فعله هو تغيير </SPAN><FONT COLOR="#006400">server-name</FONT>
+<SPAN LANG="ar-SA">بإسم السيرفر أي الـ </SPAN><FONT COLOR="#006400">Hostname</FONT>
+<SPAN LANG="ar-SA">أو تغيير الـ </SPAN><FONT COLOR="#006400">server-ip</FONT>
+<SPAN LANG="ar-SA">بالأي بي حق السيرفر لكي يعمل
+الأمر أعلاه</SPAN>. <SPAN LANG="ar-SA">طيب الحين
+كيف أصل للملفات؟ بسيطة جداً نحن ربطنا
+المجلد المشترك على الشبكة بنظام الملفات
+التي لدينا من خلال الملجد </SPAN>/mnt/Moivies
+<SPAN LANG="ar-SA">ولهذا أكيد الوصول لهم من
+خلاله</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>cd /mnt/Movies</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR><SPAN LANG="ar-SA">طيب
+يا </SPAN><FONT COLOR="#0000ff">B!n@ry</FONT> <SPAN LANG="ar-SA">لنفرض
+أنا ﻻ أعرف ما هي المجلدات التي تم عمل
+مشاركة لها على السيرفر كيف أعرف ذلك ؟
+قم بالتالي</SPAN>:</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P DIR="LTR" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; border: 2.60pt double #c0c0c0; padding: 0.07in">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>showmount -a
+server-name/ip</FONT></FONT></P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-bottom: 0in"><SPAN LANG="ar-SA">كل
+ما عليك فعله هو تغيير </SPAN><FONT COLOR="#006400">server-name</FONT>
+<SPAN LANG="ar-SA">بإسم السيرفر أي الـ </SPAN><FONT COLOR="#006400">Hostname</FONT>
+<SPAN LANG="ar-SA">أو تغيير الـ </SPAN><FONT COLOR="#006400">server-ip</FONT>
+<SPAN LANG="ar-SA">بالأي بي حق السيرفر لكي يعمل
+الأمر أعلاه</SPAN>.<BR><BR><SPAN LANG="ar-SA">ألف مبروك
+الحين جهازك يعمل كـ </SPAN><FONT COLOR="#ff8c00">NFS
+Server</FONT> ... <SPAN LANG="ar-SA">لمزيد من المعلومات؟
+دائماً الـ </SPAN><FONT COLOR="#ff8c00">man pages</FONT>
+<SPAN LANG="ar-SA">فيها الكثير، والإستفسارات
+هنا محل ترحيب مستمر </SPAN>...<BR><BR><SPAN LANG="ar-SA">خالص
+الود والتقدير للجميع </SPAN>...<BR><SPAN LANG="ar-SA">أخوكم
+</SPAN><FONT COLOR="#0000ff">B!n@ry</FONT> ...</P>
+</BODY>
+</HTML>
