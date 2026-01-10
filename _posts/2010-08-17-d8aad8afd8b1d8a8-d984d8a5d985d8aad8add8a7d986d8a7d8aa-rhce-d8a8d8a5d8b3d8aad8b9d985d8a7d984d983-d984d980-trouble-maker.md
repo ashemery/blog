@@ -3,10 +3,9 @@ title: "تدرب لإمتحانات RHCE بإستعمالك لـ Trouble-Maker"
 date: 2010-08-17 00:37:30 -0500
 categories: ["Development", "GNU/Linux", "Software/Tools"]
 tags: ["RHCE", "Trouble-Maker"]
-permalink: "/2010/08/17/%d8%aa%d8%af%d8%b1%d8%a8-%d9%84%d8%a5%d9%85%d8%aa%d8%ad%d8%a7%d9%86%d8%a7%d8%aa-rhce-%d8%a8%d8%a5%d8%b3%d8%aa%d8%b9%d9%85%d8%a7%d9%84%d9%83-%d9%84%d9%80-trouble-maker/"
+permalink: "/2010/08/17/%25d8%25aa%25d8%25af%25d8%25b1%25d8%25a8-%25d9%2584%25d8%25a5%25d9%2585%25d8%25aa%25d8%25ad%25d8%25a7%25d9%2586%25d8%25a7%25d8%25aa-rhce-%25d8%25a8%25d8%25a5%25d8%25b3%25d8%25aa%25d8%25b9%25d9%2585%25d8%25a7%25d9%2584%25d9%2583-%25d9%2584%25d9%2580-trouble-maker/"
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 اليوم كنت ألقي عن آخر الكتب الخاصة بإمتحان RHCE وذلك لكي أستخدمها في دورة جنو/لينوكس التي المفترض أقوم بإعطائها في الفترة القادمة … وجدت كتابين صراحة حديثين أعجبوني ووجدت [Trouble-Maker](http://trouble-maker.sourceforge.net/) كذلك بطريقة الصدفة :)

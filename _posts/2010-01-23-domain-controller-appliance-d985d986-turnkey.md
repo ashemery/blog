@@ -3,10 +3,9 @@ title: "Domain Controller Appliance من TurnKey"
 date: 2010-01-23 14:43:02 -0500
 categories: ["GNU/Linux", "Linux Services", "Networks", "Virtualization", "Windows"]
 tags: ["Active Directory", "AD", "Domain Controller Appliance", "TurnKey"]
-permalink: "/2010/01/23/domain-controller-appliance-%d9%85%d9%86-turnkey/"
+permalink: "/2010/01/23/domain-controller-appliance-%25d9%2585%25d9%2586-turnkey/"
 reading_time: 1
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 ![](/assets/img/posts/2010/domain-controller.jpg)

@@ -2,10 +2,9 @@
 title: "Why Aren’t Employers Calling"
 date: 2009-02-09 13:23:43 -0500
 categories: ["Life"]
-permalink: "/2009/02/09/why-aren%e2%80%99t-employers-calling/"
+permalink: "/2009/02/09/why-aren%25e2%2580%2599t-employers-calling/"
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 وصلتني اليوم رسالة من موقع Bayt الخاص بأمور التوظيف وكانت تحمل رسالتهم السؤال التالي:

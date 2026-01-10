@@ -2,10 +2,9 @@
 title: "إستطلاع من شركة Dell: نحن نستمع إليك !!!"
 date: 2007-03-15 09:49:43 -0500
 categories: ["News"]
-permalink: "/2007/03/15/%d8%a5%d8%b3%d8%aa%d8%b7%d9%84%d8%a7%d8%b9-dell-we-are-listening/"
+permalink: "/2007/03/15/%25d8%25a5%25d8%25b3%25d8%25aa%25d8%25b7%25d9%2584%25d8%25a7%25d8%25b9-dell-we-are-listening/"
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته …
 
 ![](/assets/img/posts/2007/delllogo.gif)

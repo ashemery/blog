@@ -2,10 +2,9 @@
 title: "محرك بحث جديد خاص بالـ Wikipedia"
 date: 2007-01-21 21:57:07 -0500
 categories: ["News"]
-permalink: "/2007/01/21/%d9%85%d8%ad%d8%b1%d9%83-%d8%a8%d8%ad%d8%ab-%d8%ac%d8%af%d9%8a%d8%af-%d8%ae%d8%a7%d8%b5-%d8%a8%d8%a7%d9%84%d9%80-wikipedia/"
+permalink: "/2007/01/21/%25d9%2585%25d8%25ad%25d8%25b1%25d9%2583-%25d8%25a8%25d8%25ad%25d8%25ab-%25d8%25ac%25d8%25af%25d9%258a%25d8%25af-%25d8%25ae%25d8%25a7%25d8%25b5-%25d8%25a8%25d8%25a7%25d9%2584%25d9%2580-wikipedia/"
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته …
 
 ![](http://www.wikiseek.com/images/logo_med.gif)

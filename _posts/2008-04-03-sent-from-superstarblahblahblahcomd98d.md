@@ -2,10 +2,9 @@
 title: "Sent from: SuperStar@blahblahblah.comٍ"
 date: 2008-04-03 15:46:37 -0500
 categories: ["Fun"]
-permalink: "/2008/04/03/sent-from-superstarblahblahblahcom%d9%8d/"
+permalink: "/2008/04/03/sent-from-superstarblahblahblahcom%25d9%258d/"
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 كلنا يسمع بالسبام والـ Junk Mail … وبدون شك أغلبنا إن لم يكن كلنا نقوم بحذف هذه الميلات المزعجة … لكن ماذا لو كان من بين أحدى هذه الميلات ميل بعنوان:
