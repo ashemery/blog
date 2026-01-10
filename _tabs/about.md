@@ -2,12 +2,6 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
----
-
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
-
----
 title: "Whoami"
 date: "2006-12-15T08:12:22"
 last_modified_at: "2020-12-28T05:28:33"
@@ -19,10 +13,7 @@ wp_type: "page"
 
 ---
 
-
-
 ## Interviews:
-
 
 - Interviewed by Eng. Youness Hassanin from Nakkareh Network [here](https://twitter.com/NakerahNetwork/status/1302262151906762759) or [here](https://nakerah.net/podcast/02-ali-hadi-assistant-professor-at-champlain-college-author-of-elearnsecurity-digital-forensics-malware-analysis-courses/) or download the file from [here](assets/2006/audio/02-ali-hadi-assistant-professor-at-champlain-college-author-of-elearnsecurity-digital-forensics-malware-analysis-courses.mp3), September 2020
 - Interviewed by Matt from eLearnSecurity [here](https://blog.elearnsecurity.com/understanding-malware-analysis-with-elearnsecuritys-ali-hadi.html), April 2020
