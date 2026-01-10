@@ -45,7 +45,7 @@ Just a check kind of thing! On your Windows Task bar, check that the drive is no
 
 Figure 1.4 – USB Drive Not Seen in Task Bar
 
-If you have not checked my previous post about what artifacts you will find or where to find them, when we remove a drive letter? Please check my previous post titled “[No Drive Letter, No USB Evidence? Think Again!](/assets/files/2020/no-drive-letter-no-usb-think-again)“.
+If you have not checked my previous post about what artifacts you will find or where to find them, when we remove a drive letter? Please check my previous post titled “[No Drive Letter, No USB Evidence? Think Again!](/assets/files/2020/no-drive-letter-no-usb-think-again.bin.bin)“.
 
 **PART#1 – SYSTEM HIVE**
 

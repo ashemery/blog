@@ -11,7 +11,7 @@ reading_time: 3
 
 ![](/assets/img/posts/2009/FastTrackWebIconSm.gif)
 
-تم صدور النسخة الجديدة 4 من بيئة Fast-Track التي تستعمل في مجال الـ Penetration Testing مع Metasploit او بدون … النسخة أعلنوا عنها في اجتماع [ShmooCon](http://www.shmoocon.org/) الأخير ولكنني لم أنتبه لها إلا اليوم صراحة … أيضاً من قام بقراءة موضوعي السابق “[حل مشكلة db_sqlite3 عند تشغيل Fast-Track على Ubuntu](/assets/files/2009/solution-for-launching-db_sqlite3-when-running-fast-track-on-ubuntu)” سيعرف كيف يقوم بعملية ترقية للـ Fast-Track … لمن لم يقرأه أنصحه بقراءته …
+تم صدور النسخة الجديدة 4 من بيئة Fast-Track التي تستعمل في مجال الـ Penetration Testing مع Metasploit او بدون … النسخة أعلنوا عنها في اجتماع [ShmooCon](http://www.shmoocon.org/) الأخير ولكنني لم أنتبه لها إلا اليوم صراحة … أيضاً من قام بقراءة موضوعي السابق “[حل مشكلة db_sqlite3 عند تشغيل Fast-Track على Ubuntu](/assets/files/2009/solution-for-launching-db_sqlite3-when-running-fast-track-on-ubuntu.bin.bin)” سيعرف كيف يقوم بعملية ترقية للـ Fast-Track … لمن لم يقرأه أنصحه بقراءته …
 
 التغييرات الجديدة التي حصلت من 3 الى 4 حسب الـ Change Log هي:
 

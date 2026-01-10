@@ -9,7 +9,7 @@ reading_time: 2
 
 السلام عليكم ورحمة الله وبركاته
 
-بعد أن رأينا كيف[نعمل القاعدة](/assets/files/2008/adding-database-and-giving-privileges-to-user-in-mysql) و[كيف نقوم بالعمل عليها](/assets/files/2008/working-with-mysql-databases-and-tables) … سنقوم بأول خطوة عمل بعد **[إختيارنا للقاعدة المراد العمل عليها](/assets/files/2008/working-with-mysql-databases-and-tables)** وهي إضافة الجداول التي نريدها لهذه القاعدة … يمكن عمل ذلك من خلال الأمر:
+بعد أن رأينا كيف[نعمل القاعدة](/assets/files/2008/adding-database-and-giving-privileges-to-user-in-mysql.bin.bin) و[كيف نقوم بالعمل عليها](/assets/files/2008/working-with-mysql-databases-and-tables.bin.bin) … سنقوم بأول خطوة عمل بعد **[إختيارنا للقاعدة المراد العمل عليها](/assets/files/2008/working-with-mysql-databases-and-tables.bin.bin)** وهي إضافة الجداول التي نريدها لهذه القاعدة … يمكن عمل ذلك من خلال الأمر:
 
 ```
 create table names ( firstname varchar(20) not null, 

@@ -14,7 +14,7 @@ reading_time: 1
 
 في إشارة إلى إنهم مستعدين لكتابة المشغلات لمن يحتاجها ولتأكيد قوة ووحدة عمل الـ Open Source والـ Free Software في العالم …
 
-طبعاً الكاتب [Greg Kroah](http://www.kroah.com) هو صاحب الكتاب الشهير [Linux Kernel in a Nutshell](http://www.kroah.com/lkn/) والذي بإمكانكم أن تجدوه في مدونته نفسها وبالمجان … وسبق وأن كتبت عنه أنا في مدونة سابقة —-> [أضغط هنا](/assets/files/2008/asset) … الكاتب طبعاً يعمل في مختبرات Novell وبالتحديد على أنظمة SUSE   ::20
+طبعاً الكاتب [Greg Kroah](http://www.kroah.com) هو صاحب الكتاب الشهير [Linux Kernel in a Nutshell](http://www.kroah.com/lkn/) والذي بإمكانكم أن تجدوه في مدونته نفسها وبالمجان … وسبق وأن كتبت عنه أنا في مدونة سابقة —-> [أضغط هنا](/assets/files/2008/asset.bin.bin) … الكاتب طبعاً يعمل في مختبرات Novell وبالتحديد على أنظمة SUSE   ::20
 
 دمتم بود …
 

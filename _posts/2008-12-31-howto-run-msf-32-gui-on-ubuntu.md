@@ -11,7 +11,7 @@ reading_time: 1
 
 ![](/assets/img/posts/2008/msf3-gui-logo.png)
 
-بعد أن قمنا بالموضوع السابق [بتركيب Metasploit 3.2 framework على اوبنتو](/assets/files/2008/howto-install-metasploit-on-ubuntu) …الآن إن كنت ترغب بتشغيل الواجهة الرسومية الخاصة بها عليك تركيب بعض الحزم الإضافية والتي هي libgtk2-ruby و libglade2-ruby … كل ما عليك فعله هو:
+بعد أن قمنا بالموضوع السابق [بتركيب Metasploit 3.2 framework على اوبنتو](/assets/files/2008/howto-install-metasploit-on-ubuntu.bin.bin) …الآن إن كنت ترغب بتشغيل الواجهة الرسومية الخاصة بها عليك تركيب بعض الحزم الإضافية والتي هي libgtk2-ruby و libglade2-ruby … كل ما عليك فعله هو:
 
 ```
 sudo apt-get install libgtk2-ruby libglade2-ruby

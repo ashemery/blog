@@ -13,7 +13,7 @@ reading_time: 1
 
 برنامج aria أحد البرامج التي لا استغني عنها بتاتاً في أي توزيعة أقوم بتنصيبها وأحاول بكل الوسائل تركيبه في حال عدم وجوده في مخازن تلك التوزيعة … وهذا ما حصل في السنوات الأثنين الأخيرة ولهذا أضطررت الى إضافته بشكل يدوي وكل مرة بطريقة مختلف:
 
-[الأولى](/assets/files/2010/aria-download-manager-on-fedora-8) و [الثانية](/assets/files/2010/aria-download-manager-for-suse-lovers)
+[الأولى](/assets/files/2010/aria-download-manager-on-fedora-8.bin.bin) و [الثانية](/assets/files/2010/aria-download-manager-for-suse-lovers.bin.bin)
 
 على كل حال لمن يريد إستعماله مع فيدورا 13 الجديدة، لقد قمت ببناء الحزمة ويمكنكم تركيبها من خلال تحميلها بالبداية من هنا  [aria](http://arabnix.com/packages/fedora/aria-1.0.0-1.fc13.i386.rpm) …
 

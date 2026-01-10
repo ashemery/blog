@@ -6,7 +6,7 @@ permalink: "/2011/08/01/using-metasploit-to-detect-idle-hosts/"
 reading_time: 4
 ---
 
-تعتبر طريقة الفحص التي تسمى [IDLE Scan](/assets/files/2011/idle-scan-%D8%A8%D8%A7%D9%84%D8%AA%D9%81%D8%B5%D9%8A%D9%84-2) ربما الى اليوم أحد أقوى طرق الفحص وذلك لأنه يمكن عملها ومن دون أن يرسل المهاجم ولا حُزمة واحدة الى الهدف وبالتالي ممكن تتجاوز فيها الكثير من الأمور، وأيضاً الفحص بشكل سري وغير مكشوف الى حد ما … لكن من بين الأمور التي تجعل هذا الفحص صعب التنفيذ هو إيجاد ضحية خاملة (Idle Host) نستخدمها في عملية فحص الهدف … وهنا يأتي دور Metasploit التي وفرت لنا أداة نستطيع من خلالها فحص الشبكة لكشف الأجهزة التي ممكن تفيدنا في تنفيذ Idle Scan … الأداة هذه هي [ipidseq](http://www.metasploit.com/modules/auxiliary/scanner/ip/ipidseq/) والموجودة في ظمن موديولات الـ auxiliary …
+تعتبر طريقة الفحص التي تسمى [IDLE Scan](/assets/files/2011/idle-scan-2.bin) ربما الى اليوم أحد أقوى طرق الفحص وذلك لأنه يمكن عملها ومن دون أن يرسل المهاجم ولا حُزمة واحدة الى الهدف وبالتالي ممكن تتجاوز فيها الكثير من الأمور، وأيضاً الفحص بشكل سري وغير مكشوف الى حد ما … لكن من بين الأمور التي تجعل هذا الفحص صعب التنفيذ هو إيجاد ضحية خاملة (Idle Host) نستخدمها في عملية فحص الهدف … وهنا يأتي دور Metasploit التي وفرت لنا أداة نستطيع من خلالها فحص الشبكة لكشف الأجهزة التي ممكن تفيدنا في تنفيذ Idle Scan … الأداة هذه هي [ipidseq](http://www.metasploit.com/modules/auxiliary/scanner/ip/ipidseq/) والموجودة في ظمن موديولات الـ auxiliary …
 
 لنلقي نظرة كيف يمكن العمل بها:
 
@@ -62,7 +62,7 @@ msf auxiliary(ipidseq) > run
 
 فحل المشكلة موجود [هنا](http://redmine.backtrack-linux.org:8080/issues/148) [وهنا](http://www.backtrack-linux.org/forums/backtrack-5-beginners-section/40565-metasploit-pcaprub-fix-bt5.html#post200380) …
 
-ثانياً: يجب أن تسمح للـ Promiscuous Mode في حالة كنت تستعمل BackTrack بداخل VMWare … وهذه حلها [هنا](/assets/files/2011/%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%AD-%D9%84%D9%84%D9%80-virtual-ethernet-adapter-%D8%A8%D8%AF%D8%AE%D9%88%D9%84-promiscuous-mode) …
+ثانياً: يجب أن تسمح للـ Promiscuous Mode في حالة كنت تستعمل BackTrack بداخل VMWare … وهذه حلها [هنا](/assets/files/2011/virtual-ethernet-adapter-promiscuous-mode.bin) …
 
 ```
 [*] 192.168.1.1's IPID sequence class: All zeros
@@ -88,7 +88,7 @@ db_nmap -PN -sI 192.168.1.109 192.168.1.100
 
 كلها تؤدي نفس الغرض …
 
-ملاحظة: يفضل قبل أن تقوم بعملية الفحص بواسطة Nmap من داخل Metasploit أن تكون قد شغلت وأتصلت بقاعدة بيانات وذلك لتخزين النتائج فيها … هذا إن كنت تنوي إكمال العمل وليس لمجرد عمل تجربة … لمعرفة كيفية الإتصال بالقاعدة وأمور أخرى، يرجى قراءة الموضوع التالي: [أضغط هنا](/assets/files/2011/backtrack5-metasploit-4-with-postgresql)
+ملاحظة: يفضل قبل أن تقوم بعملية الفحص بواسطة Nmap من داخل Metasploit أن تكون قد شغلت وأتصلت بقاعدة بيانات وذلك لتخزين النتائج فيها … هذا إن كنت تنوي إكمال العمل وليس لمجرد عمل تجربة … لمعرفة كيفية الإتصال بالقاعدة وأمور أخرى، يرجى قراءة الموضوع التالي: [أضغط هنا](/assets/files/2011/backtrack5-metasploit-4-with-postgresql.bin.bin)
 
 هناك طرق وأدوات أخرى لعمل فحص بواسطة Metasploit ويمكن أن تجد هذه الأدوات الخاصة بعمل Port Scan بداخل:
 

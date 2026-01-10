@@ -54,7 +54,7 @@ UPDATE names SET town="878 Austria" WHERE firstname="Mohamed";
 
 كما تلاحظون أستعملنا الأمر UPDATE للتعديل على الجدول names وحددنا التغيير من خلال SET وحددنا على من تتم التغيير من خلال إختيارنا بـ WHERE وأسم الشخص الأول …
 
-**يرجى قراءة ملاحظة** الأخ *عزوز الحسني* الموجودة [هنا](/assets/files/2008/modifying-mysql-database-tables) بخصوص كل من UPDATE و DELETE يرجى مراجعتها للظرورة.
+**يرجى قراءة ملاحظة** الأخ *عزوز الحسني* الموجودة [هنا](/assets/files/2008/modifying-mysql-database-tables.bin.bin) بخصوص كل من UPDATE و DELETE يرجى مراجعتها للظرورة.
 
 الآن لنفرض نريد نحذف سطر من الجدول، كل ما علينا فعله هو:
 

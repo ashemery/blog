@@ -7,7 +7,7 @@ permalink: "/2019/05/26/creating-a-hidden-prefetch-file-to-bypass-normal-forensi
 reading_time: 8
 ---
 
-While doing more experiments of running EXEs and Malicious EXEs from ADS and Stealthy ADS to continue my previous work “[Can We Say Farewell to Hiding Malicious EXEs in Stealth ADS](/assets/files/2019/can-we-say-farewell-to-hiding-exes-in-stealth-ads)“, and in order to create a forensic image and share it with the community as I mentioned [here](https://twitter.com/binaryz0ne/status/1131951279540977664), I found some unusual findings!
+While doing more experiments of running EXEs and Malicious EXEs from ADS and Stealthy ADS to continue my previous work “[Can We Say Farewell to Hiding Malicious EXEs in Stealth ADS](/assets/files/2019/can-we-say-farewell-to-hiding-exes-in-stealth-ads.bin.bin)“, and in order to create a forensic image and share it with the community as I mentioned [here](https://twitter.com/binaryz0ne/status/1131951279540977664), I found some unusual findings!
 
 When creating a forensic image, I also create a list of files and directories within that image, as seen in Figure 1, just for further checking and verification purposes. So, as usual, was doing the image to share and I noticed the following:
 

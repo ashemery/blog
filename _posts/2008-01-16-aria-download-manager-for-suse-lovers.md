@@ -35,7 +35,7 @@ Group : Internet Source RPM: aria-1.0.0-1.src.rpm
 Size : 1520670 License: GPL
 Signature : (none)
 Packager : Ali Al-Shemery
-URL : /assets/files/2008/asset
+URL : /assets/files/2008/asset.bin.bin
 Summary : Aria Download Manager
 Description :
 Aria is a download tool for UNIX similar to Reget or GetRight. It downloads files from Internet via HTTP/HTTPS or FTP. The transfer can be paused, resumed, queued and saved. It has very friendly GTK based GUI, and useful log consoles.

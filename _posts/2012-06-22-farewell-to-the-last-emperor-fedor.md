@@ -25,23 +25,23 @@ reading_time: 5
 
 لمن لم يحالفه الحظ بالتعرف على هذا المقاتل وهذه الشخصية الفريدة:
 
-[الــ Mixed Martial Arts !!!](/assets/files/2012/%D8%A7%D9%84%D9%80%D9%80-mixed-martial-arts)
+[الــ Mixed Martial Arts !!!](/assets/files/2012/mixed-martial-arts.bin)
 
-[العودة للـ MMA ولكن من خلال UFC](/assets/files/2012/%D8%A7%D9%84%D8%B9%D9%88%D8%AF%D8%A9-%D9%84%D9%84%D9%80-mma-%D9%88%D9%84%D9%83%D9%86-%D9%85%D9%86-%D8%AE%D9%84%D8%A7%D9%84-ufc)
+[العودة للـ MMA ولكن من خلال UFC](/assets/files/2012/mma-ufc.bin)
 
-[وهكذا يبقى الرقم الصعب في العالم يا White](/assets/files/2012/%D9%88%D9%87%D9%83%D8%B0%D8%A7-%D9%8A%D8%A8%D9%82%D9%89-%D8%A7%D9%84%D8%B1%D9%82%D9%85-%D8%A7%D9%84%D8%B5%D8%B9%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D9%8A%D8%A7-white)
+[وهكذا يبقى الرقم الصعب في العالم يا White](/assets/files/2012/white.bin)
 
-[The Last Emperor – Strikes Again](/assets/files/2012/the-last-emperor-strikes-again)
+[The Last Emperor – Strikes Again](/assets/files/2012/the-last-emperor-strikes-again.bin.bin)
 
-[أكيد أمك داعية عليك !!!](/assets/files/2012/i-think-your-mother-is-disappointed)
+[أكيد أمك داعية عليك !!!](/assets/files/2012/i-think-your-mother-is-disappointed.bin.bin)
 
-[لا جديد Fedor ينتصر من جديد](/assets/files/2012/nothing-new-fedor-strikes-again)
+[لا جديد Fedor ينتصر من جديد](/assets/files/2012/nothing-new-fedor-strikes-again.bin.bin)
 
-[The Last Emperor Goes Down :(](/assets/files/2012/the-last-emperor-goes-down)
+[The Last Emperor Goes Down :(](/assets/files/2012/the-last-emperor-goes-down.bin.bin)
 
-[Your still Mohammed Ali of MMA](/assets/files/2012/your-still-mohammed-ali-of-mma)
+[Your still Mohammed Ali of MMA](/assets/files/2012/your-still-mohammed-ali-of-mma.bin.bin)
 
-[Fedor vs Hendo – Legends Collide](/assets/files/2012/fedor-vs-hendo-legends-collide)
+[Fedor vs Hendo – Legends Collide](/assets/files/2012/fedor-vs-hendo-legends-collide.bin.bin)
 
 هكذا هي الحياة كما نعلم وهكذا أسدل الستار على آخر نزال لـ Fedor … وبها أحببت أن أهدي محبيه جميعاً هذا الفيديو: [No Hero is For Ever](http://www.youtube.com/watch?v=JkkhBxNeDLc)
 

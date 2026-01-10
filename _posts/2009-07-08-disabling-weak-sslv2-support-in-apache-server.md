@@ -9,7 +9,7 @@ reading_time: 2
 
 السلام عليكم ورحمة الله وبركاته
 
-هذه واحدة من المشاكل التي وجدتها بعد الفحص الخارجي الذي قمت به من أجل متطلبات الـ [PCI Compliance](/assets/files/2009/pci-compliance-standards) الأسبوع الماضي … على الرغم من كون أغلب المتصفحات اليوم تقوم بإستعمال TLSv1 الأقوى و SSLv3 ولكن مع هذا يجب عمل تعطيل كامل لـ SSLv2 ولهذا ما لنا سوى تنفيذ الحلول :)
+هذه واحدة من المشاكل التي وجدتها بعد الفحص الخارجي الذي قمت به من أجل متطلبات الـ [PCI Compliance](/assets/files/2009/pci-compliance-standards.bin.bin) الأسبوع الماضي … على الرغم من كون أغلب المتصفحات اليوم تقوم بإستعمال TLSv1 الأقوى و SSLv3 ولكن مع هذا يجب عمل تعطيل كامل لـ SSLv2 ولهذا ما لنا سوى تنفيذ الحلول :)
 
 عملية ترقيع هذه المشكلة بسيطة للغاية …
 
@@ -23,7 +23,7 @@ SSLCipherSuite ALL:!ADH:RC4+RSA:+HIGH:+MEDIUM:-LOW:-SSLv2:-EXP
 
 الآن كل الذي عليك فعله هو إعادة تشغيل خادم الأباتشي … للتأكد بإن SSLv2 لا يعمل الآن؟ تابع في الموضوع القادم بعنوان:
 
-[Howto Check What SSL Protocol Version & Ciphers a Domain is Using](/assets/files/2009/howto-check-what-ssl-protocol-version-ciphers-a-domain-is-using)
+[Howto Check What SSL Protocol Version & Ciphers a Domain is Using](/assets/files/2009/howto-check-what-ssl-protocol-version-ciphers-a-domain-is-using.bin.bin)
 
 السبب في كتابته في موضوع منفصل، وهو لأن له علاقة بمواضيع كثيرة سيتم كتابتها قريباً إن شاء الله ولكي يكون مرجع لهذه المواضيع ولنا جميعاً :)
 

@@ -7,7 +7,7 @@ permalink: "/2012/12/14/arp-spoofing-script/"
 reading_time: 1
 ---
 
-سكربت بسيط لعمل [ARP Spoofing](http://en.wikipedia.org/wiki/ARP_spoofing) … قم بنسخ الكود وتشغيله او تحميله من صفحة المشاريع ([هنا](/assets/files/2012/projects)) …
+سكربت بسيط لعمل [ARP Spoofing](http://en.wikipedia.org/wiki/ARP_spoofing) … قم بنسخ الكود وتشغيله او تحميله من صفحة المشاريع ([هنا](/assets/files/2012/projects.bin.bin)) …
 
 ```
 #!/usr/bin/env python
