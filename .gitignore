@@ -29,3 +29,14 @@ assets/js/dist
 # macOS
 .DS_Store
 **/.DS_Store
+
+#.DS_Store
+#**/.DS_Store
+*.swp
+*.swo
+*.tmp
+#.vscode/
+.idea/
+.bundle/
+.vendor/
+
