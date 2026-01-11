@@ -1,12 +1,21 @@
 ---
-title: "Local and Remote Port Forwarding using SSH"
+title: Local and Remote Port Forwarding using SSH
 date: 2011-08-08 22:50:03 -0500
-categories: ["Firewalls", "Networks", "Security"]
-tags: ["Local", "netstat", "Port Forwarding", "Remote", "ssh", "traffic", "Tunneling"]
-permalink: "/2011/08/08/local-and-remote-port-forwarding-using-ssh/"
+categories:
+- Firewalls
+- Networks
+- Security
+tags:
+- local
+- netstat
+- port-forwarding
+- remote
+- ssh
+- traffic
+- tunneling
+permalink: /2011/08/08/local-and-remote-port-forwarding-using-ssh/
 reading_time: 4
 ---
-
 حين نقول عملية Port forwarding أو Tunneling فإننا نقوم بعملية تمرير للحزم أو الـ traffic من خلال ممر أو نفق غير الممر أو المسار الذي تسلكه هذه الحزم بالوضع الإعتيادي أو بطريقة عملها الإعتيادية … وحين نذكر بإننا سنستخدم SSH مثلا في عملية التمرير … فهذا يعني إننا سنقوم بتمرير الحزم أو الـ traffic من خلال نفق نعمله بواسطة خدمة الـ SSH المُشفرة … وبالتالي ممكن نستفيد من عملية التمرير هذه لعدة أمور:
 
 1- تغليف سير بيانات خدمة غير آمنة بواسطة نفق آمن …
@@ -93,6 +102,6 @@ ssh user@localhost -p 9999
 
 – قم بتشغيل برنامج يقوم بعمل عمليات مستمرة مثل top او تعمل for loop يسوي ls عند إستخدامك لطريقة الـ Remote وذلك لانه ممكن قبل ان تصل المنزل يكون قد انتهى الوقت وفصل الخط وراحت عليك
 
-إن شاء الله الآن توضحت الصورة للجميع … ولن يعاني أحد بعد اليوم من الفكرة الملخبطة هذي … للنقاش [هنا](http://www.linuxac.org/forum/showthread.php?53323) …
+إن شاء الله الآن توضحت الصورة للجميع … ولن يعاني أحد بعد اليوم من الفكرة الملخبطة هذي … للنقاش [هنا](https://www.linuxac.org/forum/showthread.php?53323) …
 
 دمتم بود …

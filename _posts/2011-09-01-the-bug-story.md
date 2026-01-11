@@ -1,12 +1,20 @@
 ---
-title: "The Bug Story"
+title: The Bug Story
 date: 2011-09-01 09:51:12 -0500
-categories: ["Development", "Publications"]
-tags: ["Bug", "Bugs", "hakin9", "Honeypot", "Secure Coding", "Story", "The Bug Story"]
-permalink: "/2011/09/01/the-bug-story/"
+categories:
+- Development
+- Publications
+tags:
+- bug
+- bugs
+- hakin9
+- honeypot
+- secure-coding
+- story
+- the-bug-story
+permalink: /2011/09/01/the-bug-story/
 reading_time: 2
 ---
-
 [![](/assets/img/posts/2011/secure_coding_cover1-208x300.jpg)](/assets/img/posts/2011/secure_coding_cover1.jpg)
 
 عنوان هذه التدوينة، هو عنوان مقالتي في هذا العدد من مجلة [Hakin9](http://hakin9.org//) … هذا العدد تركز حول [Secure Coding](http://hakin9.org/secure-coding-911/) وما الى ذلك، ولهذا كانت مقالتي في نفس سياق المواضيع … The Bug Story تعيد ذكر بعض التاريخ والبرمجيات الخبيثة التي ضربة عالم الأنترنت والحواسيب بشكل سريع جداً … وبعد ذلك يتم تشريح إحدى أخطر الديدان Worms التي أصابة أنظمة الويندوز … التشريح يوضح كيف إستطاعت الدودة من إستغلال ثغرة في نظام الويندوز لغرض الإنتشار والسيطرة بشكل أوسع … كذلك بالمقالة قمت بتوضيح بشكل مختصر جدا كيف يمكن أن تحصل على مثل هذه الديدان لغرض التجارب وذكرت بإنه ممكن يتم عمل ذلك من خلال Honeypots وذكرت إني سأخصص إما مقالة في عدد قادم حول ذلك (من تنصيب الـ Honeypot الى كيفية إستعماله) … في نهاية المقالة قمت بذكر بعض الأمور البسيطة التي ممكن تساعدنا على تجنب هذه الديدان والثغرات والأخطاء البرمجية بشكل مختصر جداً … طبعاً لم ادخل في التفاصيل البرمجية كثيراً بل كانت النقاط تتكلم عن تجنب المشاكل من جانب آخر ليس الجانب البرمجي فقط، ﻷنه ليس هو وحده من يتحمل هذه الأخطاء التي نتج عنها Bugs وبالتالي إستغلال …

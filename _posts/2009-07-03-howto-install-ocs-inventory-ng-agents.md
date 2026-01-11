@@ -1,12 +1,24 @@
 ---
-title: "HOWTO Install OCS Inventory NG Agents"
+title: HOWTO Install OCS Inventory NG Agents
 date: 2009-07-03 11:01:28 -0500
-categories: ["GNU/Linux", "Networks", "Patch Management", "Security", "Vulnerability", "Windows"]
-tags: ["Agent", "OCS Inventory NG", "OSSIM", "Patching", "Reports", "Security", "Vulnerabilities"]
-permalink: "/2009/07/03/howto-install-ocs-inventory-ng-agents/"
+categories:
+- GNU/Linux
+- Networks
+- Patch Management
+- Security
+- Vulnerability
+- Windows
+tags:
+- agent
+- ocs-inventory-ng
+- ossim
+- patching
+- reports
+- security
+- vulnerabilities
+permalink: /2009/07/03/howto-install-ocs-inventory-ng-agents/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 الآن لنكمل باقي أجزاء OSSIM الذي تحدثت عنه [هنا](/assets/files/2009/open-source-security-information-management.bin.bin) الآن لنقوم بتركيب OCS Inventory NG Agent على توزيعات جنو/لينوكس الموجودة عندك على الشبكة … بالبداية يجب توفر التالي:

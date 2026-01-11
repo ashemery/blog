@@ -1,12 +1,21 @@
 ---
-title: "HOWTO Configure JIRA Ticketing System to work behind a proxy and use SSL"
+title: HOWTO Configure JIRA Ticketing System to work behind a proxy and use SSL
 date: 2010-07-22 20:20:55 -0500
-categories: ["Apache/Tomcat", "Linux Services"]
-tags: ["Apache2", "Certificate", "JIRA", "mod_proxy", "ssl", "Ticketing System", "Tomcat", "Virtual Hosting"]
-permalink: "/2010/07/22/howto-configure-jira-ticketing-system-to-work-behind-a-proxy-and-use-ssl/"
+categories:
+- Apache/Tomcat
+- Linux Services
+tags:
+- apache2
+- certificate
+- jira
+- mod-proxy
+- ssl
+- ticketing-system
+- tomcat
+- virtual-hosting
+permalink: /2010/07/22/howto-configure-jira-ticketing-system-to-work-behind-a-proxy-and-use-ssl/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 قبل فترة في العمل أحتجت الى نقل الـ svn للشركة ونقل الكثير من الخدمات الأخرى الى خادم آخر جديد في مكان جديد … من بين تلك الخدمات التي أحتجت الى نقلها كان نظام الـ JIRA Ticketing System … المشكلة التي حصلت هي بإنه JIRA يستعمل Tomcat والخدمات الأخرى تم إعداداها على العمل مع Apache2 … هذه نقطة … والنقطة الأخرى والتي كانت أكبر مشكلة هي إنه مديري يريد خدمة إستضافة الموقع مع خدمة JIRA على نفس الـ IP وذلك لكي يستخدم SSL Certificate واحدة لهم … لانه الرخصة أشتريناها على IP واحد ولهذا وضعها على IP آخر لن يتعرف عليها المتصفحات وستعطي خلل … مشكلة أخرى تذكرتها وهي إن الخادم هذا يعمل خلف NAT من الخارج … وهذه بحد ذاتها مشكلة بالنسبة لخادم Tomcat الذي حين ستطلب رابطه من الخارج لن يعرف كيف يعمل الـ resolve بشكل صحيح مع الخدمة الداخلية …

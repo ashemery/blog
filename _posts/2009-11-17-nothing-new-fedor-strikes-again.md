@@ -1,12 +1,19 @@
 ---
-title: "لا جديد Fedor ينتصر من جديد"
+title: لا جديد Fedor ينتصر من جديد
 date: 2009-11-17 07:48:18 -0500
-categories: ["Sport"]
-tags: ["Brett", "Brett Rogers", "Dana White", "Fedor", "Fedor Emelianenko", "MMA", "UFC"]
-permalink: "/2009/11/17/nothing-new-fedor-strikes-again/"
+categories:
+- Sport
+tags:
+- brett
+- brett-rogers
+- dana-white
+- fedor
+- fedor-emelianenko
+- mma
+- ufc
+permalink: /2009/11/17/nothing-new-fedor-strikes-again/
 reading_time: 5
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 مضت فترة طويلة من الزمن على الغياب سواءاً هنا أو في مجتمع لينوكس العربي أو أي مكان آخر … ولكن الحمد لله على كل حال وها أنا عُدت إن شاء الله مرة أخرى … هذه التدوينة والتي تخص بطل العالم الروسي Fedor Emelianenko كان المفروض كتابتها وعملها قبل فترة من الزمن ولكن الظروف منعتني من عمل الكثير من الأشياء …

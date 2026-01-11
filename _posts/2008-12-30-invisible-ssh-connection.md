@@ -1,12 +1,21 @@
 ---
-title: "تقريباً Invisible SSH Connection"
+title: تقريباً Invisible SSH Connection
 date: 2008-12-30 13:56:50 -0500
-categories: ["Linux Security", "Linux Services"]
-tags: ["/dev/null", "export", "Penetration Testing", "ssh", "TERM", "top", "w", "xterm"]
-permalink: "/2008/12/30/invisible-ssh-connection/"
+categories:
+- Linux Security
+- Linux Services
+tags:
+- devnull
+- export
+- penetration-testing
+- ssh
+- term
+- top
+- w
+- xterm
+permalink: /2008/12/30/invisible-ssh-connection/
 reading_time: 2
 ---
-
 ****
 
 **السلام عليكم ورحمة الله وبركاته**

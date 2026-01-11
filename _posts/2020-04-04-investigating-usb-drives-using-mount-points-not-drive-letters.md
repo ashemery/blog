@@ -1,12 +1,24 @@
 ---
-title: "Investigating USB Drives using Mount Points Not Drive Letters"
+title: Investigating USB Drives using Mount Points Not Drive Letters
 date: 2020-04-04 16:42:40 -0500
-categories: ["DFIR", "Forensics", "Investigations", "Windows"]
-tags: ["DFIR", "Forensics", "Investigations", "registry", "Registry Explorer", "RegRipper", "USB", "Windows", "Windows and tagged Computer Forensics"]
-permalink: "/2020/04/04/investigating-usb-drives-using-mount-points-not-drive-letters/"
+categories:
+- DFIR
+- Forensics
+- Investigations
+- Windows
+tags:
+- dfir
+- forensics
+- investigations
+- registry
+- registry-explorer
+- regripper
+- usb
+- windows
+- windows-and-tagged-computer-forensics
+permalink: /2020/04/04/investigating-usb-drives-using-mount-points-not-drive-letters/
 reading_time: 6
 ---
-
 Yes, another excellent question came up by one of my students:
 
 **If a user mounts the volume to a mount point, what artifacts could we find for the USB?**

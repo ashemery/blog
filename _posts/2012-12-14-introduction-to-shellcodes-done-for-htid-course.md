@@ -1,13 +1,27 @@
 ---
-title: "مقدمة عن الـ Shellcodes لمحاضرة HTID"
+title: مقدمة عن الـ Shellcodes لمحاضرة HTID
 date: 2012-12-14 12:10:22 -0500
-categories: ["Academia", "Exploitation", "PenTest", "Publications", "Vulnerability"]
-tags: ["CTP", "Debugging", "Demo", "Exploitation", "HTID", "Opcode", "OSCE", "Shellcode", "Template", "محاضرة"]
-permalink: "/2012/12/14/introduction-to-shellcodes-done-for-htid-course/"
+categories:
+- Academia
+- Exploitation
+- PenTest
+- Publications
+- Vulnerability
+tags:
+- ctp
+- debugging
+- demo
+- exploitation
+- htid
+- opcode
+- osce
+- shellcode
+- template
+- محاضرة
+permalink: /2012/12/14/introduction-to-shellcodes-done-for-htid-course/
 reading_time: 2
 ---
-
-كما قلت في أحد ردودي في [مجتمع لينُكس العربي](http://www.linuxac.org/forum/threads/60971-%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-Hacking-Techniques-and-Intrusion-Detection/page2) بإني سأقوم بإعداد محاضرة بسيطة عن الـ Shellcodes وذلك لأني وجدت الكثير من طلابي لا يعرفون كثيراً عنها، ولا ما هي أنواعها ومتى نستعمل كل واحدة منها … ولذلك قمت بإعداد هذه المادة البسيطة جداً، لا يوجد فيها كتابة Shellcode ولكن توضيح لمعناهم وماذا نعني عندما نسمع كلمة Opcode … في نهاية المحاضرة هناك توضيح لأهم الأمور التي يجب أن نأخذها بعين الإعتبار حين نقوم بإستعمال أو عمل Shellcode … أيضاً وضعت Template يسهل عليك عملية تحليل أي Shellcode قمت بتحميله من الأنترنت … يعني يسهل عليك عملية الـ Debugging له وذلك لمعرفة مالذي يقوم به … هناك كذلك بعض الأدوات التي أراها مفيدة للغاية وبدون شك مصادر لمواقع رائعة ومفيدة للغاية وبدون شك بدون الإستغناء عن بعض الكتب التي يجب ان تكون بحوزتك :)
+كما قلت في أحد ردودي في [مجتمع لينُكس العربي](https://www.linuxac.org/forum/threads/60971-%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-Hacking-Techniques-and-Intrusion-Detection/page2) بإني سأقوم بإعداد محاضرة بسيطة عن الـ Shellcodes وذلك لأني وجدت الكثير من طلابي لا يعرفون كثيراً عنها، ولا ما هي أنواعها ومتى نستعمل كل واحدة منها … ولذلك قمت بإعداد هذه المادة البسيطة جداً، لا يوجد فيها كتابة Shellcode ولكن توضيح لمعناهم وماذا نعني عندما نسمع كلمة Opcode … في نهاية المحاضرة هناك توضيح لأهم الأمور التي يجب أن نأخذها بعين الإعتبار حين نقوم بإستعمال أو عمل Shellcode … أيضاً وضعت Template يسهل عليك عملية تحليل أي Shellcode قمت بتحميله من الأنترنت … يعني يسهل عليك عملية الـ Debugging له وذلك لمعرفة مالذي يقوم به … هناك كذلك بعض الأدوات التي أراها مفيدة للغاية وبدون شك مصادر لمواقع رائعة ومفيدة للغاية وبدون شك بدون الإستغناء عن بعض الكتب التي يجب ان تكون بحوزتك :)
 
 تجدون ذلك في الصفحة الخاصة بالمحاضرات هذه … [هنا](/assets/files/2013/htid.bin.bin) …
 

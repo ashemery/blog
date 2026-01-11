@@ -1,21 +1,23 @@
 ---
 title: Disable Automount for SIFT
 date: 2013-02-22 13:06:39 -0500
-categories: ["DFIR", "Forensics"]
+categories:
+- DFIR
+- Forensics
 tags:
-- Automount
-- Computer Forensics
-- Digital Forensics
-- Disable
+- automount
+- computer-forensics
+- digital-forensics
+- disable
 - gconftool-2
 - mount
-- SANS
-- SANS Investigation Forensic Toolkit
-- SIFT
-- USB
-- VirtualBox
-- VMware
-- GNU/Linux
+- sans
+- sans-investigation-forensic-toolkit
+- sift
+- usb
+- virtualbox
+- vmware
+- gnulinux
 permalink: /2013/02/22/disable-automount-for-sift/
 reading_time: 1
 ---

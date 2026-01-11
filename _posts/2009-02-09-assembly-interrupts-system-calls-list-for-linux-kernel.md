@@ -1,12 +1,16 @@
 ---
-title: "Assembly Interrupts/System Calls list for Linux Kernel"
+title: Assembly Interrupts/System Calls list for Linux Kernel
 date: 2009-02-09 15:32:29 -0500
-categories: ["Development", "Kernel"]
-tags: ["Assembly", "Interrupts", "System Calls"]
-permalink: "/2009/02/09/assembly-interrupts-system-calls-list-for-linux-kernel/"
+categories:
+- Development
+- Kernel
+tags:
+- assembly
+- interrupts
+- system-calls
+permalink: /2009/02/09/assembly-interrupts-system-calls-list-for-linux-kernel/
 reading_time: 2
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 لي فترة أصارع مع Assembly على بيئة جنو/لينوكس … أنا لست خبير في هذه اللغة ولكن الحمد لله عندي صديق خبير فيها بشكل مميز للغاية (عمل ألعاب عليها  ::22 الله يوفقه، لكن هو يعرف أسمبلي على الويندوز وليس جنو/لينوكس) وجالس يساعدني في تعلمها وإتقانها الى حد ما … الأمر الوحيد الذي وقف عائق في وجهنا أنا وهو هي لم نصل الى أرقام الـ Interrupts أو الـ System Calls الخاصة بـ Kernel جنو/لينوكس … عندي Reference ممتاز لـ Interrupts الخاصة بالـ BIOS ولكن للنواة لا … بحثت كثيراً أنا وإياه الجمعة الماضية ولكن كل الذي وجدناه هو الـ System Call على شكل دالة C … أي كلهم يعطونني [HLA](http://en.wikipedia.org/wiki/High_Level_Assembly) … وأنا أريد قائمة الـ Interrupts مع كل متغيير يستطيع أن يأخذها هذا الـ Interrupt … فكما يعرف الأخوة الذين يبرمجون في أسمبلي بإن كل Interrupt له قائمة من القييم التي يقبلها الـ registers أو الذاكرة … وكل واحد من هذه القييم لها دوور ووظيفة … سأواصل البحث وأحاول أشوف طريقة للحصول على هذه القوائم …

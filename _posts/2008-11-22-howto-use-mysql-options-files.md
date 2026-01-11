@@ -1,12 +1,14 @@
 ---
-title: "إستعمال MySQL Option Files"
+title: إستعمال MySQL Option Files
 date: 2008-11-22 13:39:45 -0500
-categories: ["Database"]
-tags: ["mysql", "options files"]
-permalink: "/2008/11/22/howto-use-mysql-options-files/"
+categories:
+- Database
+tags:
+- mysql
+- options-files
+permalink: /2008/11/22/howto-use-mysql-options-files/
 reading_time: 2
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 بعض الأحيان تريد خلال إستعمالك للـ **MySQL** أن تمرر لها بعض الخيارات الخاصة بك … مثلاً تريد **key_buffer_size** بحجم معيين أو تريد أن لا تقوم بإدخال إسم المستخدم الذي تستعمله والكلمة السرية له في كل مرة … كل هذه ممكنة من خلال إستعمال **Options Files** …
@@ -100,6 +102,6 @@ mysql -u binary -p
 
 لمن يريد مراجعة المزيد من الخيارات والأمور حول هذه الملفات **—–****>** [أضغط هنا](http://dev.mysql.com/doc/refman/5.1/en/option-files.html) …
 
-الموضوع موجود في مجتمع لينوكس العربي أيضاً **—–****>** [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=17573) …
+الموضوع موجود في مجتمع لينوكس العربي أيضاً **—–****>** [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=17573) …
 
 هذا ما لدي ودمتم …

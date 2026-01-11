@@ -1,12 +1,24 @@
 ---
-title: "الجزء الثالث من محاضرات HTID"
+title: الجزء الثالث من محاضرات HTID
 date: 2012-10-30 23:12:46 -0500
-categories: ["Academia", "BackTrack", "Footprinting", "Life", "Networks", "OSINT", "PenTest", "Security"]
-tags: ["Footprinting", "Pre-Engagement", "Recon", "reconnaissance", "Scoping"]
-permalink: "/2012/10/30/hacking-techniques-and-intrusion-detection-course-part-three/"
+categories:
+- Academia
+- BackTrack
+- Footprinting
+- Life
+- Networks
+- OSINT
+- PenTest
+- Security
+tags:
+- footprinting
+- pre-engagement
+- recon
+- reconnaissance
+- scoping
+permalink: /2012/10/30/hacking-techniques-and-intrusion-detection-course-part-three/
 reading_time: 1
 ---
-
 هذا الجزء يشمل الأقسام التالية:
 
 Pre-Engagement

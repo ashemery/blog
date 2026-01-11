@@ -1,12 +1,24 @@
 ---
-title: "The Unpredictable & The Dragon"
+title: The Unpredictable & The Dragon
 date: 2009-05-25 21:30:31 -0500
-categories: ["Sport"]
-tags: ["Bad Boy", "Badr Hari", "Its Showtime", "Lyoto Machida", "MMA", "Muay Thai", "Quinton Jackson", "Rashad Evans", "Remy Bonjask", "Semmy Schilt", "The Dragon", "UFC"]
-permalink: "/2009/05/25/the-unpredictable-and-the-dragon/"
+categories:
+- Sport
+tags:
+- bad-boy
+- badr-hari
+- its-showtime
+- lyoto-machida
+- mma
+- muay-thai
+- quinton-jackson
+- rashad-evans
+- remy-bonjask
+- semmy-schilt
+- the-dragon
+- ufc
+permalink: /2009/05/25/the-unpredictable-and-the-dragon/
 reading_time: 6
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2009/its-showtime.jpg)

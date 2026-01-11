@@ -1,12 +1,21 @@
 ---
-title: "Bypass Company Firewall using HTTP Tunnels"
+title: Bypass Company Firewall using HTTP Tunnels
 date: 2009-01-27 15:25:58 -0500
-categories: ["Firewalls", "Networks", "Security"]
-tags: ["Bypass", "HTTP", "HTTPS", "httptunnel", "Proxy", "SOCKS", "ssh"]
-permalink: "/2009/01/27/bypass-company-firewall-using-http-tunnels/"
+categories:
+- Firewalls
+- Networks
+- Security
+tags:
+- bypass
+- http
+- https
+- httptunnel
+- proxy
+- socks
+- ssh
+permalink: /2009/01/27/bypass-company-firewall-using-http-tunnels/
 reading_time: 5
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 بعض الأحيان في العمل تجد مدير الشبكة قد قام بغلق أغلب المنافذ، والكثير من المواقع محجوبة، وبالتالي سيعقد حياتك ومشاغلك الإنترنتية … كما كنت اعمل بالشبكة في عملي السابق ::18 طيب ما العمل هل نقول له خلاص أنتصرت وأنا أستسلم؟ ولا أستطيع عمل سوى ما تسمح لنا به؟

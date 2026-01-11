@@ -1,12 +1,25 @@
 ---
-title: "Challenge #8 – NTFS File System Case"
+title: 'Challenge #8 – NTFS File System Case'
 date: 2023-03-27 04:26:44 -0500
-categories: ["Challenges", "DFIR", "File Systems", "Forensics", "Investigations", "Windows"]
-tags: ["ant-forensics", "challenges", "DFIR", "file systems", "hidden", "Investigations", "ntfs", "Windows Forensics"]
-permalink: "/2023/03/27/challenge-8-ntfs-file-system-case/"
+categories:
+- Challenges
+- DFIR
+- File Systems
+- Forensics
+- Investigations
+- Windows
+tags:
+- ant-forensics
+- challenges
+- dfir
+- file-systems
+- hidden
+- investigations
+- ntfs
+- windows-forensics
+permalink: /2023/03/27/challenge-8-ntfs-file-system-case/
 reading_time: 1
 ---
-
 In this case you are required to find all the data and files that have been hidden using some of the NTFS file system capabilities.
 
 – E01 for the drive could be found: [here](https://archive.org/details/ntfs-hidden-files)

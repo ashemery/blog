@@ -10,7 +10,7 @@ reading_time: 1
 
 ![](/assets/img/posts/2008/phpids.png)
 
-بالإضافة الى الـ [ModSecurity](http://www.linuxac.org/forum/showthread.php?t=15672) والي شائت الصدف إني شرحته اليوم أليكم هذا الـ Intrusion Detection System الخاص بالـ PHP يسمى PHPIDS … هو عبارة عن طبقة حماية إضافية للبرمجيات الويب Web Application التي تشغلها.
+بالإضافة الى الـ [ModSecurity](https://www.linuxac.org/forum/showthread.php?t=15672) والي شائت الصدف إني شرحته اليوم أليكم هذا الـ Intrusion Detection System الخاص بالـ PHP يسمى PHPIDS … هو عبارة عن طبقة حماية إضافية للبرمجيات الويب Web Application التي تشغلها.
 
 يقوم بكشف الدخلاء بناءاً على قواعد rules تم تجربتها … ويقوم بالتصدي للمهاجم بناءاً على الطريقة التي تقوم بإعداده لها … أيضاً تساعدك على كشف من يقوم بتنفيذ الإختراق وكيف يتم ذلك …
 
@@ -24,6 +24,6 @@ reading_time: 1
 
 مستندات —> [هنا](http://php-ids.org/docs/)
 
-للنقاش —> [هنا](http://www.linuxac.org/forum/showthread.php?t=15689)
+للنقاش —> [هنا](https://www.linuxac.org/forum/showthread.php?t=15689)
 
 ودمتم بود …

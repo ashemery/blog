@@ -1,12 +1,19 @@
 ---
-title: "ATI Radeon not working!! – Ubuntu 9.04"
+title: ATI Radeon not working!! – Ubuntu 9.04
 date: 2009-04-23 18:41:09 -0500
-categories: ["GNU/Linux", "News"]
-tags: ["ATI Radeon", "Grub", "Jackalop", "netroot", "open source", "Ubuntu 9.04"]
-permalink: "/2009/04/23/ati-radeon-not-working-ubuntu-904/"
+categories:
+- GNU/Linux
+- News
+tags:
+- ati-radeon
+- grub
+- jackalop
+- netroot
+- open-source
+- ubuntu-904
+permalink: /2009/04/23/ati-radeon-not-working-ubuntu-904/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 قمت فجر اليوم بترقية النظام عندي من Ubuntu 8.04 Hardy الى النسخة الحديثة Ubuntu 9.04 Jackalop …

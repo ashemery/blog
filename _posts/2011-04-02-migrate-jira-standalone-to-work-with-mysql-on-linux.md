@@ -1,12 +1,21 @@
 ---
-title: "Migrate JIRA Standalone to work with MySQL on Linux"
+title: Migrate JIRA Standalone to work with MySQL on Linux
 date: 2011-04-02 22:42:50 -0500
-categories: ["Apache/Tomcat", "Database", "GNU/Linux"]
-tags: ["HSQL", "JIRA", "Linux", "Migrate", "mysql", "Standalone", "Tomcat"]
-permalink: "/2011/04/02/migrate-jira-standalone-to-work-with-mysql-on-linux/"
+categories:
+- Apache/Tomcat
+- Database
+- GNU/Linux
+tags:
+- hsql
+- jira
+- linux
+- migrate
+- mysql
+- standalone
+- tomcat
+permalink: /2011/04/02/migrate-jira-standalone-to-work-with-mysql-on-linux/
 reading_time: 3
 ---
-
 هذه التدوينة هي لأجل كتابة الخطوات المطلوبة لجعل نظام Ticketing المسمى Jira بالعمل مع قاعدة البيانات MySQL بدلا من العمل على HSQL … وهي تدوينة من بين عدة كتابات قمت بكتابتها باللغة الأنجليزية وحان وقت ترجمتها لمن قد يستفيد منها بدلاً من تركها هكذا في جهازي … طبعا في هذه التدوينة لن أتكلم عن طريقة التنصيب وإنما فقط عملية التحويل أو تركيب نظام MySQL على النظام … ولكن فقط خطوات التحويل … وأرجوا ان تقوم بعمل نسخ إحتياطي لقاعدة الموقع الحالية (XML Export) وذلك لأننا سنحتاجها في نهاية العمل …
 
 الآن قم بعمل قاعدة بيانات لـ Jira وكذلك مستخدم للقاعدة … سوف أسمي القاعدة jiradb والمستخدم jirauser … قم بتغيير التسميات الى ما تشاء إن رغبت في ذلك … لعمل ذلك:

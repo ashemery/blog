@@ -1,12 +1,19 @@
 ---
-title: "HOWTO Switch to tty under VirtualBox"
+title: HOWTO Switch to tty under VirtualBox
 date: 2009-02-12 02:55:30 -0500
-categories: ["Virtualization"]
-tags: ["BackTrack4", "GNOME", "HostKey", "Login Window", "tty", "Ubuntu", "VirtualBox"]
-permalink: "/2009/02/12/howto-switch-to-tty-under-virtualbox/"
+categories:
+- Virtualization
+tags:
+- backtrack4
+- gnome
+- hostkey
+- login-window
+- tty
+- ubuntu
+- virtualbox
+permalink: /2009/02/12/howto-switch-to-tty-under-virtualbox/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 بالأمس رحت نزلت BackTrack4 النسخة (بيتا) الجديدة وقمت بتركيبها على VirtualBox كالعادة التي أعملها … وبعد ذلك قمت بتركيب واجهة GNOME الغالية عليها … طبعاً كلها أمر واحد يعني مو إختراع، خاصة وإن BackTrack4 اليوم مبنية على Ubuntu … المهم بعد التركيب عملت خروج وحاولت أدخل مرة أخرى لقيت النظام مانعني من الدخول !!! فكما يعرف جميع مستخدمي Ubuntu بإنها وبشكل أساسي تمنع دخول المستخدم root الى النظام من خلال الواجهة الرسومية إلا إن ذهبت أنت الى Login Window وعملت تحديد للسماح بذلك … المهم مش هذا موضوعنا … لكن بسبب هذه المشكلة لم أعد قادر على الدخول للنظام … ولا يوجد على التوزيعة سوى المستخدم root بالوقت الحالي … فما العمل ؟

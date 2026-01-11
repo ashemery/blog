@@ -1,12 +1,32 @@
 ---
-title: "Securing a Linux Box with Tariq"
+title: Securing a Linux Box with Tariq
 date: 2011-08-03 01:31:26 -0500
-categories: ["Development", "Firewalls", "Linux Security", "Linux Services", "Networks", "PortKnocking", "Security"]
-tags: ["2Way Authentication", "GnuGP", "gpg", "iptables", "Mutual Authentication", "Packet", "Port-Knocking", "Python", "python-imaging", "Scapy", "Steganography", "Tariq", "TariqCleint", "TariqServer"]
-permalink: "/2011/08/03/securing-a-linux-box-with-tariq/"
+categories:
+- Development
+- Firewalls
+- Linux Security
+- Linux Services
+- Networks
+- PortKnocking
+- Security
+tags:
+- 2way-authentication
+- gnugp
+- gpg
+- iptables
+- mutual-authentication
+- packet
+- port-knocking
+- python
+- python-imaging
+- scapy
+- steganography
+- tariq
+- tariqcleint
+- tariqserver
+permalink: /2011/08/03/securing-a-linux-box-with-tariq/
 reading_time: 10
 ---
-
 ![](/assets/img/posts/2011/logo.jpeg)
 
 وصلتني إستفسارات عدة بخصوص طريقة تركيب وتشغيل [طارق Tariq](http://code.google.com/p/tariq/) ويبدو إنه هناك لبس بسيط في طريقة عمل البرنامج ولهذا لم يعرف الجميع كيفية تشغيله … سأشرح في هذا الموضوع طريقة تركيب Tariq وكيفية الإستفادة منه … الشرح الذي في هذا الموضوع تم تطبيقه على توزيعة Debian الأخيرة (Debian 6 – Squeeze) … سأقوم بشرح الأمور البسيطة التي في طارق وبعدها نتوسع في مواضيع أخرى لأني أنوي ترقيته والتعديل على بعض الأمور فيه …

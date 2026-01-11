@@ -35,6 +35,6 @@ yum install GConf2-devel ghc-gconf-devel
 
 كلامي بطبيعة الحال عن توزيعة Fedora … ولهذا لمستخدمي أوبنتو ودبيان ما عليكم سوى إيجاد اسماء هذه الحزم وتركيبها وإن شاء الله المشكلة تنحل …
 
-للنقاش: [هنا](http://www.linuxac.org/forum/showthread.php?41928)
+للنقاش: [هنا](https://www.linuxac.org/forum/showthread.php?41928)
 
 موفقين …

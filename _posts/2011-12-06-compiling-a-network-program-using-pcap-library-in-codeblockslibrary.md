@@ -1,12 +1,21 @@
 ---
-title: "Compiling a Network Program using Pcap Library in CodeBlocks"
+title: Compiling a Network Program using Pcap Library in CodeBlocks
 date: 2011-12-06 02:15:39 -0500
-categories: ["Development", "Networks"]
-tags: ["Build", "CodeBlocks", "Compile", "Compiling", "gcc", "include", "Linker", "pcap"]
-permalink: "/2011/12/06/compiling-a-network-program-using-pcap-library-in-codeblockslibrary/"
+categories:
+- Development
+- Networks
+tags:
+- build
+- codeblocks
+- compile
+- compiling
+- gcc
+- include
+- linker
+- pcap
+permalink: /2011/12/06/compiling-a-network-program-using-pcap-library-in-codeblockslibrary/
 reading_time: 2
 ---
-
 في حالة قيامك بعمل Compile لبرنامج يستعمل [pcap](http://libpcap.org) في [CodeBlocks](http://codeblocks.org) فإنه سوف يعطيك خطأ وذلك لأنه لن يستطيع التعرف على المتغييرات والدوال الموجودة في مكتبة pcap بشكل أساسي، ولهذا علينا إضافة المكتبة لعملية الـ Compile … حتى لو كنت قد أضفت سطر الـ include لهذه المكتبة، بدون إخبار CodeBlocks ببناء هذا البرنامج بوجود هذه المكتبة لن ينفع …
 
 أنتهينا من الكلام، لنبدأ العمل … أول شيء نعمله هو إننا نريد أن نضيف المكتبة pcap الى الـ Linker وذلك ليتم ربطها مع البرنامج لحظة عمل Compile له … ويمكن عمل ذلك من خلال الضغط على إسم المشروع في CodeBlocks Workspace ومن ثم الذهاب الى Build Options … كما في الصورة:

@@ -1,12 +1,19 @@
 ---
-title: "Fast-Track 4 now rocking"
+title: Fast-Track 4 now rocking
 date: 2009-02-19 18:26:41 -0500
-categories: ["News", "PenTest", "Security"]
-tags: ["Fast-Track", "Metasploit", "Penetration Testing", "ShmooCon", "svn"]
-permalink: "/2009/02/19/fast-track-4-now-rocking/"
+categories:
+- News
+- PenTest
+- Security
+tags:
+- fast-track
+- metasploit
+- penetration-testing
+- shmoocon
+- svn
+permalink: /2009/02/19/fast-track-4-now-rocking/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2009/FastTrackWebIconSm.gif)

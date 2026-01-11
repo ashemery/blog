@@ -1,15 +1,22 @@
 ---
-title: "HOWTO change Java Runtime Environment Package"
+title: HOWTO change Java Runtime Environment Package
 date: 2009-04-16 09:09:28 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["aria", "IDM", "java", "JRE", "OpenJDK", "Sun"]
-permalink: "/2009/04/16/howto-change-java-runtime-environment-package/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- aria
+- idm
+- java
+- jre
+- openjdk
+- sun
+permalink: /2009/04/16/howto-change-java-runtime-environment-package/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
-اليوم أحتجت أشغل برنامج بالجافا والي هو IDM الي ذكره أخونه [PuppetMaster](http://www.linuxac.org/forum/members/puppetmaster.html) في [مجتمع لينوكس العربي](http://www.linuxac.org/forum/linuxac13/thread23982.html) … المشكلة بإنه كلما شغلت البرنامج يقول لي بإنه هذي النسخة من الـ JRE غير صالحة … وموقع البرنامج والأخ صاحب الموضوع يقولون أستعملوا الأمر التالي لإضافة الجافا هذي:
+اليوم أحتجت أشغل برنامج بالجافا والي هو IDM الي ذكره أخونه [PuppetMaster](https://www.linuxac.org/forum/members/puppetmaster.html) في [مجتمع لينوكس العربي](https://www.linuxac.org/forum/linuxac13/thread23982.html) … المشكلة بإنه كلما شغلت البرنامج يقول لي بإنه هذي النسخة من الـ JRE غير صالحة … وموقع البرنامج والأخ صاحب الموضوع يقولون أستعملوا الأمر التالي لإضافة الجافا هذي:
 
 sudo apt-get install sun-java6-jre
 

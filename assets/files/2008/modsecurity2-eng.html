@@ -416,7 +416,7 @@ let us start the following:
 parked on the domain <I>www.example.com</I>. Open your favorite
 browser and goto: 
 </P>
-<P STYLE="margin-bottom: 0in"><FONT COLOR="#0000ff">http://www.example.com/wp-admin/post-new.php</FONT>
+<P STYLE="margin-bottom: 0in"><FONT COLOR="#0000ff">http://www.example.com#</FONT>
 </P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
@@ -435,7 +435,7 @@ at ARGS:referredby. [file
 [line &quot;32&quot;] [id &quot;<FONT COLOR="#0000ff">950117</FONT>&quot;]
 [msg &quot;<FONT COLOR="#0000ff">Remote File Inclusion Attack</FONT>&quot;]
 [severity &quot;CRITICAL&quot;] [hostname &quot;<FONT COLOR="#0000ff">www.example.com</FONT>&quot;]
-[uri &quot;<FONT COLOR="#0000ff">/wp-admin/post-new.php</FONT>&quot;]
+[uri &quot;<FONT COLOR="#0000ff">#</FONT>&quot;]
 [unique_id &quot;dGP7GXAAA8AAAPQC4AAEAAFZ&quot;] 
 </P>
 <P STYLE="margin-bottom: 0in"><BR>
@@ -465,7 +465,7 @@ is the domain where the problem came from (in case you are hosting
 more domains on the same server). 
 </P>
 <P STYLE="margin-bottom: 0in"><B>5th:</B> The file that made the
-alert is <FONT COLOR="#0000ff">/wp-admin/post-new.php</FONT>. 
+alert is <FONT COLOR="#0000ff">#</FONT>. 
 </P>
 <P STYLE="margin-bottom: 0in"><B>Finally:</B> <FONT COLOR="#0000ff">id</FONT>,
 This is the important thing for us here, because we shall be using
@@ -487,7 +487,7 @@ edit it:
 error above: 
 </P>
 <P STYLE="margin-bottom: 0in"><FONT COLOR="#0000ff">&lt;LocationMatch
-&quot;/wp-admin/post-new.php&quot;&gt; </FONT>
+&quot;# </FONT>
 </P>
 <P STYLE="margin-bottom: 0in"><FONT COLOR="#0000ff">SecRuleRemoveById
 950117 </FONT>
@@ -542,7 +542,7 @@ documentation, then the main site is always a good place to look in:
 <P STYLE="margin-bottom: 0in"><B>Written by:</B> 
 </P>
 <P STYLE="margin-bottom: 0in">	Ali Al-Shemery (<A HREF="https://www.binary-zone.com/">B!n@ry</A>)</P>
-<P STYLE="margin-bottom: 0in">	<A HREF="http://www.linuxac.org/">Linux
+<P STYLE="margin-bottom: 0in">	<A HREF="https://www.linuxac.org/">Linux
 Arab Community</A></P>
 </BODY>
 </HTML>

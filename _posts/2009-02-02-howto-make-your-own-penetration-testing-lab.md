@@ -1,12 +1,20 @@
 ---
-title: "HOWTO Make your own Penetration Testing Lab"
+title: HOWTO Make your own Penetration Testing Lab
 date: 2009-02-02 14:28:29 -0500
-categories: ["PenTest", "Security", "Virtualization"]
-tags: ["Lab", "OWASP", "Penetration Testing", "VirtualBox", "VMware", "WebGoat"]
-permalink: "/2009/02/02/howto-make-your-own-penetration-testing-lab/"
+categories:
+- PenTest
+- Security
+- Virtualization
+tags:
+- lab
+- owasp
+- penetration-testing
+- virtualbox
+- vmware
+- webgoat
+permalink: /2009/02/02/howto-make-your-own-penetration-testing-lab/
 reading_time: 3
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 [![](http://binary-zone.com/images/pentest/pentest-labprev.jpg)](http://binary-zone.com/images/pentest/pentest-lab.jpg)
@@ -27,7 +35,7 @@ reading_time: 3
 
 – قم بتحميل الأنظمة التي عملوها جماعة [De-Ice](http://de-ice.net/) والتي هي مخصصة لهذه الأغراض … أي قاموا بعملها لك على شكل سيناريوهات أو مختبرات كالتي ستراها عندما تنزل الى سوق العمل كـ PenTester …
 
-لتحميل السيناريو أو المختبر الأول (عبارة عن إختبارين) والاقراص الخاصة به: [الجزء الأول](http://forums.heorot.net/viewtopic.php?f=16&t=13) **|** [الأعدادات المطلوبة للقرص الأول](http://http//forums.heorot.net/viewtopic.php?f=16&t=15) **|** [الأعدادات المطلوبة للقرص الثاني](http://forums.heorot.net/viewtopic.php?f=16&t=17) …
+لتحميل السيناريو أو المختبر الأول (عبارة عن إختبارين) والاقراص الخاصة به: [الجزء الأول](http://forums.heorot.net/viewtopic.php?f=16&t=13) **|** [الأعدادات المطلوبة للقرص الأول](http://forums.heorot.net/viewtopic.php?f=16&t=15) **|** [الأعدادات المطلوبة للقرص الثاني](http://forums.heorot.net/viewtopic.php?f=16&t=17) …
 
 لتحميل السيناريو أو المختبر الثاني والقرص الخاص به: [الجزء الثاني](http://forums.heorot.net/viewtopic.php?f=18&t=16) **|** [الإعدادات الخاصة بالجزء الثاني](http://forums.heorot.net/viewtopic.php?f=18&t=91) …
 

@@ -1,12 +1,13 @@
 ---
-title: "Arabnix New Business Partner"
+title: Arabnix New Business Partner
 date: 2008-12-03 10:50:28 -0500
-categories: ["Arabnix"]
-tags: ["Arabnix"]
-permalink: "/2008/12/03/arabnix-new-business-partner/"
+categories:
+- Arabnix
+tags:
+- arabnix
+permalink: /2008/12/03/arabnix-new-business-partner/
 reading_time: 1
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 [![](http://binary-zone.com/arabnix0/kk-logo.jpg)](http://www.knowledgekingdom.com.jo/)

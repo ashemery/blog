@@ -1,9 +1,22 @@
 ---
-title: "كتاب: Nmap Network Scanning – تم إضافة التقرير لموقع الكتاب الرسمي"
+title: 'كتاب: Nmap Network Scanning – تم إضافة التقرير لموقع الكتاب الرسمي'
 date: 2009-06-27 12:43:54 -0500
-categories: ["Books", "Firewalls", "Footprinting", "Networks", "PenTest", "Security"]
-tags: ["Firewalls", "IDS", "network", "nmap", "Penetration Testers", "PenTest", "Security"]
-permalink: "/2009/06/27/%25d9%2583%25d8%25aa%25d8%25a7%25d8%25a8-nmap-network-scanning/"
+categories:
+- Books
+- Firewalls
+- Footprinting
+- Networks
+- PenTest
+- Security
+tags:
+- firewalls
+- ids
+- network
+- nmap
+- penetration-testers
+- pentest
+- security
+permalink: /2009/06/27/%25d9%2583%25d8%25aa%25d8%25a7%25d8%25a8-nmap-network-scanning/
 reading_time: 3
 ---
 السلام عليكم ورحمة الله وبركاته

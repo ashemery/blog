@@ -1,12 +1,18 @@
 ---
-title: "حل مشكلة تحديث الحزم apt-get update وعدم إمكانية التحميل بواسطة wget"
+title: حل مشكلة تحديث الحزم apt-get update وعدم إمكانية التحميل بواسطة wget
 date: 2009-04-22 13:16:41 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["apt-get", "http_proxy", "set", "variable", "wget"]
-permalink: "/2009/04/22/solution-for-wget-and-aptget-download-problem/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- apt-get
+- http-proxy
+- set
+- variable
+- wget
+permalink: /2009/04/22/solution-for-wget-and-aptget-download-problem/
 reading_time: 7
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 قبل فترة صارت عندي مشكلة بحيث لا أستطيع تحميل أي ملف من النت من خلال wget وأيضاً لما فكرت في تحديث مكتبة الحزم عندي بواسطة apt-get أيضاً فشلت وذلك لإنه يستخدم wget في التحميل والذي لا يعمل عندي أصلاً !!!

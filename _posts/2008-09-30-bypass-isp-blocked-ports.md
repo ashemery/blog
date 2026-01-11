@@ -1,12 +1,14 @@
 ---
-title: "Bypass ISP Blocked Ports"
+title: Bypass ISP Blocked Ports
 date: 2008-09-30 08:05:41 -0500
-categories: ["Linux Security"]
-tags: ["Bypass", "ssh"]
-permalink: "/2008/09/30/bypass-isp-blocked-ports/"
+categories:
+- Linux Security
+tags:
+- bypass
+- ssh
+permalink: /2008/09/30/bypass-isp-blocked-ports/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 كما وعدت أن أشرح كيفية تجاوز أي مزود خدمة، وأي بروكسي موجود عندك في بلدك، تابع معي هذا الموضوع البسيط لعمل ذلك.
@@ -100,6 +102,6 @@ network.proxy.socks_remote_dns
 
 **ملاحظة مهمة جداً:** أنا غير مسؤول عن أي إستعمال خاطيء لهذه الطريقة. الطريقة شرحتها لكي تحصل على حريتك الحقيقية بالتصفح المخفي + تجاوز الحجوبات المعمولة عليك لأسباب غبية، وليس لتصفح المواقع المحرمة أو استعمالها لأغراض خبيثة أو مؤذية لأي مسلم.**اللهم إني بلغت، اللهم فأشهد**.
 
-للنقاش حول الموضوع، قم بزيارة الرابط التالي: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=15629)
+للنقاش حول الموضوع، قم بزيارة الرابط التالي: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=15629)
 
 هذا ما لدي ودمتم بود

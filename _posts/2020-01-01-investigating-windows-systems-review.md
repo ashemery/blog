@@ -1,12 +1,25 @@
 ---
-title: "Investigating Windows Systems (Book Review)"
+title: Investigating Windows Systems (Book Review)
 date: 2020-01-01 00:28:21 -0500
-categories: ["Books", "Forensics", "Investigations", "Windows"]
-tags: ["Analysis", "Artifacts", "DFIR", "Investigating", "Micro-Timelines", "Pivot Points", "Review", "Skills", "Timelines", "Windows"]
-permalink: "/2020/01/01/investigating-windows-systems-review/"
+categories:
+- Books
+- Forensics
+- Investigations
+- Windows
+tags:
+- analysis
+- artifacts
+- dfir
+- investigating
+- micro-timelines
+- pivot-points
+- review
+- skills
+- timelines
+- windows
+permalink: /2020/01/01/investigating-windows-systems-review/
 reading_time: 9
 ---
-
 Hello,
 
 We have a saying in Arabic “ان تأتي متآخراً، خيراً من أن لا تأتي أبدا” and in English “Better late, than never!”. This is my review to [Harlan Carvey](http://windowsir.blogspot.com/)‘s last book titled “[Investigating Windows Systems](https://www.amazon.com/Investigating-Windows-Systems-Harlan-Carvey/dp/0128114150/)” which I should have wrote a long time ago (Sorry Harlan)!

@@ -1,12 +1,28 @@
 ---
-title: "هل تختبر حلول الـ failover التي تستعملها؟"
+title: هل تختبر حلول الـ failover التي تستعملها؟
 date: 2009-10-07 23:57:09 -0500
-categories: ["Firewalls", "Linux Services", "Networks", "Security"]
-tags: ["ARP", "cache", "cluster", "Connections", "Failover", "Gateway", "interface", "Keepalived", "Master", "NAT", "Routing Table", "Slave", "VPN"]
-permalink: "/2009/10/07/do-you-test-your-failover-solution/"
+categories:
+- Firewalls
+- Linux Services
+- Networks
+- Security
+tags:
+- arp
+- cache
+- cluster
+- connections
+- failover
+- gateway
+- interface
+- keepalived
+- master
+- nat
+- routing-table
+- slave
+- vpn
+permalink: /2009/10/07/do-you-test-your-failover-solution/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 صراحة هذا السؤال ظروري جداً تجاوب عليه إن كنت تستعمل Cluster أو أي من حلول الـ Failover في بيئة عملك … الأسبوع الماضي طلبت من الفريق الذي أعمل معه التقرير الخاص بعملية الـ Failover لبيئة العمل لكي أطلع عليه وأرى آلية وخطوات عمل الـ Failover وكيف ستحدث … ولكن أنصدمت بإنهم لم يقوموا بتجربة ذلك قط !!!

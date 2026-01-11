@@ -1,12 +1,23 @@
 ---
-title: "Howto Setup and use the CuckooVM v2"
+title: Howto Setup and use the CuckooVM v2
 date: 2020-03-18 08:43:06 -0500
-categories: ["DFIR", "Forensics", "Investigations", "Malware", "Virtualization"]
-tags: ["Cuckoo", "DFIR", "Malware", "Malware Analysis", "Nested Virtualization", "Sandbox", "Virtualization"]
-permalink: "/2020/03/18/howto-setup-and-use-the-cuckoovm-v2/"
+categories:
+- DFIR
+- Forensics
+- Investigations
+- Malware
+- Virtualization
+tags:
+- cuckoo
+- dfir
+- malware
+- malware-analysis
+- nested-virtualization
+- sandbox
+- virtualization
+permalink: /2020/03/18/howto-setup-and-use-the-cuckoovm-v2/
 reading_time: 10
 ---
-
 This post should cover the basics of how to import and run a basic analysis using the [Cuckoo](https://cuckoosandbox.org/) VM which could be found [here](http://bit.ly/CuckooVM). I’m referring to this VM as CuckooVM version 2, since if you’ve been following, you already know that I have shared a previous version of this CuckooVM which I configured. Even if you do not do malware analysis or digital forensics and incident response, this VM could come handy and useful to you, so please do not skip just because you’re not working in those areas.
 
 Now, in order to use the Cuckoo Sandbox which I think many of the online service providers today have their systems built around Cuckoo (no proof to this claim!), you will need a dedicated machine. The installation process itself is also not simple for some, but it could be a piece of cake to others (not saying it is for me!), so this VM could save you the trouble of:

@@ -1,9 +1,19 @@
 ---
-title: "التعامل مع Dictionary في لغة Python"
+title: التعامل مع Dictionary في لغة Python
 date: 2012-09-13 22:38:45 -0500
-categories: ["Development"]
-tags: ["Dictionaries", "Dictionary", "enumerate", "for", "for loop", "iteritems", "print", "Python", "الدالة"]
-permalink: "/2012/09/13/%25d8%25a7%25d9%2584%25d8%25aa%25d8%25b9%25d8%25a7%25d9%2585%25d9%2584-%25d9%2585%25d8%25b9-dictionary-%25d9%2581%25d9%258a-%25d9%2584%25d8%25ba%25d8%25a9-python/"
+categories:
+- Development
+tags:
+- dictionaries
+- dictionary
+- enumerate
+- for
+- for-loop
+- iteritems
+- print
+- python
+- الدالة
+permalink: /2012/09/13/%25d8%25a7%25d9%2584%25d8%25aa%25d8%25b9%25d8%25a7%25d9%2585%25d9%2584-%25d9%2585%25d8%25b9-dictionary-%25d9%2581%25d9%258a-%25d9%2584%25d8%25ba%25d8%25a9-python/
 reading_time: 3
 ---
 لا اعلم لماذا أنسى طريقة إستعمال الـ Dictionary في لغة Python … كل فترة وآخرى أقوم ببعض الأشياء الخاطئة … نعم أنا لست مبرمج حالياً، وكذلك لا استعمل اللغة كثيراً وإنما حسب الحاجة، لكن أعتقد إني سأقوم بتدوين كل ما يخص هذه اللغة من باب أن أحاول الحفظ لهذه الأمور، وكذلك لكي يصبح مرجع لي عند الحاجة … طبعاً ومرجع لجميع زوار الموقع ولأني أنوي ترك مثل هذه التدوينات بالتحديد مفتوحة للجميع للمشاركة، وكذلك لكي نتعلم من بعضنا الآخر … على بركة الله …

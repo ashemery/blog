@@ -1,17 +1,21 @@
 ---
-title: "مسابقة مجلة Hakin9"
+title: مسابقة مجلة Hakin9
 date: 2009-04-01 17:54:40 -0500
-categories: ["Books", "News", "Security"]
-tags: ["Clickjacking", "hakin9"]
-permalink: "/2009/04/01/hakin9-magazine-contest/"
+categories:
+- Books
+- News
+- Security
+tags:
+- clickjacking
+- hakin9
+permalink: /2009/04/01/hakin9-magazine-contest/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 الحين وصلتني رسالة من مجلة Hakin9 تفيد بإن أقوم بوضع صورة لغلاف مجلتهم للعدد الحالي المختص بالـ Clickjacking والتي عنوانها The Real World Clickjacking في صفحة أو تدوينة خاصة وأدخل في مسابقة الحصول على إشتراك لمدة عام واحد لمجلة Hakin9 على شكل pdf …
 
-![](http://www.binary-zone.com/wp-content/themes/pixeled/images/ads/hakin9_2_2009_EN_21.jpg)
+![](https://www.binary-zone.com/wp-content/themes/pixeled/images/ads/hakin9_2_2009_EN_21.jpg)
 
 ولهذا قررت أعمل هذه الصفحة، فكما يقولون: الحجارة التي لا تعجبك تفشخك  ::bgrim::
 

@@ -1,12 +1,19 @@
 ---
-title: "Tiger – Security audit and intrusion detection tool"
+title: Tiger – Security audit and intrusion detection tool
 date: 2009-02-06 15:03:05 -0500
-categories: ["Linux Security", "Security", "Software/Tools", "Unix"]
-tags: ["Host-IDS", "Intrusion Detection", "SNORT", "Tiger"]
-permalink: "/2009/02/06/tiger-security-audit-and-intrusion-detection-tool/"
+categories:
+- Linux Security
+- Security
+- Software/Tools
+- Unix
+tags:
+- host-ids
+- intrusion-detection
+- snort
+- tiger
+permalink: /2009/02/06/tiger-security-audit-and-intrusion-detection-tool/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2009/tiger-logo.jpg)

@@ -1,12 +1,20 @@
 ---
-title: "Controlling Nmap Scan Speed"
+title: Controlling Nmap Scan Speed
 date: 2010-01-23 15:54:57 -0500
-categories: ["Firewalls", "Footprinting", "IDS/IPS", "Networks", "PenTest"]
-tags: ["IDS", "nmap", "Scan", "Scanner"]
-permalink: "/2010/01/23/controlling-nmap-scan-speed/"
+categories:
+- Firewalls
+- Footprinting
+- IDS/IPS
+- Networks
+- PenTest
+tags:
+- ids
+- nmap
+- scan
+- scanner
+permalink: /2010/01/23/controlling-nmap-scan-speed/
 reading_time: 4
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 موضوع الأخ مصطفى ذكرني أكتب عن **nmap** والتي هي أفضل Scanner بأن أقوم بكتابة القليل عن هذه الأداة الرائعة …
@@ -75,4 +83,4 @@ nmap -T 4 -p80,22,443 example.com
 
 أكيد عارفين شلون تستعملونهم، ولهذا لا حاجة لذكرهم … إن شاء الله يكون الموضوع مفيد لكم وسأعود بالمزيد حول nmap بإذن الله …
 
-[الموضوع للمناقشة موجود هنا](http://www.linuxac.org/forum/showthread.php?35188-Controlling-Nmap-Scan-Speed)
+[الموضوع للمناقشة موجود هنا](https://www.linuxac.org/forum/showthread.php?35188-Controlling-Nmap-Scan-Speed)

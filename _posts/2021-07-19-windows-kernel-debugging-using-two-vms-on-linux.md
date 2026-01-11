@@ -1,12 +1,20 @@
 ---
-title: "Windows Kernel Debugging Using Two VMs on Linux"
+title: Windows Kernel Debugging Using Two VMs on Linux
 date: 2021-07-19 06:46:07 -0500
-categories: ["Exploitation", "Kernel", "Virtualization", "Windows"]
-tags: ["bcdedit", "debug", "kdnet", "serial", "WinDbg"]
-permalink: "/2021/07/19/windows-kernel-debugging-using-two-vms-on-linux/"
+categories:
+- Exploitation
+- Kernel
+- Virtualization
+- Windows
+tags:
+- bcdedit
+- debug
+- kdnet
+- serial
+- windbg
+permalink: /2021/07/19/windows-kernel-debugging-using-two-vms-on-linux/
 reading_time: 4
 ---
-
 Just thought of writing this here, because I keep forgetting how to do this stuff! Also, since [OST2](https://opensecuritytraining.info/) has lots of new courses related to Windbg, I thought this would be helpful for folks who use a Linux Workstation and would like to do Windows Kernel Debugging and follow [Xeno](https://twitter.com/XenoKovah)‘s new courses (highly recommend you check them out). This post does not explain how to install the [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/) on any of the systems, but again check out Xeno’s courses, you will find all of that there.
 
 **Basic Info:**

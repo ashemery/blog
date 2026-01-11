@@ -1,12 +1,24 @@
 ---
-title: "أختبر إمكانياتك في إدارة نظام التشغيل لينُكس وحل مشاكله"
+title: أختبر إمكانياتك في إدارة نظام التشغيل لينُكس وحل مشاكله
 date: 2012-07-31 20:08:13 -0500
-categories: ["Academia", "GNU/Linux", "Life", "Virtualization"]
-tags: ["7zip", "Bridge Mode", "CentOS", "Exam", "RAM", "Redhat", "Testing", "VirtualBox", "Virtualization"]
-permalink: "/2012/07/31/test-your-linux-configuration-and-troubleshooting-skills/"
+categories:
+- Academia
+- GNU/Linux
+- Life
+- Virtualization
+tags:
+- 7zip
+- bridge-mode
+- centos
+- exam
+- ram
+- redhat
+- testing
+- virtualbox
+- virtualization
+permalink: /2012/07/31/test-your-linux-configuration-and-troubleshooting-skills/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أتمنى يكون الجميع بخير وبصحة وعافية، ومستمتعين بالأجواء الرمضانية …
@@ -41,4 +53,4 @@ reading_time: 3
 
 أتمنى التوفيق للجميع وأتمنى تعجبكم المغامرة
 
-لديك إستفسار أو نقاش؟ ضعه [هنا](http://www.linuxac.org/forum/showthread.php/59636).
+لديك إستفسار أو نقاش؟ ضعه [هنا](https://www.linuxac.org/forum/showthread.php/59636).

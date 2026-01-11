@@ -1,12 +1,18 @@
 ---
-title: "شرلوك هولمز الرقمي"
+title: شرلوك هولمز الرقمي
 date: 2013-01-03 23:47:42 -0500
-categories: ["Academia", "Forensics", "Life"]
-tags: ["DFI", "Digital Forensic Investigation", "Sherlock Holmes", "التحقيقات الجنائية"]
-permalink: "/2013/01/03/digital-sherlock-holmes/"
+categories:
+- Academia
+- Forensics
+- Life
+tags:
+- dfi
+- digital-forensic-investigation
+- sherlock-holmes
+- التحقيقات الجنائية
+permalink: /2013/01/03/digital-sherlock-holmes/
 reading_time: 1
 ---
-
 لم أجد الفراغ المناسب لأكتب عن هذه التدوينة وماذا تعني … ولكني عُدت قبل بضع ساعات من عملي وقلت أكتب عن الأمر قبل أن أنساه بالكامل!
 
 ![](/assets/img/posts/2013/digital-forensics.jpg)

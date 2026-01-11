@@ -6,7 +6,7 @@ title: "Whoami"
 date: "2006-12-15T08:12:22"
 last_modified_at: "2020-12-28T05:28:33"
 permalink: "/whoami/"
-original_url: "http://www.binary-zone.com/whoami/"
+original_url: "https://www.binary-zone.com/whoami/"
 wp_type: "page"
 ---
 *I’m a Cybersecurity addict from Iraq, and below is a short answer to whoami.*
@@ -15,14 +15,14 @@ wp_type: "page"
 
 ## Interviews:
 
-- Interviewed by Eng. Youness Hassanin from Nakkareh Network [here](https://twitter.com/NakerahNetwork/status/1302262151906762759) or [here](https://nakerah.net/podcast/02-ali-hadi-assistant-professor-at-champlain-college-author-of-elearnsecurity-digital-forensics-malware-analysis-courses/) or download the file from [here](assets/2006/audio/02-ali-hadi-assistant-professor-at-champlain-college-author-of-elearnsecurity-digital-forensics-malware-analysis-courses.mp3), September 2020
+- Interviewed by Eng. Youness Hassanin from Nakkareh Network [here](https://twitter.com/NakerahNetwork/status/1302262151906762759) or [here](https://nakerah.net/podcast/02-ali-hadi-assistant-professor-at-champlain-college-author-of-elearnsecurity-digital-forensics-malware-analysis-courses/) or download the file from [here](/assets/media/posts/2006/02-ali-hadi-assistant-professor-at-champlain-college-author-of-elearnsecurity-digital-forensics-malware-analysis-courses.mp3), September 2020
 - Interviewed by Matt from eLearnSecurity [here](https://blog.elearnsecurity.com/understanding-malware-analysis-with-elearnsecuritys-ali-hadi.html), April 2020
 - Interviewed by President Frank Strong from BRICATA [here](https://bricata.com/blog/zeek-network-security-hadi/), December 2019
 - Will be adding others soon!
 
 ---
 
-**NOTE: This is an old page and has not been updated in years, therefore I removed most of it. If you want to know more about whoami? Check my bio [here]([http://bit.ly/2MwoBOF](https://www.ashemery.com/bio.html)).**
+**NOTE: This is an old page and has not been updated in years, therefore I removed most of it. If you want to know more about whoami? Check my bio [here](https://www.ashemery.com/bio.html).**
 
 ---
 

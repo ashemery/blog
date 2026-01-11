@@ -216,12 +216,12 @@ insserv -r SUSEfirewall2_final;
 
 المراجع:
 
-[الأول](www.novell.com)
+[الأول](https://www.novell.com)
 
 [الثاني](http://en.opensuse.org/HOWTOs)
 
 [الثالث](http://en.opensuse.org/How_to_Install_a_Xen_VM_Server)
 
-للنقاش حول الموضوع —> [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=10252)
+للنقاش حول الموضوع —> [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=10252)
 
 ودمتم بود …

@@ -1,12 +1,27 @@
 ---
-title: "حل مشكلة db_sqlite3 عند تشغيل Fast-Track على Ubuntu"
+title: حل مشكلة db_sqlite3 عند تشغيل Fast-Track على Ubuntu
 date: 2009-02-17 04:20:32 -0500
-categories: ["Database", "PenTest", "Security"]
-tags: ["Aircrack-NG", "apt-get", "Autopwn", "Fast-Track", "Metasploit", "Milw0rm", "msfconsole", "Nikto", "PenTest", "sqlite3", "SQLMap", "sudo", "W3AF"]
-permalink: "/2009/02/17/solution-for-launching-db_sqlite3-when-running-fast-track-on-ubuntu/"
+categories:
+- Database
+- PenTest
+- Security
+tags:
+- aircrack-ng
+- apt-get
+- autopwn
+- fast-track
+- metasploit
+- milw0rm
+- msfconsole
+- nikto
+- pentest
+- sqlite3
+- sqlmap
+- sudo
+- w3af
+permalink: /2009/02/17/solution-for-launching-db_sqlite3-when-running-fast-track-on-ubuntu/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 قد يكون أحدكم قد قام بتثبيت [Metasploit](http://www.metasploit.com/) وأيضاً [Fast-Track](http://thepentest.com/) على توزيعة Ubuntu وعند تشغيله لـ Fast-Track واجه مشاكل مثل هذه:

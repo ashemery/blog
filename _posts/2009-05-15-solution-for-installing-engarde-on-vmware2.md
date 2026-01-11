@@ -1,12 +1,20 @@
 ---
-title: "Solution for Installing EnGarde on VMWare2"
+title: Solution for Installing EnGarde on VMWare2
 date: 2009-05-15 10:04:23 -0500
-categories: ["Linux Security", "Linux Services", "Virtualization", "Web Security"]
-tags: ["EnGarde", "LiveCD", "SELinux", "VMware", "Web Services"]
-permalink: "/2009/05/15/solution-for-installing-engarde-on-vmware2/"
+categories:
+- Linux Security
+- Linux Services
+- Virtualization
+- Web Security
+tags:
+- engarde
+- livecd
+- selinux
+- vmware
+- web-services
+permalink: /2009/05/15/solution-for-installing-engarde-on-vmware2/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/engarde.jpeg)

@@ -1,12 +1,20 @@
 ---
-title: "Windows InstallTime vs InstallDate Registry Values"
+title: Windows InstallTime vs InstallDate Registry Values
 date: 2019-05-31 21:51:36 -0500
-categories: ["Forensics", "Windows"]
-tags: ["DCode", "InstallDate", "InstallTime", "registry", "Registry Explorer", "timestamps", "Windows"]
-permalink: "/2019/05/31/windows-installtime-vs-installdate-registry-values/"
+categories:
+- Forensics
+- Windows
+tags:
+- dcode
+- installdate
+- installtime
+- registry
+- registry-explorer
+- timestamps
+- windows
+permalink: /2019/05/31/windows-installtime-vs-installdate-registry-values/
 reading_time: 2
 ---
-
 This is just a quick post about two Registry Values InstallTime and InstallDate which are found under the following key:
 
 **SOFTWARE\Microsoft\Windows NT\CurrentVersion**

@@ -11,7 +11,7 @@ reading_time: 2
 
 كما نذكّر دوماً ودائماً ، نحن لا نريد منكم سوى المساهمة في نشر العدد في كل موقع وفي كل منتدى وفي كل ساحة يتكلمون بها بلغة الضاد ، دعوا هذا العمل الخير يصل إلى كل مكان، من لم يساهم منكم في الكتابة هل يعجز عن المساهمة في نشر العلم وإيصال الخير لكافة الناس؟ دع عنك الكسل وساهم معنا ، فوالله لن يضيع أجر المحسنين.
 
-![](http://www.linuxac.org/forum/magazine/cover5.jpg)
+![](https://www.linuxac.org/forum/magazine/cover5.jpg)
 
 نوصي باستخدام برنامج Adobe Reader أو KPDF لقراءة المجلة للحصول على أفضل جودة أثناء التصفح.
 
@@ -21,9 +21,9 @@ reading_time: 2
 
 [rapidshare.com](http://rapidshare.com/files/152914858/LAC_magazine_Sep_Oct_2008HQ.pdf.html)
 
-[رابط مباشر](http://www.binary-zone.com/magazine/LAC_magazine_Sep_Oct_2008HQ.pdf)
+[رابط مباشر](https://www.binary-zone.com/magazine/LAC_magazine_Sep_Oct_2008HQ.pdf)
 
-[رابط مباشر](http://www.linuxac.org/forum/magazine/LAC_magazine_Sep_Oct_2008HQ.pdf)
+[رابط مباشر](https://www.linuxac.org/forum/magazine/LAC_magazine_Sep_Oct_2008HQ.pdf)
 
 أما الاصدار الثاني فهو بدقة أقل وبالتالي حجم أقل ايضا. وهو مصمم لقراءته على شاشة الحاسوب بنمط الE-Book . وحجم الملف 2 ميجا تقريبا. للتحميل:
 
@@ -31,9 +31,9 @@ reading_time: 2
 
 [rapidshare.com](http://rapidshare.com/files/152813521/LAC_magazine_Sep_Oct_2008.pdf.html)
 
-[رابط مباشر](http://www.binary-zone.com/magazine/LAC_magazine_Sep_Oct_2008.pdf)
+[رابط مباشر](https://www.binary-zone.com/magazine/LAC_magazine_Sep_Oct_2008.pdf)
 
-[رابط مباشر](http://www.linuxac.org/forum/magazine/LAC_magazine_Sep_Oct_2008.pdf)
+[رابط مباشر](https://www.linuxac.org/forum/magazine/LAC_magazine_Sep_Oct_2008.pdf)
 
 نرجو أن يحوز هذا العمل على اعجابكم وتشجيعكم ،كما ننتظر أي اقتراحات من شأنها تطوير المجلة للأفضل، ونعتذر عن أي أخطاء قد ترد في مواضيع المجلة ، كما أود شكر جميع القائمين على إعداد وتطوير المجلة من كتاب ومحررين ومدققين ، ونلقاكم في الاعداد القادمة بإذن الله تعالى.
 
@@ -41,4 +41,4 @@ reading_time: 2
 
 إدارة مجتمع لينوكس العربي.
 
-للمزيد —> [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=16251)
+للمزيد —> [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=16251)

@@ -1,12 +1,22 @@
 ---
-title: "Howto install and configure Snort on Debian Lenny"
+title: Howto install and configure Snort on Debian Lenny
 date: 2009-10-22 15:02:16 -0500
-categories: ["IDS/IPS", "Linux Security", "Security"]
-tags: ["configure", "Debian", "IDS", "install", "IPS", "Lenny", "Sensor", "SNORT"]
-permalink: "/2009/10/22/howto-install-and-configure-snort-on-debian-lenny/"
+categories:
+- IDS/IPS
+- Linux Security
+- Security
+tags:
+- configure
+- debian
+- ids
+- install
+- ips
+- lenny
+- sensor
+- snort
+permalink: /2009/10/22/howto-install-and-configure-snort-on-debian-lenny/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/security/snort_logo.png)
@@ -19,6 +29,6 @@ reading_time: 1
 
 لتحميل المستند: [أضغط هنا](http://binary-zone.com/Projects/howto-install-config-snort.pdf)
 
-إذا كنت تود النقاش حول الموضوع، يرجى القيام بذلك [هنا](http://www.linuxac.org/forum/linuxac4/thread31247.html).
+إذا كنت تود النقاش حول الموضوع، يرجى القيام بذلك [هنا](https://www.linuxac.org/forum/linuxac4/thread31247.html).
 
 بالتوفيق لكم

@@ -1,12 +1,15 @@
 ---
-title: "حل مشكلة PIIX3 cannot attach drive في VirtualBox"
+title: حل مشكلة PIIX3 cannot attach drive في VirtualBox
 date: 2009-03-02 16:19:28 -0500
-categories: ["Virtualization"]
-tags: ["CD/DVD-ROM", "PIIX3", "VirtualBox"]
-permalink: "/2009/03/02/piix3-cannot-attach-drive-in-virtualbox-solution/"
+categories:
+- Virtualization
+tags:
+- cddvd-rom
+- piix3
+- virtualbox
+permalink: /2009/03/02/piix3-cannot-attach-drive-in-virtualbox-solution/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 كوني أستخدم برنامج VirtualBox بشكل يومي في كل شغلي يجعلني بين الحين والآخر أواجه أحدى مشاكل الـ VirtualBox التي تظهر … ولكن الحمد لله كلها يتم حلها وتجاوزها …

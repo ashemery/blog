@@ -1,12 +1,13 @@
 ---
-title: "Vuurmuur Firewall"
+title: Vuurmuur Firewall
 date: 2008-10-09 10:00:12 -0500
-categories: ["Firewalls"]
-tags: ["Firewalls"]
-permalink: "/2008/10/09/vuurmuur-firewall/"
+categories:
+- Firewalls
+tags:
+- firewalls
+permalink: /2008/10/09/vuurmuur-firewall/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 وجدت قبل يومين هذا البرنامج وتركته على الـ firefox tabs الي عندي لكي أكتب عنه القليل … البرنامج Vuurmuur عبارة عن أداة تم بناءها بالإعتماد أو فوق الـ iptables … هذه الأداة تسهل عليك عملية إعداد للجدار الناري iptables وايضاً فيها اعدادات جاهزة تستطيع أن تستند عليها سواءاً في عمل إعدادات مقدمة أو أعدادات بسيطة … أيضاً Vuurmuur تدعم الـ Traffic Shaping ولها إمكانيات لعمل مراقبة جيدة أيضاً تمكن الأدمن من النظر الى السجلات والـ bandwidth بشكل حي ومباشر Real Time … طبعاً والأداة تقع تحت رخصة GNU GPL … وأنصحكم تجربوها على الأقل …
@@ -89,7 +90,7 @@ reading_time: 3
 
 الموقع الرسمي للبرنامج Vuurmuur: [أضغط هنا](http://www.vuurmuur.org/trac/)
 
-للنقاش بخصوص البرنامج —–> [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=16146)
+للنقاش بخصوص البرنامج —–> [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=16146)
 
 إن شاء الله يفيدكم، فهو فعلاً رائع ورائع جداً …
 

@@ -1,12 +1,20 @@
 ---
-title: "حل مشكلة عدم قدرة تشغيل Apache بسبب كون المنافذ الخاصة به محجوزة"
+title: حل مشكلة عدم قدرة تشغيل Apache بسبب كون المنافذ الخاصة به محجوزة
 date: 2009-01-20 11:57:30 -0500
-categories: ["Linux Services", "WHM/Cpanel"]
-tags: ["apache", "crond", "httpd", "make_sock", "netstat", "service", "sockets"]
-permalink: "/2009/01/20/cannot-start-apache-because-of-used-ports-solution/"
+categories:
+- Linux Services
+- WHM/Cpanel
+tags:
+- apache
+- crond
+- httpd
+- make-sock
+- netstat
+- service
+- sockets
+permalink: /2009/01/20/cannot-start-apache-because-of-used-ports-solution/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 كما وعدتكم بموضوع سابق بإني سأقوم بوضع أي مشكلة تمر علي هنا مع حلها طبعاً … هذه أيضاً مشكلة أخرى مرت علينا قبل فترة بخادم المجتمع وبخادم آخر وهي كلما حاولنا تشغيل الأباتشي تظهر لنا هذه الرسالة:

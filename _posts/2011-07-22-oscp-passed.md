@@ -1,13 +1,15 @@
 ---
 title: OSCP Passed
 date: 2011-07-22 10:10:32 -0500
-categories: ["Cybersecurity", "Companies"]
+categories:
+- Cybersecurity
+- Companies
 permalink: /2011/07/22/oscp-passed/
 reading_time: 3
 tags:
-- Life
-- News
-- Security
+- life
+- news
+- security
 ---
 [![](/assets/img/posts/2011/oscp.png)](http://www.offensive-security.com/information-security-certifications/)
 

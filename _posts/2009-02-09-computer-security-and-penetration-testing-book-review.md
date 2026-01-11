@@ -1,12 +1,15 @@
 ---
-title: "كتاب: Computer Security and Penetration Testing"
+title: 'كتاب: Computer Security and Penetration Testing'
 date: 2009-02-09 14:21:39 -0500
-categories: ["Books"]
-tags: ["Books", "PenTest", "Security"]
-permalink: "/2009/02/09/computer-security-and-penetration-testing-book-review/"
+categories:
+- Books
+tags:
+- books
+- pentest
+- security
+permalink: /2009/02/09/computer-security-and-penetration-testing-book-review/
 reading_time: 3
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 ![](/assets/img/posts/2009/compsec-pentest.jpg)

@@ -1,12 +1,14 @@
 ---
-title: "Thanks to No Starch Press"
+title: Thanks to No Starch Press
 date: 2009-03-17 22:37:19 -0500
-categories: ["Books"]
-tags: ["book", "No Starch Press"]
-permalink: "/2009/03/17/thanks-to-no-starch-press/"
+categories:
+- Books
+tags:
+- book
+- no-starch-press
+permalink: /2009/03/17/thanks-to-no-starch-press/
 reading_time: 2
 ---
-
 Hi,
 
 The last month I bought a book from **No Starch Press** titled: [The Art of Exploitation, 2nd Edition](http://www.nostarch.com/hacking2.htm)

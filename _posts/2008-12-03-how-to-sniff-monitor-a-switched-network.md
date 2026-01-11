@@ -1,12 +1,18 @@
 ---
-title: "How to Sniff/Monitor a Switched Network"
+title: How to Sniff/Monitor a Switched Network
 date: 2008-12-03 12:39:52 -0500
-categories: ["Cybersecurity"]
-tags: ["IDS", "monitor", "network", "sniff", "switched", "tap"]
-permalink: "/2008/12/03/how-to-sniff-monitor-a-switched-network/"
+categories:
+- Cybersecurity
+tags:
+- ids
+- monitor
+- network
+- sniff
+- switched
+- tap
+permalink: /2008/12/03/how-to-sniff-monitor-a-switched-network/
 reading_time: 5
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 أعتقد ربما خطر في تفكير الكثير منا كيف يمكنني أن أقوم بعملية Sniff على الشبكة … ويوجد ولله الحمد الكثير من المواضيع تشرح هذه المسألة سواءاً بإستخدام مجموعة dsniff وtcpdump وettercap و Wireshark وغيرها من البرامج … لكن أنا متأكد ما لم يخطر في فكر الكثيرين هي الطرق الصحيحة لمراقبة وعمل Sniff بشكل صحيح على الشبكة … ولهذا أحببت أن أكتب هذا الموضوع الذي هو مجرد توضيح وشرح للطرق المتوفرة لمراقبة وعمل Sniff على الشبكات …

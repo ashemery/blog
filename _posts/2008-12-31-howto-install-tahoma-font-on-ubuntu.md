@@ -1,12 +1,21 @@
 ---
-title: "إضافة الخط Tahoma الى Ubuntu"
+title: إضافة الخط Tahoma الى Ubuntu
 date: 2008-12-31 09:51:17 -0500
-categories: ["GNU/Linux"]
-tags: ["apt-get", "cp", "fc-cache", "install", "msttcorefonts", "sudo", "Tahoma", "TrueType", "Ubuntu"]
-permalink: "/2008/12/31/howto-install-tahoma-font-on-ubuntu/"
+categories:
+- GNU/Linux
+tags:
+- apt-get
+- cp
+- fc-cache
+- install
+- msttcorefonts
+- sudo
+- tahoma
+- truetype
+- ubuntu
+permalink: /2008/12/31/howto-install-tahoma-font-on-ubuntu/
 reading_time: 2
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 بعد أن قام [عبدو](http://br4v3-h34r7.com) بعمل التعريب والتضبيط للثيم الحالي للزون … وجدت خطوطه عندي غير جميلة فقلت له يارجل قم بتغيير الخطوط فهي غير جميلة عندي … قال لا هي رائعة عنده … وبعد ان تبادلنا بالصور … تبيين إنه يستعمل الخط Tahoma وهذا ما لا استعمله أنا … ولهذا أرسله لي وقمت بتركيبه أيضاً وذلك لرغبته في أن أقوم بذلك … ولأن الرجل مو وجه فشل ما فشلته وقمت بتركيبه على الجهاز … ولهذا بس حبيت أكتب الخطوات السهلة التي عملتهم لتركيبه على الجهاز وهي كالتالي:

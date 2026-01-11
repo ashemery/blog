@@ -1,21 +1,23 @@
 ---
 title: Memory Forensics – RansomCare Investigation Case 1
 date: 2023-05-21 21:23:38 -0500
-categories: ["DFIR", "Anti-Forensics"]
+categories:
+- DFIR
+- Anti-Forensics
 tags:
 - anti-forensics
-- Case Study
-- Challenge
-- DFIR
-- Investigation
-- Malware
-- memory forensics
-- RansomCare
-- Ransomware
-- Challenges
-- Cyber 5W
-- Forensics
-- Investigations
+- case-study
+- challenge
+- dfir
+- investigation
+- malware
+- memory-forensics
+- ransomcare
+- ransomware
+- challenges
+- cyber-5w
+- forensics
+- investigations
 permalink: /2023/05/21/memory-forensics-ransomcare-investigation-case-1/
 reading_time: 1
 ---

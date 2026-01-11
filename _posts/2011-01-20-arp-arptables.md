@@ -1,12 +1,18 @@
 ---
-title: "طريقة فلترة حزم ARP من خلال arptables"
+title: طريقة فلترة حزم ARP من خلال arptables
 date: 2011-01-20 23:54:15 -0500
-categories: ["Firewalls", "Linux Security", "Security"]
-tags: ["ARP", "arptables", "iptables"]
-permalink: "/2011/01/20/%25d8%25b7%25d8%25b1%25d9%258a%25d9%2582%25d8%25a9-%25d9%2581%25d9%2584%25d8%25aa%25d8%25b1%25d8%25a9-%25d8%25ad%25d8%25b2%25d9%2585-arp-%25d9%2585%25d9%2586-%25d8%25ae%25d9%2584%25d8%25a7%25d9%2584-arptables/"
+categories:
+- Firewalls
+- Linux Security
+- Security
+tags:
+- arp
+- arptables
+- iptables
+permalink: /2011/01/20/%25d8%25b7%25d8%25b1%25d9%258a%25d9%2582%25d8%25a9-%25d9%2581%25d9%2584%25d8%25aa%25d8%25b1%25d8%25a9-%25d8%25ad%25d8%25b2%25d9%2585-arp-%25d9%2585%25d9%2586-%25d8%25ae%25d9%2584%25d8%25a7%25d9%2584-arptables/
 reading_time: 3
 ---
-قبل فترة كتب لنا الأخ [ماجد](http://www.linuxac.org/forum/member.php?22036-majed_19845) عن عملية سرقة الإتصال من خلال سرقة المنافذ أو ما يسمى Port Stealing في موضوعه [هنا](http://www.linuxac.org/forum/showthread.php?45967)
+قبل فترة كتب لنا الأخ [ماجد](https://www.linuxac.org/forum/member.php?22036-majed_19845) عن عملية سرقة الإتصال من خلال سرقة المنافذ أو ما يسمى Port Stealing في موضوعه [هنا](https://www.linuxac.org/forum/showthread.php?45967)
 
 ذكر أخونا ماجد في موضوعه الـ Static ARP فقلت لما لا نشرح كيفية عملها في جنو/لينوكس ؟ :)
 
@@ -99,4 +105,4 @@ COMMIT
 
 ———————
 
-للنقاش، يرجى زيارة الرابط الأصلي [هنا](http://www.linuxac.org/forum/showthread.php?48163) …
+للنقاش، يرجى زيارة الرابط الأصلي [هنا](https://www.linuxac.org/forum/showthread.php?48163) …

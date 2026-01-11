@@ -1,12 +1,23 @@
 ---
-title: "Linux Iptables ip_conntrack: table full, dropping packet error"
+title: 'Linux Iptables ip_conntrack: table full, dropping packet error'
 date: 2009-09-26 08:35:13 -0500
-categories: ["Firewalls", "Kernel", "Linux Security", "PCI Compliance", "PenTest"]
-tags: ["ip_conntrack", "Kernel", "Nessus", "netfilter", "PCI Compliance", "proc", "sysctl.conf"]
-permalink: "/2009/09/26/linux-iptables-ip_conntrack-table-full-dropping-packet-error/"
+categories:
+- Firewalls
+- Kernel
+- Linux Security
+- PCI Compliance
+- PenTest
+tags:
+- ip-conntrack
+- kernel
+- nessus
+- netfilter
+- pci-compliance
+- proc
+- sysctlconf
+permalink: /2009/09/26/linux-iptables-ip_conntrack-table-full-dropping-packet-error/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 كنت أقوم بعمل فحص بواسطة Nessus ولكن لم تكن النتائج تظهر بشكل صحيح، خاصة وإن بعض الفحوصات تمت أكثر من مرة، ولهذا أستغربت من الموضوع … وأيضاً أجهزة أخرى لم تكن تحقق الـ PCI Compliance وكان تقرير Nessus يقول لي بإنه لم يستطيع القيام بعملية فحص شاملة وكاملة !!!

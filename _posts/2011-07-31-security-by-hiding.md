@@ -1,13 +1,20 @@
 ---
-title: "Security by Hiding!"
+title: Security by Hiding!
 date: 2011-07-31 13:06:25 -0500
-categories: ["Networks", "PenTest", "Publications", "Social Engineering"]
-tags: ["hakin9", "Security by Hiding", "Security by Obscurity", "Social Engineering"]
-permalink: "/2011/07/31/security-by-hiding/"
+categories:
+- Networks
+- PenTest
+- Publications
+- Social Engineering
+tags:
+- hakin9
+- security-by-hiding
+- security-by-obscurity
+- social-engineering
+permalink: /2011/07/31/security-by-hiding/
 reading_time: 1
 ---
-
-[![](http://hakin9.org/wp-content/uploads/2011/07/H9_cover81.jpg)](http://hakin9.org/hacking-rfid-82011/)
+[![](http://hakin9.org/assets/legacy/wp-uploads/2011/07/H9_cover81.jpg)](http://hakin9.org/hacking-rfid-82011/)
 
 في هذا العدد من مجلة Hakin9 كانت المقالة التي كتبتها تتحدث عن التقنيون الذين يضنون إنه بإخفائهم لبعض التفاصيل حول شبكتهم أو شركتهم وعدم عمل الحماية الحقيقية واللازمة فإنه ذلك سيجلب لهم الآمان والإطمئنان … وهذا مفهوم خاطيء وغير صحيح … حصل جدال كبير عريض بالسابق ولازال حول مفهوم Security by Obscurity ولكن ذلك المفهوم لم يكن بتاتاً يعني الإختفاء لوحده يحقق الحماية وإنما إستعمال طرق الإخفاء بعد أن تم عمل الحماية اللازمة على الأقل … لكن في المقالة حديثي ليس عن ذلك المفهوم وإنما عن الذي يتخذ الإخفاء طريقة لحماية نفسه …
 

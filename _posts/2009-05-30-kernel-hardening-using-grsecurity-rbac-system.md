@@ -1,12 +1,36 @@
 ---
-title: "Kernel Hardening using Grsecurity & RBAC System"
+title: Kernel Hardening using Grsecurity & RBAC System
 date: 2009-05-30 20:12:29 -0500
-categories: ["Arabnix", "Footprinting", "Kernel", "Linux Security", "Security"]
-tags: ["BIOS", "c99", "Compile", "fingerprinting", "gradmn", "Grsecurity", "Grub", "Kernel", "Kernel Panic", "make", "menuconfig", "nmap", "Patch", "Policy", "RBAC", "Role Based Access Control", "root", "TCP Stack", "uname", "Xprobe2"]
-permalink: "/2009/05/30/kernel-hardening-using-grsecurity-rbac-system/"
+categories:
+- Arabnix
+- Footprinting
+- Kernel
+- Linux Security
+- Security
+tags:
+- bios
+- c99
+- compile
+- fingerprinting
+- gradmn
+- grsecurity
+- grub
+- kernel
+- kernel-panic
+- make
+- menuconfig
+- nmap
+- patch
+- policy
+- rbac
+- role-based-access-control
+- root
+- tcp-stack
+- uname
+- xprobe2
+permalink: /2009/05/30/kernel-hardening-using-grsecurity-rbac-system/
 reading_time: 10
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2009/fingerprint.jpg)

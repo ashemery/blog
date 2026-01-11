@@ -30,6 +30,6 @@ reading_time: 1
 
 [طبعاً وأخيراً الموقع الرسمي](http://www.boswars.org/index.shtml)
 
-للنقاش حول اللعبة يرجى زيارة الموضوع التالي:  [Bos Wars لعبة RTS](http://www.linuxac.org/forum/showthread.php?t=15081)
+للنقاش حول اللعبة يرجى زيارة الموضوع التالي:  [Bos Wars لعبة RTS](https://www.linuxac.org/forum/showthread.php?t=15081)
 
 إن شاء الله تعجبكم  ::20

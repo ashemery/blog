@@ -60,8 +60,8 @@ sudo /etc/init.d/vboxdrv restart
 
 [الثاني](https://bugs.launchpad.net/ubuntu/+source/update-manager/+bug/237278/comments/12)
 
-[الثالث](http://www.linuxac.org/forum/showthread.php?t=14998)
+[الثالث](https://www.linuxac.org/forum/showthread.php?t=14998)
 
-الموضوع نقلته من مجتمع لينوكس العربي، للنقاش حوله يرجى زيارة الموضوع التالي:[تشغيل VirtualBox بعد ترقية النواة في أوبنتو](http://www.linuxac.org/forum/showthread.php?t=14998)
+الموضوع نقلته من مجتمع لينوكس العربي، للنقاش حوله يرجى زيارة الموضوع التالي:[تشغيل VirtualBox بعد ترقية النواة في أوبنتو](https://www.linuxac.org/forum/showthread.php?t=14998)
 
 دمتم بود

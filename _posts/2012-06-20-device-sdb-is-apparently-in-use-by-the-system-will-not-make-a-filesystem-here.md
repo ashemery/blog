@@ -1,12 +1,27 @@
 ---
-title: "Device sdb is apparently in use by the system will not make a filesystem here"
+title: Device sdb is apparently in use by the system will not make a filesystem here
 date: 2012-06-20 21:00:44 -0500
-categories: ["GNU/Linux"]
-tags: ["dmsetup", "ext3", "ext4", "fstab", "Logical Volume", "lvdisplay", "Maintenace", "mkfs.ext4", "Partition", "RAID", "Single User Mode", "Troubleshooting", "tune2fs", "UUID", "uuidgen"]
-permalink: "/2012/06/20/device-sdb-is-apparently-in-use-by-the-system-will-not-make-a-filesystem-here/"
+categories:
+- GNU/Linux
+tags:
+- dmsetup
+- ext3
+- ext4
+- fstab
+- logical-volume
+- lvdisplay
+- maintenace
+- mkfsext4
+- partition
+- raid
+- single-user-mode
+- troubleshooting
+- tune2fs
+- uuid
+- uuidgen
+permalink: /2012/06/20/device-sdb-is-apparently-in-use-by-the-system-will-not-make-a-filesystem-here/
 reading_time: 2
 ---
-
 لدي على جهازي Partition قديم لازال يستعمل نظام ملفات ext3 وأحببت أن أحوله الى ext4 بعد أن أخذت نسخة إحتياطية من الملفات التي عليه … قمت بعمل umount للهارديسك هذا وبعد ذلك حاولت أقوم بتحويله الى ext4 ولكن لم تنفع وكان دائماً الناتج هو:
 
 > /dev/sdb is apparently in use by the system will not make a filesystem here
@@ -65,4 +80,4 @@ tune2fs /dev/sdb1 -U 000000-0000000-333333-333333
 
 أراكم على خير …
 
-(( [للنقاش](http://www.linuxac.org/forum/showthread.php/59063) ))
+(( [للنقاش](https://www.linuxac.org/forum/showthread.php/59063) ))

@@ -1,12 +1,16 @@
 ---
-title: "تمرير دالة ذات متغييرات الى دالة أخرى في Python"
+title: تمرير دالة ذات متغييرات الى دالة أخرى في Python
 date: 2011-12-02 01:46:19 -0500
-categories: ["Development"]
-tags: ["argument", "Functions", "NoneType", "Python"]
-permalink: "/2011/12/02/pass-function-with-arguments-to-another-function-in-python/"
+categories:
+- Development
+tags:
+- argument
+- functions
+- nonetype
+- python
+permalink: /2011/12/02/pass-function-with-arguments-to-another-function-in-python/
 reading_time: 2
 ---
-
 أحتجت قبل فترة الى تمرير دالة ذات متغييرات الى دالة أخرى عند عمل Call لها في لغة بايثون وبالبداية لم أصل الى نتيجة بسبب إنني كنت أرسل المتغييرات التابعة للدالة التي أريد إرسالها للدالة الأخرى بشكل خاطيء … يعني لنفرض لدي الدوال التالية:
 
 ```

@@ -1,12 +1,22 @@
 ---
-title: "No Drive Letter, No USB Evidence? Think Again!"
+title: No Drive Letter, No USB Evidence? Think Again!
 date: 2020-04-03 06:22:35 -0500
-categories: ["DFIR", "Forensics", "Investigations", "Windows"]
-tags: ["Computer Forensics", "DFIR", "registry", "Registry Explorer", "RegRipper", "USB", "Windows"]
-permalink: "/2020/04/03/no-drive-letter-no-usb-think-again/"
+categories:
+- DFIR
+- Forensics
+- Investigations
+- Windows
+tags:
+- computer-forensics
+- dfir
+- registry
+- registry-explorer
+- regripper
+- usb
+- windows
+permalink: /2020/04/03/no-drive-letter-no-usb-think-again/
 reading_time: 6
 ---
-
 This post is about a question asked:
 
 **If the user removes the drive letter to hide the presence of a mounted USB drive, could we still locate that drive in the Windows Registry?**

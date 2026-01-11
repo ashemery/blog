@@ -1,12 +1,29 @@
 ---
-title: "Using Python for my Port-Knocking System & Simulator"
+title: Using Python for my Port-Knocking System & Simulator
 date: 2009-02-28 15:58:41 -0500
-categories: ["Books", "Development", "Life", "PortKnocking"]
-tags: ["Hping3", "LetDown", "NetSim", "nmap", "NS2", "OpNET", "p0f", "Port-Knocking", "ps", "Python", "Simulation", "Simulator", "tcpreplay", "Wireshark"]
-permalink: "/2009/02/28/using-python-for-my-port-knocking-system-simulator/"
+categories:
+- Books
+- Development
+- Life
+- PortKnocking
+tags:
+- hping3
+- letdown
+- netsim
+- nmap
+- ns2
+- opnet
+- p0f
+- port-knocking
+- ps
+- python
+- simulation
+- simulator
+- tcpreplay
+- wireshark
+permalink: /2009/02/28/using-python-for-my-port-knocking-system-simulator/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 اليوم إن شاء الله سأرسل المسودة النهائية من المقترح الخاص برسالتي الى الدكتور المشرف علي، وكنت قد أتفقت مع الدكتور على أن أعمل Simulation خاص بي وأترك NS2 لانني فعلا وجدته معقد، بالإضافة الى إعتراف الدكتور نفسه … هو ليس معقد وحسب بل ستقوم بجميع الأمور برمجياً … ولهذا بما إني سأقوم بالبرمجة، خبرت الدكتور لماذا لا أقوم أنا بعمل برمجة للنظام الجديد بالكامل … وأقوم بعمل Simulation لهجمات وإختبارات حقيقية على النظام ؟ … فقال خلاص إذا كنت قادر على عملها فلنقم بعملها وعلى ضوئها نقيس الـ Performance Measures للنظام الجديد … حسب خبرته هو الطويلة في هذا المجال أخبرني بإن NS2 سيأخذ منك وقت طويل جداً لتعلمه … قلت له وأنت الصادق تحتاج وقت طويل لتشغيله فكيف بتعليمه ::bgrim:: ولهذا خلاص نعمل واحد كامل يؤدي الغرض الذي نحتاجه أفضل بكثير … وحتى من خلال أحدى الدراسات التي أجراها وجد بإن نسبة كبيرة من طلاب الدكتوراه والباحثين يستعملون Simulator لعملهم خاص بهم ولا يعولون على البرمجيات الجاهزة مثل NetSim و NS2 و OpNET وغيرها …

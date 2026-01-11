@@ -1,12 +1,13 @@
 ---
-title: "Arabnix 111 Days Up and Running"
+title: Arabnix 111 Days Up and Running
 date: 2009-02-11 05:03:27 -0500
-categories: ["Arabnix"]
-tags: ["Arabnix"]
-permalink: "/2009/02/11/arabnix-111-days-up-and-running/"
+categories:
+- Arabnix
+tags:
+- arabnix
+permalink: /2009/02/11/arabnix-111-days-up-and-running/
 reading_time: 1
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 أعرف بإن **111** يوم في عالم خوادم GNU/Linux والـ BSD ليست بتلك الأرقام … ولكن بالنسبة لي هذا الرقم مميز بصراحة ::18 … من فترة لم أقم بالدخول الى خادم [موقع شركة عرب نيكس](http://arabnix.com) واليوم قبل قليل دخلت ووجدت التالي:

@@ -1,12 +1,17 @@
 ---
-title: "Web Application Finger Printer – WAFP"
+title: Web Application Finger Printer – WAFP
 date: 2010-01-22 17:47:47 -0500
-categories: ["Footprinting", "Web Security"]
-tags: ["nmap", "p0f", "WAFP", "Web Application"]
-permalink: "/2010/01/22/web-application-finger-printer-wafp/"
+categories:
+- Footprinting
+- Web Security
+tags:
+- nmap
+- p0f
+- wafp
+- web-application
+permalink: /2010/01/22/web-application-finger-printer-wafp/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أداة أخرى مفيدة ربما بعض الشيء ظهرت في أواخر عام 2009 … هذه الأداة تعمل على إكتشاف نسخة الـ Web Application المستعمل … يعني هي مشابهة لعمل nmap و p0f في إكتشاف النظام والخدمات التي تعمل على الهدف … لكن هذه تكتشف البرمجيات العنكبوتية التي تعمل على الهدف …
@@ -47,6 +52,6 @@ VERBOSE: deleting the temporary database entries for scan "472312620367191262036
 
 لمعرفة المزيد: [أضغط هنا](http://mytty.org/wafp/)
 
-للنقاش: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?35399)
+للنقاش: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?35399)
 
 بالتوفيق للجميع …

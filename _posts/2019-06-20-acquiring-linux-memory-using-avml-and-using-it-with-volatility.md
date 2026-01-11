@@ -1,12 +1,23 @@
 ---
-title: "Acquiring Linux Memory using AVML and Using it with Volatility"
+title: Acquiring Linux Memory using AVML and Using it with Volatility
 date: 2019-06-20 02:26:27 -0500
-categories: ["DFIR", "Forensics", "Memory", "Software/Tools"]
-tags: ["Acquiring", "avml", "Forensics", "LiME", "Linux", "memory forensics", "Profile", "Volatility"]
-permalink: "/2019/06/20/acquiring-linux-memory-using-avml-and-using-it-with-volatility/"
+categories:
+- DFIR
+- Forensics
+- Memory
+- Software/Tools
+tags:
+- acquiring
+- avml
+- forensics
+- lime
+- linux
+- memory-forensics
+- profile
+- volatility
+permalink: /2019/06/20/acquiring-linux-memory-using-avml-and-using-it-with-volatility/
 reading_time: 4
 ---
-
 This is another quick post going over the process to acquire memory from a Linux system, but instead of using [LiME](https://github.com/504ensicsLabs/LiME), I’m going to use [AVML](https://github.com/microsoft/avml) which stands for Acquire Volatile Memory for Linux, and could be found [here](https://github.com/microsoft/avml). The tool has been developed by [Brian Casewell](https://twitter.com/evilcazz) for Microsoft and is a “userland volatile memory acquisition tool”.
 
 AVML tries to acquire memory from the following memory sources:

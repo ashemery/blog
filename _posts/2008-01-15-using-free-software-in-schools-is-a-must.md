@@ -30,7 +30,7 @@ reading_time: 2
 
 [Free Software in Schools](http://www.gnu.org/philosophy/schools.html)
 
-لمتابعة النقاش الذي يدور حولها أليك الرابط التالي —> [أضغط هنا](http://www.linuxac.org/forum/showthread.php?p=62818)
+لمتابعة النقاش الذي يدور حولها أليك الرابط التالي —> [أضغط هنا](https://www.linuxac.org/forum/showthread.php?p=62818)
 
 أتمنى تكون أعجبتكم …
 

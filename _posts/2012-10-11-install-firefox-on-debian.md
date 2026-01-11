@@ -1,12 +1,18 @@
 ---
-title: "Install Firefox on Debian"
+title: Install Firefox on Debian
 date: 2012-10-11 23:00:02 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["Debian", "Firefox", "iceweasel", "install", "Web Browser"]
-permalink: "/2012/10/11/install-firefox-on-debian/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- debian
+- firefox
+- iceweasel
+- install
+- web-browser
+permalink: /2012/10/11/install-firefox-on-debian/
 reading_time: 2
 ---
-
 ![](/assets/img/posts/2012/firefox_.jpg)
 
 بعد المشاكل التي حصلت لدي كان يجب ان اعيد العمل مرة أخرى ولهذا سأقوم بتدوين الأمور لعل أحتاجها في المستقبل … أول حاجة قمت بها هو تحميل وتركيب المتصفح فايرفوكس … كل ما عليك فعله هو تحميل المتصفح من [هنا](http://www.mozilla.com) …  بعد ذلك لك حرية الإختيار بين تخزينه في المجلد /opt/ او المجلد /usr/share/ عني أستعمل الأخير … قم بفك الضغط عن الملف ونقله الى هناك … إذا كان الجهاز يستعمله أكثر من شخص فيفضل أن تعطيه الصلاحيات التالية:

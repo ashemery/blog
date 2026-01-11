@@ -1,12 +1,20 @@
 ---
-title: "HOWTO Install libgksu2, gksu, & gksudo, on Ojuba/Fedora"
+title: HOWTO Install libgksu2, gksu, & gksudo, on Ojuba/Fedora
 date: 2009-05-30 12:27:48 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["Compile", "gksu", "gksudo", "GOpenVPN", "GTK", "libgksu2", "PKG_CONFIG_PATH"]
-permalink: "/2009/05/30/howto-install-libgksu2-gksu-gksudo-on-ojubafedora/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- compile
+- gksu
+- gksudo
+- gopenvpn
+- gtk
+- libgksu2
+- pkg-config-path
+permalink: /2009/05/30/howto-install-libgksu2-gksu-gksudo-on-ojubafedora/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 بالحقيقة قمت بتركيب توزيعة أعجوبة قبل يومين وكنت بدأت مرحلة نقل بعض البرامج الموجودة على أوبنتو عليها … لكن تفاجئت بإن هناك برامج لم استطيع تنزيلهم بطريقة Compile (لانهم بالأساس غير موجودين بمخازن أعجوبة/فيدورا) والسبب هو عدم وجود برنامج ومكتبات gksu و gksudo و libgksu … ولهذا كان لابد من تركيبهم بشكل يدوي … طبعاً يوجد rpm لهم ولكنه جداً قديم ويعود لأيام فيدورا 4 وقريباً نصل الى فيدورا 11 يعني الحزمة تلك أصبحت من الماضي !!!

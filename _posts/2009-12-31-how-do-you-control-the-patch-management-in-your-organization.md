@@ -1,12 +1,21 @@
 ---
-title: "كيف تدير عملية الـ Patch Management في مؤسستك؟"
+title: كيف تدير عملية الـ Patch Management في مؤسستك؟
 date: 2009-12-31 08:16:24 -0500
-categories: ["Patch Management", "PCI Compliance", "Security"]
-tags: ["Auto Update", "Documented", "Logged", "Patch Management", "Patches", "PCI Compliance", "Testing Environment"]
-permalink: "/2009/12/31/how-do-you-control-the-patch-management-in-your-organization/"
+categories:
+- Patch Management
+- PCI Compliance
+- Security
+tags:
+- auto-update
+- documented
+- logged
+- patch-management
+- patches
+- pci-compliance
+- testing-environment
+permalink: /2009/12/31/how-do-you-control-the-patch-management-in-your-organization/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أحدى متطلبات الـ PCI Compliance إنك لا تستعمل Auto Update على الخوادم التي لديك … بل تقوم بتحميل التحديثات سواءاً أمنية أو غير أمنية على خوادم غير … أي تقوم بعمل بيئة خاصة للتجربة Testing Environment … تقوم بتركيب التحديثات Patches وتجربتها عليهم هناك ومن ثم إن لم تجد مشكلة؟ تقوم بعمل تطبيق لها على الخوادم الأصلية الـ Production … طبعاً جميع هذه الخطوات تكون موثقة ومسجلة Documented و Logged …
@@ -19,6 +28,6 @@ reading_time: 2
 
 الموضوع بالنهاية للنقاش ولأعرف ماذا لديكم من أفكار … ولنتناقش حولها … حيث إني بدأت هذا النقاش مع الأخ باحث وأحببنا أن نضعه هنا ونكمله هنا معكم …
 
-لمن يريد معرفة ما هي PCI Compliance يمكنه مراجعة [هذه](/assets/files/2009/pci-compliance-free-bootcamp.bin.bin) … كما أتمنى أن تشاركونا الحوار [هنا](http://www.linuxac.org/forum/linuxac4/thread34444.html) …
+لمن يريد معرفة ما هي PCI Compliance يمكنه مراجعة [هذه](/assets/files/2009/pci-compliance-free-bootcamp.bin.bin) … كما أتمنى أن تشاركونا الحوار [هنا](https://www.linuxac.org/forum/linuxac4/thread34444.html) …
 
 ودمتم بود …

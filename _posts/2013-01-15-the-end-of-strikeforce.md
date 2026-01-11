@@ -1,12 +1,18 @@
 ---
-title: "The End of StrikeForce"
+title: The End of StrikeForce
 date: 2013-01-15 00:08:36 -0500
-categories: ["News", "Sport"]
-tags: ["Daniel Cormier", "Fedor", "Fedor Emelianenko", "MMA", "Strikeforce"]
-permalink: "/2013/01/15/the-end-of-strikeforce/"
+categories:
+- News
+- Sport
+tags:
+- daniel-cormier
+- fedor
+- fedor-emelianenko
+- mma
+- strikeforce
+permalink: /2013/01/15/the-end-of-strikeforce/
 reading_time: 1
 ---
-
 ![](/assets/img/posts/2013/strikeforce_logo.jpg)
 
 يوم أمس كانت آخر مرة تلعب فيها بطولة StrikeForce بعد 27 عام من البطولات … بدأتها من خلال بطولات الكيك بوكس وثم تحولت الى بطولات الـ MMA …

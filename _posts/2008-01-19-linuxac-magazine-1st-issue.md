@@ -18,7 +18,7 @@ reading_time: 1
 
 [الأول](/assets/files/2008/LAC_magazine_Jan2008.pdf)
 
-[الثاني](http://www.linuxac.org/forum/magazine/LAC_magazine_Jan2008.pdf)
+[الثاني](https://www.linuxac.org/forum/magazine/LAC_magazine_Jan2008.pdf)
 
 [الثالث](http://www.4shared.com/file/35243289/9531e4d6/LAC_magazine_Jan2008.html?dirPwdVerified=1288c290)
 
@@ -26,7 +26,7 @@ reading_time: 1
 
 [الأول](/assets/files/2008/LAC_magazine_Jan2008HQ.pdf)
 
-[الثاني](http://www.linuxac.org/forum/magazine/LAC_magazine_Jan2008HQ.pdf)
+[الثاني](https://www.linuxac.org/forum/magazine/LAC_magazine_Jan2008HQ.pdf)
 
 [الثالث](http://www.4shared.com/file/35244859/b0df27f4/LAC_magazine_Jan2008HQ.html?dirPwdVerified=1288c290)
 

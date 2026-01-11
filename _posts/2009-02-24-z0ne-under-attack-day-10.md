@@ -1,12 +1,15 @@
 ---
-title: "z0ne Under Attack – Day 10"
+title: z0ne Under Attack – Day 10
 date: 2009-02-24 16:41:53 -0500
-categories: ["Life", "Web Security", "z0ne"]
-tags: ["Script Dummies"]
-permalink: "/2009/02/24/z0ne-under-attack-day-10/"
+categories:
+- Life
+- Web Security
+- z0ne
+tags:
+- script-dummies
+permalink: /2009/02/24/z0ne-under-attack-day-10/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 هذه الحقيقة المُرة … اليوم هو اليوم العاشر والموقع يقع تحت الهجوم أو لمحاولات الإختراق المتكررة … أغلبها بصراحة غبية وسخيفة وتوضح لك الى أي درجة هذا المخترق غبي ويطبق كل ما يراه في النت كما يأخذه بدون لا علم ولا فهم !!! أليكم هذا المرفق فيه بعض محاولاتهم السخيفة أضغط [هنا](/assets/files/2009/lame-attacks.txt) …

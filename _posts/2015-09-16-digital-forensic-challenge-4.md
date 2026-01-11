@@ -1,12 +1,19 @@
 ---
-title: "Digital Forensic Challenge #4"
+title: 'Digital Forensic Challenge #4'
 date: 2015-09-16 19:45:20 -0500
-categories: ["Academia", "Challenges", "Forensics", "z0ne"]
-tags: ["challenges", "DFI", "Digital Forensics", "Hacking"]
-permalink: "/2015/09/16/digital-forensic-challenge-4/"
+categories:
+- Academia
+- Challenges
+- Forensics
+- z0ne
+tags:
+- challenges
+- dfi
+- digital-forensics
+- hacking
+permalink: /2015/09/16/digital-forensic-challenge-4/
 reading_time: 2
 ---
-
 **The Case:**
 
 A company’s web server has been breached through their website. Our team arrived just in time to take a forensic image of the running system and its memory for further analysis. The files can be found below:

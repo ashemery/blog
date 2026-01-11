@@ -1,12 +1,21 @@
 ---
-title: "عجز Metasploit تغطيه W3af"
+title: عجز Metasploit تغطيه W3af
 date: 2009-01-03 13:32:49 -0500
-categories: ["Database", "PenTest", "Web Security"]
-tags: ["LFI", "Metasploit", "RFI", "SQL Injection", "Wa3f", "Web Application", "XSS"]
-permalink: "/2009/01/03/web-application-attack-and-audit-framework/"
+categories:
+- Database
+- PenTest
+- Web Security
+tags:
+- lfi
+- metasploit
+- rfi
+- sql-injection
+- wa3f
+- web-application
+- xss
+permalink: /2009/01/03/web-application-attack-and-audit-framework/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/pentest/w3af.png)

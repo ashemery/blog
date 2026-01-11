@@ -1,12 +1,21 @@
 ---
-title: "أعشق كل ما هو ASCII Text"
+title: أعشق كل ما هو ASCII Text
 date: 2009-02-15 10:53:50 -0500
-categories: ["Arabnix", "Life", "Webapp"]
-tags: ["ASCII", "BlueFish Editor", "gedit", "HTML", "OpenOffice", "Text", "vim"]
-permalink: "/2009/02/15/i-love-anything-that-is-ascii-text/"
+categories:
+- Arabnix
+- Life
+- Webapp
+tags:
+- ascii
+- bluefish-editor
+- gedit
+- html
+- openoffice
+- text
+- vim
+permalink: /2009/02/15/i-love-anything-that-is-ascii-text/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 نعم أنا من عشاق كل ما هو عبارة عن نصوص … كل ما هو ASCII Text أنا أعشقه … ولهذا السبب انا أعشق المحرر vim و gedit … لا أحب أبداً المحررات مثل OpenOffice رغم إنه بعض الأحيان أضطر الى إستعمالها … ولكن vim و gedit هم أجمل وأفضل ما أستخدم … كل شيء أكتبه تجدني أكتبهم على هذه المحررات ونادر جداً أكتب بواسطة محرر آخر …

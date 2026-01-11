@@ -12,7 +12,7 @@ reading_time: 1
 
 بطبيعة حال عملي ومتابعتي الدائمة لأخبار نوفل … فإن أحد الأخبار المهمة لنا كمحبي المصادر المفتوحة ولينوكس هي إفتتاح نوفل لموقع خاص للمقارنة بين Novell SuSE Linux Desktop والمسمى SLED وبين منتج شركة مايكروسوفت الجديد Windows Vista …
 
-رابط الموقع [هنا](http://www.novell.com/products/desktop/compare-to-vista.html)
+رابط الموقع [هنا](https://www.novell.com/products/desktop/compare-to-vista.html)
 
 ﻻ تنسى أن تتصفح الموقع بشكل جيد … وكما تقول نوفل: **Your Linux is ready**
 

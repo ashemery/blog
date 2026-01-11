@@ -1,12 +1,22 @@
 ---
-title: "Solution for Installing THC-Hydra on Ubuntu"
+title: Solution for Installing THC-Hydra on Ubuntu
 date: 2009-02-18 13:35:54 -0500
-categories: ["PenTest", "Security"]
-tags: ["apt-get", "BackTrack4", "GTK", "hydra", "libpq4", "libssh", "THC-Hydra", "Ubuntu", "xhydra"]
-permalink: "/2009/02/18/solution-for-installing-thc-hydra-on-ubuntu/"
+categories:
+- PenTest
+- Security
+tags:
+- apt-get
+- backtrack4
+- gtk
+- hydra
+- libpq4
+- libssh
+- thc-hydra
+- ubuntu
+- xhydra
+permalink: /2009/02/18/solution-for-installing-thc-hydra-on-ubuntu/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2009/thc.jpg)

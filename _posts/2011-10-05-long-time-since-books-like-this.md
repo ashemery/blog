@@ -1,12 +1,16 @@
 ---
-title: "زمااااااان عن هكذا كُتب"
+title: زمااااااان عن هكذا كُتب
 date: 2011-10-05 23:31:59 -0500
-categories: ["Books", "PenTest", "Web Security"]
-tags: ["The Web Application Hacker's Handbook", "wahh"]
-permalink: "/2011/10/05/long-time-since-books-like-this/"
+categories:
+- Books
+- PenTest
+- Web Security
+tags:
+- the-web-application-hackers-handbook
+- wahh
+permalink: /2011/10/05/long-time-since-books-like-this/
 reading_time: 2
 ---
-
 ![](/assets/img/posts/2011/wahh2-pic2.jpg)
 
 أخيراً وبعد إنتظار طويل جداً وصلني يوم أمس كتاب [The Web Application Hacker’s Handbook: Finding and Exploiting Security Flaws](http://www.amazon.com/gp/product/1118026470?ie=UTF8&tag=portswinet-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1118026470) النسخة الجديدة (النسخة الثانية) … طبعاً من المحال أن أكون قد قرأته كله أو حتى ربعه خاصة في ظل ظروف العمل الجديدة، لكني تصفحة الفهرس وطريقة الإعداد والأمور التابعة للكتاب (المختبرات الموجودة online لتجربة ما تقرأ) يجعلني فعلاً أفتخر بإنه هذا الكتاب سيكون في مكتبتي … وبالطبع جاري القراءة …

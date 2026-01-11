@@ -1,12 +1,17 @@
 ---
-title: "HOWTO add Alt+Shift Language Layout Switch to KDE"
+title: HOWTO add Alt+Shift Language Layout Switch to KDE
 date: 2009-02-11 04:14:20 -0500
-categories: ["GNU/Linux"]
-tags: ["BackTrack", "KDE", "Keyboard Layout", "Language", "Switch"]
-permalink: "/2009/02/11/howto-add-altshift-language-layout-switch-to-kde/"
+categories:
+- GNU/Linux
+tags:
+- backtrack
+- kde
+- keyboard-layout
+- language
+- switch
+permalink: /2009/02/11/howto-add-altshift-language-layout-switch-to-kde/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 في الفترة الأخيرة وجدت الكثير من الأخوة يستفسرون عن كيفية إضافة التحكم في التغيير باللغات من الأنجليزية الى اللغة العربية والعكس في توزيعة BackTrack بالتحديد أو أي توزيعة أخرى تستعمل KDE … ولهذا قلت أرجع أكتب مرة أخرى هذا الموضوع في تدوينة منفصلة لعل وعسى ينتهي معها هذا السؤال …

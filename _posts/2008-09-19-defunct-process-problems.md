@@ -16,7 +16,7 @@ kill -9 PID
 
 لن تجدي نفعاً … فهل بعمرك سمعت عن قتل الميت ؟؟؟!!!
 
-![](http://www.linuxac.org/forum/images/smiley/la5ma.gif)
+![](https://www.linuxac.org/forum/images/smiley/la5ma.gif)
 
 وسيبقى حالة الـ **process** هي هي **defunct** … لا أعلم بالنسبة لمدراء الخوادم بدون شك مرت عليهم سواءاً مع *SSH* أو *HTTPD* أو أي خدمة أخرى يقدمونها …
 
@@ -58,7 +58,7 @@ pstree
 
 لمعرفة الأب للـ **Process** … الطرق كثيرة والهدف روما
 
-![](http://www.linuxac.org/forum/images/smiley/tooth.gif)
+![](https://www.linuxac.org/forum/images/smiley/tooth.gif)
 
 لو كانت قد أنحلت المشكلة وذهبت الـ **defunct process** ممتاز أنحلت المشكلة، إن لم تذهب؟ تابع …
 
@@ -80,13 +80,13 @@ ps -A | grep defunct
 
 **الثالث:****تعيد تشغيل النظام**
 
-![](http://www.linuxac.org/forum/images/smiley/tooth.gif)
+![](https://www.linuxac.org/forum/images/smiley/tooth.gif)
 
-![](http://www.linuxac.org/forum/images/smiley/3ayoo6.gif)
+![](https://www.linuxac.org/forum/images/smiley/3ayoo6.gif)
 
-![](http://www.linuxac.org/forum/images/smiley/tooth.gif)
+![](https://www.linuxac.org/forum/images/smiley/tooth.gif)
 
-![](http://www.linuxac.org/forum/images/smiley/3ayoo6.gif)
+![](https://www.linuxac.org/forum/images/smiley/3ayoo6.gif)
 
 بأمانة هناك بعض المرات ستجد بإنه فعلاً هذه الـ **processes** لا تستطيع إيقافها حتى بالـ
 
@@ -98,10 +98,10 @@ kill -9 PID
 
 إن كان لديك حل يرجى الإضافة … لأن هذه الـ **defunct** تسبب قلق خاصة لما عندك سيرفر شغال في بيئة Production ولم تنفع معك الحالات السابقة وتضطر الى عمل إعادة تشغيل للنظام
 
-![](http://www.linuxac.org/forum/images/smiley/ob.gif)
+![](https://www.linuxac.org/forum/images/smiley/ob.gif)
 
-![](http://www.linuxac.org/forum/images/smiley/frustrated.gif)
+![](https://www.linuxac.org/forum/images/smiley/frustrated.gif)
 
-![](http://www.linuxac.org/forum/images/smiley/blabla.gif)
+![](https://www.linuxac.org/forum/images/smiley/blabla.gif)
 
-غندك حلول وأفكار ؟ تعال خبرنا فيها —> [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=15460)
+غندك حلول وأفكار ؟ تعال خبرنا فيها —> [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=15460)

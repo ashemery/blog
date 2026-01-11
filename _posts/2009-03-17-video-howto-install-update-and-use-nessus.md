@@ -1,12 +1,15 @@
 ---
-title: "Video: HOWTO Install/Update and use Nessus"
+title: 'Video: HOWTO Install/Update and use Nessus'
 date: 2009-03-17 13:37:05 -0500
-categories: ["PenTest", "Security"]
-tags: ["NASL", "Nessus"]
-permalink: "/2009/03/17/video-howto-install-update-and-use-nessus/"
+categories:
+- PenTest
+- Security
+tags:
+- nasl
+- nessus
+permalink: /2009/03/17/video-howto-install-update-and-use-nessus/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/video/nessus/NessusLogo.png)

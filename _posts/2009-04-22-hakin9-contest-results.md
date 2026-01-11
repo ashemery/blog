@@ -1,15 +1,20 @@
 ---
-title: "إنتهت مسابقة مجلة Hakin9"
+title: إنتهت مسابقة مجلة Hakin9
 date: 2009-04-22 14:32:48 -0500
-categories: ["Books", "News", "Security", "z0ne"]
-tags: ["hakin9", "Magazine"]
-permalink: "/2009/04/22/hakin9-contest-results/"
+categories:
+- Books
+- News
+- Security
+- z0ne
+tags:
+- hakin9
+- magazine
+permalink: /2009/04/22/hakin9-contest-results/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
-[![](http://www.binary-zone.com/wp-content/themes/pixeled/images/ads/hakin9-logo.jpg)](http://www.hakin9.org/en/)
+[![](https://www.binary-zone.com/wp-content/themes/pixeled/images/ads/hakin9-logo.jpg)](http://www.hakin9.org/en/)
 
 أنتهت مسابقة مجلة Hakin9 قبل يومين وصحيح إني لم أفز بإشتراك لمدة عام كامل … ولكني فزت بثلاث أعداد للمجلة وهي العدد الأول والثاني والثالث لعام 2009  ::bgrim::
 

@@ -1,12 +1,17 @@
 ---
-title: "HOWTO Connect to OpenVPN using GNOME Network Manager"
+title: HOWTO Connect to OpenVPN using GNOME Network Manager
 date: 2009-05-22 01:45:55 -0500
-categories: ["Linux Security", "Networks", "Security"]
-tags: ["GNOME", "Network Manager", "VPN"]
-permalink: "/2009/05/22/howto-connect-to-openvpn-using-gnome-network-manager/"
+categories:
+- Linux Security
+- Networks
+- Security
+tags:
+- gnome
+- network-manager
+- vpn
+permalink: /2009/05/22/howto-connect-to-openvpn-using-gnome-network-manager/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 في هذا الموضوع سنقوم بالتعرف على كيفية الإتصال بالـ VPN بإستعمال برنامج GNOME Network Manager … البرنامج هذا والذي هو موجود بأعلى الشاشة لديك على اليمين وعلى شكل شاشتين كمبيوتر يحتوي على صفحة خاصة بالإتصال بالـ VPN ولكنه يحتاج الى إضافات معينة لكي يتفعل … الآن في حالتنا نريد الإتصال بشبكة OpenVPN ولهذا سنقوم بإضافة الإضافة:

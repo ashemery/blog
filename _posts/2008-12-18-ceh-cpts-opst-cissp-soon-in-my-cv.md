@@ -1,12 +1,23 @@
 ---
-title: "C|EH و CPTS و OPST و CISSP في طريقهم للسيرة الذاتية :)"
+title: C|EH و CPTS و OPST و CISSP في طريقهم للسيرة الذاتية :)
 date: 2008-12-18 01:29:28 -0500
-categories: ["PenTest"]
-tags: ["Audit", "C|EH", "CISSP", "CPTS", "network", "OPST", "OSSTMM", "PenTest", "SANS", "Security", "SysAdmin"]
-permalink: "/2008/12/18/ceh-cpts-opst-cissp-soon-in-my-cv/"
+categories:
+- PenTest
+tags:
+- audit
+- ceh
+- cissp
+- cpts
+- network
+- opst
+- osstmm
+- pentest
+- sans
+- security
+- sysadmin
+permalink: /2008/12/18/ceh-cpts-opst-cissp-soon-in-my-cv/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أثناء إستعدادي لإنهاء رسالة الدكتوراه، ومن خلال المطالعة والقراءة للكثير من الكتاب والباحثين، وجدتهم جميعهم يحملون شهادة أو شهادتين أو أكثر في مجال أمن المعلومات … ولهذا قلت في نفسي ولماذا لا أقوم بالحصول عليهم أنا كذلك ؟!!! ولهذا بدأت بجوار التحضير لرسالتي الدراسة والإستعداد لهذه الإمتحانات الأربعة …

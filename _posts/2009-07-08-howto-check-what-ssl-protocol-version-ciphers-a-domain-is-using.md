@@ -1,12 +1,23 @@
 ---
-title: "Howto Check What SSL Protocol Version & Ciphers a Domain is Using"
+title: Howto Check What SSL Protocol Version & Ciphers a Domain is Using
 date: 2009-07-08 02:07:42 -0500
-categories: ["Footprinting", "PenTest", "Security", "Web Security"]
-tags: ["Ciphers", "curl", "OpenSSL", "SSL2", "SSL3", "SSLDigger", "SSLThing", "TLS1"]
-permalink: "/2009/07/08/howto-check-what-ssl-protocol-version-ciphers-a-domain-is-using/"
+categories:
+- Footprinting
+- PenTest
+- Security
+- Web Security
+tags:
+- ciphers
+- curl
+- openssl
+- ssl2
+- ssl3
+- ssldigger
+- sslthing
+- tls1
+permalink: /2009/07/08/howto-check-what-ssl-protocol-version-ciphers-a-domain-is-using/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أكيد قرأت الموضوع السابق بعنوان [Disabling Weak SSLv2 Support in Apache Server](/assets/files/2009/disabling-weak-sslv2-support-in-apache-server.bin.bin) والآن تتسائل كيف تقوم بالتحقق من عملك تم بنجاح أم لا … أو كيف تتحقق من نسخة البروتوكول والمشفرات التي على دومين معيين؟ جواب هذا السؤال هو هذا الموضوع إن شاء الله …

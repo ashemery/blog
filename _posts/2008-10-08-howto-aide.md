@@ -1,12 +1,14 @@
 ---
-title: "Aide من البداية الى النهاية Howto"
+title: Aide من البداية الى النهاية Howto
 date: 2008-10-08 02:00:58 -0500
-categories: ["Linux Security"]
-tags: ["FIC", "IDS"]
-permalink: "/2008/10/08/howto-aide/"
+categories:
+- Linux Security
+tags:
+- fic
+- ids
+permalink: /2008/10/08/howto-aide/
 reading_time: 12
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 **Advanced Intrusion Detection Environment**
@@ -260,7 +262,7 @@ aide --update
 
 [الموقع الرسمي للبرنامج](http://www.cs.tut.fi/~rammer/aide.html)
 
-للنقاش حول الموضوع ——> [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=12151)
+للنقاش حول الموضوع ——> [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=12151)
 
 تقبلوا تحياتي الحارة …
 

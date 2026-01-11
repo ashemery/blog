@@ -1,12 +1,23 @@
 ---
-title: "ASP.NET Debug Method Enabled"
+title: ASP.NET Debug Method Enabled
 date: 2009-07-11 12:07:39 -0500
-categories: ["Apache/Tomcat", "Footprinting", "PCI Compliance", "PenTest", "Security", "Web Security", "Windows"]
-tags: ["ASP.NET", "debug", "Notepad", "PCI Compliance", "Web Application"]
-permalink: "/2009/07/11/asp-net-debug-method-enabled/"
+categories:
+- Apache/Tomcat
+- Footprinting
+- PCI Compliance
+- PenTest
+- Security
+- Web Security
+- Windows
+tags:
+- aspnet
+- debug
+- notepad
+- pci-compliance
+- web-application
+permalink: /2009/07/11/asp-net-debug-method-enabled/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 مشكلة أخرى ظهرت عندي عند عمل فحص على PCI Compliance وكانت بإنه الـ Debug مفعل في ملفات ASP.NET وهذه تكشف بعض المعلومات التي لا يفترض يتم كشفها إلا للأشخاص المصرح لهم بذلك authenticated users … ولهذا عليك بإيقاف ذلك أو عمل تعطيل لها من خلال التالي:

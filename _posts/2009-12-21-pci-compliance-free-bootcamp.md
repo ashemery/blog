@@ -1,12 +1,20 @@
 ---
-title: "PCI Compliance Free Bootcamp"
+title: PCI Compliance Free Bootcamp
 date: 2009-12-21 03:24:58 -0500
-categories: ["Companies", "PCI Compliance", "Security", "Vulnerability"]
-tags: ["Bootcamp", "PCI Compliance", "qualys", "Vulnerability", "Vulnerability Assessment"]
-permalink: "/2009/12/21/pci-compliance-free-bootcamp/"
+categories:
+- Companies
+- PCI Compliance
+- Security
+- Vulnerability
+tags:
+- bootcamp
+- pci-compliance
+- qualys
+- vulnerability
+- vulnerability-assessment
+permalink: /2009/12/21/pci-compliance-free-bootcamp/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2009/pci-compliance-bootcamp.png)

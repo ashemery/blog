@@ -1,12 +1,18 @@
 ---
-title: "Network Forensics Challenge 1"
+title: Network Forensics Challenge 1
 date: 2013-12-05 01:26:28 -0500
-categories: ["Academia", "Forensics", "Networks"]
-tags: ["Challenge", "Forensics", "Network Forensics", "Wireshark"]
-permalink: "/2013/12/05/network-forensics-challenge1/"
+categories:
+- Academia
+- Forensics
+- Networks
+tags:
+- challenge
+- forensics
+- network-forensics
+- wireshark
+permalink: /2013/12/05/network-forensics-challenge1/
 reading_time: 1
 ---
-
 كالعادة، الغياب عن هذا المكان أصبح شيء روتيني :)
 
 على كل حال …

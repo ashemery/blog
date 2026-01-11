@@ -1,12 +1,16 @@
 ---
-title: "The Last Emperor – Strikes Again"
+title: The Last Emperor – Strikes Again
 date: 2009-01-26 19:27:36 -0500
-categories: ["Sport"]
-tags: ["Affliction", "Fedor", "MMA", "UFC"]
-permalink: "/2009/01/26/the-last-emperor-strikes-again/"
+categories:
+- Sport
+tags:
+- affliction
+- fedor
+- mma
+- ufc
+permalink: /2009/01/26/the-last-emperor-strikes-again/
 reading_time: 4
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/MMA/affliction-logo.jpg)

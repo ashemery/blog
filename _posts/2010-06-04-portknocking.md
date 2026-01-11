@@ -1,14 +1,19 @@
 ---
-title: "طارق على موقع الـ Portknocking الرسمي"
+title: طارق على موقع الـ Portknocking الرسمي
 date: 2010-06-04 10:41:33 -0500
-categories: ["Development", "PortKnocking", "Security"]
-tags: ["PortKnocking", "طارق"]
-permalink: "/2010/06/04/%25d8%25b7%25d8%25a7%25d8%25b1%25d9%2582-%25d8%25b9%25d9%2584%25d9%2589-%25d9%2585%25d9%2588%25d9%2582%25d8%25b9-%25d8%25a7%25d9%2584%25d9%2580-portknocking-%25d8%25a7%25d9%2584%25d8%25b1%25d8%25b3%25d9%2585%25d9%258a/"
+categories:
+- Development
+- PortKnocking
+- Security
+tags:
+- portknocking
+- طارق
+permalink: /2010/06/04/%25d8%25b7%25d8%25a7%25d8%25b1%25d9%2582-%25d8%25b9%25d9%2584%25d9%2589-%25d9%2585%25d9%2588%25d9%2582%25d8%25b9-%25d8%25a7%25d9%2584%25d9%2580-portknocking-%25d8%25a7%25d9%2584%25d8%25b1%25d8%25b3%25d9%2585%25d9%258a/
 reading_time: 2
 ---
 السلام عليكم ورحمة الله وبركاته
 
-الحمد لله بعد أن أنتهيت من [طارق](http://code.google.com/p/tariq/) تمكنت من وضع مقالة حوله في مجلة [Hakin9](http://hakin9.org/) العدد الجديد لشهر 6 من عام 2010 … وكما ذكر الأخوة في مجتمع الحماية العربي “[طارق في مجلة Hakin9](http://www.security4arabs.com/2010/06/01/tariq_in_hakin9_magazine/)” وكما في مجتمع لينوكس العربي “[مشروع طارق في مجلة Hakin9](http://www.linuxac.org/forum/showthread.php?40199)” … شكراً لأخواني صبري وأحمد الشمري على كتابة مواضيع حول ذلك …
+الحمد لله بعد أن أنتهيت من [طارق](http://code.google.com/p/tariq/) تمكنت من وضع مقالة حوله في مجلة [Hakin9](http://hakin9.org/) العدد الجديد لشهر 6 من عام 2010 … وكما ذكر الأخوة في مجتمع الحماية العربي “[طارق في مجلة Hakin9](http://www.security4arabs.com/2010/06/01/tariq_in_hakin9_magazine/)” وكما في مجتمع لينوكس العربي “[مشروع طارق في مجلة Hakin9](https://www.linuxac.org/forum/showthread.php?40199)” … شكراً لأخواني صبري وأحمد الشمري على كتابة مواضيع حول ذلك …
 
 الآن [طارق](http://code.google.com/p/tariq/) ليس مجلة Hakin9 فقط بل ولله الحمد تم إضافته الى الموقع الرسمي للـ [PortKnocking](http://www.portknocking.org/) ويمكنكم مشاهدة الإضافة من خلال الرابط التالي: [أضغط هنا](http://www.portknocking.org/view/implementations)
 

@@ -1,12 +1,20 @@
 ---
-title: "أكيد أمك داعية عليك !!!"
+title: أكيد أمك داعية عليك !!!
 date: 2009-10-30 18:12:22 -0500
-categories: ["Sport"]
-tags: ["Brett Rogers", "Brock Lesner", "Fedor", "Fedor Emelianenko", "KO", "MMA", "submissions", "UFC"]
-permalink: "/2009/10/30/i-think-your-mother-is-disappointed/"
+categories:
+- Sport
+tags:
+- brett-rogers
+- brock-lesner
+- fedor
+- fedor-emelianenko
+- ko
+- mma
+- submissions
+- ufc
+permalink: /2009/10/30/i-think-your-mother-is-disappointed/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 في الشهور الماضية وخاصة بعد أن فاز Brock Lesner بحزام الوزن الثقيل في بطولة الـ UFC بدأت الإشاعات والكلام من هنا وهناك … نعم عزيزي القاريء الموضوع رغم العنوان الغريب عن فنون القتال :) … الأنترنت والجرائد والمجلات كلها بدأت تكتب وتتمنى أن يلاقي Brock اللاعب الأفضل بالعالم … لكن يا ترى من هو هذا اللاعب الافضل بالعالم؟ من هو هذا المقاتل الذي الكل تتمنى أن تحضى بشرف الخسارة منه ؟

@@ -131,7 +131,7 @@ compile.bat
 
 ![](/assets/img/posts/2011/virus-detection.png)
 
-عيب هذا الـ Backdoor الوحيد حسب رأيي هو حجمه الكبير … ياله تجربة موفقة للجميع … إذا كان هناك اي سؤال أو إستفسار، يرجى وضعه [هنا](http://www.linuxac.org/forum/showthread.php?53004) …
+عيب هذا الـ Backdoor الوحيد حسب رأيي هو حجمه الكبير … ياله تجربة موفقة للجميع … إذا كان هناك اي سؤال أو إستفسار، يرجى وضعه [هنا](https://www.linuxac.org/forum/showthread.php?53004) …
 
 المصادر:
 

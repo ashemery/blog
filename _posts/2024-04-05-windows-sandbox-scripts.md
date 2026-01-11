@@ -1,12 +1,23 @@
 ---
-title: "Windows Sandbox Scripts"
+title: Windows Sandbox Scripts
 date: 2024-04-05 05:07:45 -0500
-categories: ["DFIR", "Investigations", "Malware", "Research", "Security", "Software/Tools", "ThreatHunting", "Virtualization", "Windows"]
-tags: ["Malware Analysis", "Reverse Engineering", "Windows Sandbox"]
-permalink: "/2024/04/05/windows-sandbox-scripts/"
+categories:
+- DFIR
+- Investigations
+- Malware
+- Research
+- Security
+- Software/Tools
+- ThreatHunting
+- Virtualization
+- Windows
+tags:
+- malware-analysis
+- reverse-engineering
+- windows-sandbox
+permalink: /2024/04/05/windows-sandbox-scripts/
 reading_time: 2
 ---
-
 Windows Sandbox is an amazing Windows feature that could be used for Malware Analysis. In order to install it you’ll need to follow this blog post [here](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview) by Microsoft.
 
 ![](/assets/img/posts/2024/run-in-sandbox.png)

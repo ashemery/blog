@@ -1,12 +1,20 @@
 ---
-title: "حل مشكلة مستخدم modsec مع قاعدة البيانات mysql"
+title: حل مشكلة مستخدم modsec مع قاعدة البيانات mysql
 date: 2009-01-20 00:22:31 -0500
-categories: ["Database", "Linux Services", "WHM/Cpanel"]
-tags: ["modsec", "ModSecurity2", "mysql", "phpMyAdmin", "Privileges", "WHM/Cpanel"]
-permalink: "/2009/01/20/solution-for-modsec-access-denied-on-mysql-database/"
+categories:
+- Database
+- Linux Services
+- WHM/Cpanel
+tags:
+- modsec
+- modsecurity2
+- mysql
+- phpmyadmin
+- privileges
+- whmcpanel
+permalink: /2009/01/20/solution-for-modsec-access-denied-on-mysql-database/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 اليوم أحد الخوادم التي عملت عليها كان فيه مشكلة ويصل لمدير الخادم الرسالة التالية:

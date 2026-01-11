@@ -1,12 +1,28 @@
 ---
-title: "الجزء الرابع من محاضرات HTID"
+title: الجزء الرابع من محاضرات HTID
 date: 2012-12-01 23:59:28 -0500
-categories: ["Academia", "BackTrack", "OSINT", "PenTest", "Publications"]
-tags: ["fingerprinting", "Hacking Techniques", "Hacking Techniques and Intrusion Detection", "Host Discovery", "hping", "HTID", "IDLE", "Idle Scan", "nmap", "Packet Crafting", "Port Scanning", "Scapy"]
-permalink: "/2012/12/01/hacking-techniques-and-intrusion-detection-course-part-four/"
+categories:
+- Academia
+- BackTrack
+- OSINT
+- PenTest
+- Publications
+tags:
+- fingerprinting
+- hacking-techniques
+- hacking-techniques-and-intrusion-detection
+- host-discovery
+- hping
+- htid
+- idle
+- idle-scan
+- nmap
+- packet-crafting
+- port-scanning
+- scapy
+permalink: /2012/12/01/hacking-techniques-and-intrusion-detection-course-part-four/
 reading_time: 1
 ---
-
 لقد نسيت أمر رفع المحاضرات بصراحة بسبب الإنشغال … على كل حال هذا الجزء يشمل الأقسام التالية:
 
 Port Scanning

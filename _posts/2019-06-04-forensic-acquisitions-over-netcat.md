@@ -1,12 +1,23 @@
 ---
-title: "Forensic Acquisitions over Netcat"
+title: Forensic Acquisitions over Netcat
 date: 2019-06-04 05:35:57 -0500
-categories: ["DFIR", "GNU/Linux"]
-tags: ["Acquisition", "Acquisitions", "DFIR", "distro", "Forensic", "Forensic image", "Linux", "netcat", "ssh", "TSURUGI"]
-permalink: "/2019/06/04/forensic-acquisitions-over-netcat/"
+categories:
+- DFIR
+- GNU/Linux
+tags:
+- acquisition
+- acquisitions
+- dfir
+- distro
+- forensic
+- forensic-image
+- linux
+- netcat
+- ssh
+- tsurugi
+permalink: /2019/06/04/forensic-acquisitions-over-netcat/
 reading_time: 4
 ---
-
 In the past I used to write here what I did so I do not forget, so I’ll try to get back to that habit again :)
 
 These days whenever I find time, I’m playing with TSURUGI, which is a new (*at least to me*) Linux DFIR distro. More about the distro could be found on the system’s website [here](https://tsurugi-linux.org/). I highly recommend if you are reading these words of mine, that you go download TSURUGI and give it a try. It can be seen as the KALI Linux of DFIR!

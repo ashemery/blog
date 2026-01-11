@@ -39,4 +39,12 @@ assets/js/dist
 .idea/
 .bundle/
 .vendor/
-
+# my scripts and reports
+scripts/
+scripts/*.csv
+scripts/*.tsv
+scripts/*report*
+scripts/*_report*
+scripts/*_reports*
+scripts/reports/
+scripts/*report*

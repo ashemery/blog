@@ -1,12 +1,16 @@
 ---
-title: "The Last Emperor Goes Down :("
+title: The Last Emperor Goes Down :(
 date: 2010-06-27 15:48:22 -0500
-categories: ["Sport"]
-tags: ["Fedor", "Fedor Emelianenko", "MMA", "The Last Emperor"]
-permalink: "/2010/06/27/the-last-emperor-goes-down/"
+categories:
+- Sport
+tags:
+- fedor
+- fedor-emelianenko
+- mma
+- the-last-emperor
+permalink: /2010/06/27/the-last-emperor-goes-down/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/sports/Fedor_Emelianenko_and_Fabricio_Werdum.jpg)

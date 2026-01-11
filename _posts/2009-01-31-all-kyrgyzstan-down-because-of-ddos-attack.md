@@ -1,9 +1,11 @@
 ---
 title: Kyrgyzstan وقف النت فيها بسبب DDoS Attack
 date: 2009-01-31 03:25:23 -0500
-categories: ["Community", "News"]
+categories:
+- Community
+- News
 tags:
-- DDoS Attack
+- ddos-attack
 permalink: /2009/01/31/all-kyrgyzstan-down-because-of-ddos-attack/
 reading_time: 1
 ---

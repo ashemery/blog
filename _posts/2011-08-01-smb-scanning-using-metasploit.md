@@ -1,12 +1,21 @@
 ---
-title: "SMB Scanning بواسطة Metasploit"
+title: SMB Scanning بواسطة Metasploit
 date: 2011-08-01 08:56:07 -0500
-categories: ["Footprinting", "Linux Services", "Metasploit", "PenTest", "Windows"]
-tags: ["auxiliary", "Metasploit", "Scanning", "SMB", "smb_version"]
-permalink: "/2011/08/01/smb-scanning-using-metasploit/"
+categories:
+- Footprinting
+- Linux Services
+- Metasploit
+- PenTest
+- Windows
+tags:
+- auxiliary
+- metasploit
+- scanning
+- smb
+- smb-version
+permalink: /2011/08/01/smb-scanning-using-metasploit/
 reading_time: 2
 ---
-
 حين تم تطوير Metasploit كان الهدف هو خلق بيئة متكاملة للمهاجم لتنفيذ هجومه على الهدف … من بين تلك الأهداف هي عمل Modules متخصصة في جزئيات معينة تسهل عليك الوصول الى الضحية … وكذلك حسب كتاب Metasploit الأخير، يقولون ليس مُعيب ان تسلك أسهل وأسخف الطرق للوصول الى الضحية … والكلام سليم 100% … لماذا تستهلك وقتك وجهد كبير في البحث عن طرق صعبة بعض الشيء … أستعمل الطرق الأسهل للوصول الى الهدف … والهدف هو إختراق الضحية أليس كذلك؟ إذن دائماً برأيي تبدأ بالأسهل وتتدرج …
 
 في مثالنا هنا والذي سنتحدث عن SMB Scanning، لماذا نقوم بعمل فحص لجميع الشبكة والأجهزة والخدمات لنعرف الاجهزة التي يعمل عليها بروتوكول Server Message Block ؟ خاصة إذا كانت هناك أداة تمكننا من عمل ذلك بشكل مباشر؟ الجواب ببساطة هو ضياع للوقت ليس إلا حسب رأيي … ولعمل فحص SMB كل الذي علينا فعله هو التالي:

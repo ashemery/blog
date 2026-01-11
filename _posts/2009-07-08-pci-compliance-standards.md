@@ -1,12 +1,27 @@
 ---
-title: "PCI Compliance Standards"
+title: PCI Compliance Standards
 date: 2009-07-08 01:15:49 -0500
-categories: ["Patch Management", "PCI Compliance", "PenTest", "Security", "Vulnerability"]
-tags: ["Approved Scanning Vendor", "ASV", "Audit", "LanGaurd", "Nessus", "nmap", "Patch Management", "PCI Compliance", "PenTest", "Security Auditors", "Vulnerability Assessment"]
-permalink: "/2009/07/08/pci-compliance-standards/"
+categories:
+- Patch Management
+- PCI Compliance
+- PenTest
+- Security
+- Vulnerability
+tags:
+- approved-scanning-vendor
+- asv
+- audit
+- langaurd
+- nessus
+- nmap
+- patch-management
+- pci-compliance
+- pentest
+- security-auditors
+- vulnerability-assessment
+permalink: /2009/07/08/pci-compliance-standards/
 reading_time: 5
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أعرف بإن لي فترة طويلة غائب عن الكتابة سواءاً في المدونة، أو في مجتمع لينوكس العربي ولكن السبب هو إنشغالي بالعمل بشكل كبير جداً … حالياً يجب أن أقوم بتسليم التقارير الأمنية سواءاً الخاصة بالـ Vulnerability Assessment أو الخاصة بالـ PenTest أو غيرها … كل ذلك مطلوب من أجل الـ [PCI Compliance](https://www.pcisecuritystandards.org/) التي سأتحدث عنه …

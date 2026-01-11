@@ -55,4 +55,4 @@ fslint-gui
 
 وللغاية هذي دمتم بود ...
 
-[للنقاش حول الموضوع راجع مجتمع لينوكس العربي من هنا](http://www.linuxac.org/forum/showthread.php?t=10054)
+[للنقاش حول الموضوع راجع مجتمع لينوكس العربي من هنا](https://www.linuxac.org/forum/showthread.php?t=10054)

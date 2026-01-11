@@ -1,12 +1,17 @@
 ---
-title: "Howto upgrade Debian from any version to Debian Lenny"
+title: Howto upgrade Debian from any version to Debian Lenny
 date: 2009-10-25 07:37:26 -0500
-categories: ["GNU/Linux"]
-tags: ["Debian", "Etch", "Howto", "Lenny", "upgrade"]
-permalink: "/2009/10/25/howto-upgrade-debian-from-any-version-to-debian-lenny/"
+categories:
+- GNU/Linux
+tags:
+- debian
+- etch
+- howto
+- lenny
+- upgrade
+permalink: /2009/10/25/howto-upgrade-debian-from-any-version-to-debian-lenny/
 reading_time: 4
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 هذا أيضاً مستند بسيط قمت بكتابته لأغراض العمل وأتوقع إنكم ممكن تستفيدو منه … عملية الترقية في نظام Debian الى نسخة أحدث ليست بالصعبة لكن هناك حاجة بسيطة يغفل عليها بعض المواقع التي يشرحون الطريقة ولعل السبب التي لا تظهر عندهم المشكلة إنهم دائماً يحدثون نظامهم من النسخة القديمة الى النسخة الحديثة حال صدورها … أنا وجدت قبل فترة إن لدينا في العمل أكثر من خادم غير محدث ربما منذ حوالي العام !!! ولهذا وجدت عندنا أنظمة Debian Etch ورقمها هو على ما اذكر 4.7 … وحالياً يوجد Debian Lenny والذي رقمه هو 5.0.3 … يعني مسافة كبيرة بين الأول والثاني …
@@ -91,6 +96,6 @@ cat /etc/debian_version
 
 إن شاء الله قريباً أشرح كيفية عمل Subversion Repository لتستعمله كـ Configuration Manager وتستطيع حفظ جميع التغييرات التي تتم على إعدادات نظامك …
 
-للنقاش [هنا](http://www.linuxac.org/forum/linuxac7/thread31469.html) …
+للنقاش [هنا](https://www.linuxac.org/forum/linuxac7/thread31469.html) …
 
 بالتوفيق للجميع …

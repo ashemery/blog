@@ -1,12 +1,18 @@
 ---
-title: "Howto Verify Fedora 12 ISO"
+title: Howto Verify Fedora 12 ISO
 date: 2010-01-23 15:40:49 -0500
-categories: ["GNU/Linux", "Linux Security"]
-tags: ["CHECKSUM", "curl", "gpg", "sha256sum", "verify"]
-permalink: "/2010/01/23/howto-verify-fedora-12-iso/"
+categories:
+- GNU/Linux
+- Linux Security
+tags:
+- checksum
+- curl
+- gpg
+- sha256sum
+- verify
+permalink: /2010/01/23/howto-verify-fedora-12-iso/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 للتحقق من ملف التوزيعة Fedora 12 عليك أن تتبع خطوات معينة وذلك لانه الـ HASH الموجود في ملف CHECKSUM هو جزء لا يتجزء من مفتاح الـ PGP … وكما يؤكدون من خلال الجملة:
@@ -40,6 +46,6 @@ $ gpg --verify *-CHECKSUM
 $ sha256sum -c *-CHECKSUM
 ```
 
-إذا كان الناتج مطابق؟ إذن الملف سليم ولم يتغيير فيه شيء أثناء التحميل … الموضوع ترجمته من [هنا](https://fedoraproject.org/en/verify) … يعني ما جبت حاجة جديدة من عندي … للنقاش فيما يخص الموضوع: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?35258)
+إذا كان الناتج مطابق؟ إذن الملف سليم ولم يتغيير فيه شيء أثناء التحميل … الموضوع ترجمته من [هنا](https://fedoraproject.org/en/verify) … يعني ما جبت حاجة جديدة من عندي … للنقاش فيما يخص الموضوع: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?35258)
 
 دمتم بود …

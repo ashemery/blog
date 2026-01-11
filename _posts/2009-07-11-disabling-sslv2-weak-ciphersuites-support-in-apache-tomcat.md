@@ -1,12 +1,24 @@
 ---
-title: "Disabling SSLv2 & Weak CipherSuites Support in Apache Tomcat"
+title: Disabling SSLv2 & Weak CipherSuites Support in Apache Tomcat
 date: 2009-07-11 12:39:49 -0500
-categories: ["Apache/Tomcat", "Footprinting", "PCI Compliance", "PenTest", "Security", "Web Security"]
-tags: ["apache", "CipherSuites", "JSSE", "KeyStore", "OpenSSL", "SSLv2", "Tomcat"]
-permalink: "/2009/07/11/disabling-sslv2-weak-ciphersuites-support-in-apache-tomcat/"
+categories:
+- Apache/Tomcat
+- Footprinting
+- PCI Compliance
+- PenTest
+- Security
+- Web Security
+tags:
+- apache
+- ciphersuites
+- jsse
+- keystore
+- openssl
+- sslv2
+- tomcat
+permalink: /2009/07/11/disabling-sslv2-weak-ciphersuites-support-in-apache-tomcat/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 نفس الخلل الذي ظهر عندي في خادم Apache من أجل فحص الحصول على [PCI Compliance](/assets/files/2009/pci-compliance-standards.bin.bin) ظهر في خادم Tomcat وهو وجود [Weak supported SSL ciphers suites](/assets/files/2009/disabling-weak-sslv2-support-in-apache-server.bin.bin) … وبصراحة أنا ما لي خبرة في Tomcat ولهذا كان لازم أبدأ بالقراءة عنه وعن طريقة عمله وإعداداته … والحمد لله بعد القراءة عرفت أين ملفات الإعداد وكيف أقوم بحل المشكلة … الآن كل الذي عليك فعله هو التالي:

@@ -1,12 +1,22 @@
 ---
-title: "سكربت بسيط لعمل ARP Spoofing"
+title: سكربت بسيط لعمل ARP Spoofing
 date: 2012-12-14 22:16:49 -0500
-categories: ["Development", "PenTest", "Software/Tools"]
-tags: ["ARP", "ARP-Poisoner", "ARP-Spoofing", "Poison", "Python", "Scapy", "Spoof", "Spoofing"]
-permalink: "/2012/12/14/arp-spoofing-script/"
+categories:
+- Development
+- PenTest
+- Software/Tools
+tags:
+- arp
+- arp-poisoner
+- arp-spoofing
+- poison
+- python
+- scapy
+- spoof
+- spoofing
+permalink: /2012/12/14/arp-spoofing-script/
 reading_time: 1
 ---
-
 سكربت بسيط لعمل [ARP Spoofing](http://en.wikipedia.org/wiki/ARP_spoofing) … قم بنسخ الكود وتشغيله او تحميله من صفحة المشاريع ([هنا](/assets/files/2012/projects.bin.bin)) …
 
 ```

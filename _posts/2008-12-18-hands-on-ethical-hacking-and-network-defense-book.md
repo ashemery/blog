@@ -1,12 +1,16 @@
 ---
-title: "كتاب: Hands-On Ethical Hacking and Network Defense"
+title: 'كتاب: Hands-On Ethical Hacking and Network Defense'
 date: 2008-12-18 20:48:45 -0500
-categories: ["Books", "PenTest"]
-tags: ["Ethical Hacking", "Penetration Testing", "PenTest"]
-permalink: "/2008/12/18/hands-on-ethical-hacking-and-network-defense-book/"
+categories:
+- Books
+- PenTest
+tags:
+- ethical-hacking
+- penetration-testing
+- pentest
+permalink: /2008/12/18/hands-on-ethical-hacking-and-network-defense-book/
 reading_time: 4
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 كما وعدتكم بأن أبدأ من الآن فصاعداً بأن أعطي رأيي في الكتب التي قرأتها وأيضاً التكلم حول اهم الكتب التي أستفدت منها في رحلة التحضير للشهادات الخاصة بالحماية التي ذكرتهم في تدوينتي الأخيرة بعنوان: [C|EH و CPTS و OPST و CISSP في طريقهم للسيرة الذاتية :)](/assets/files/2008/ceh-cpts-opst-cissp-soon-in-my-cv.bin.bin)

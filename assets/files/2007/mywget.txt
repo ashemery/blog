@@ -4,8 +4,8 @@
 # 	B!n@ry wget made easy	v1.0			 #
 #							 #
 # For more information please visit:			 #
-# 	1) B!n@ry-z0ne --> www.binary-zone.com		 #
-#	2) LinuxAC --> www.linuxac.org			 #
+# 	1) B!n@ry-z0ne --> https://www.binary-zone.com		 #
+#	2) LinuxAC --> https://www.linuxac.org			 #
 #	3) Mail me @ Arabnix[at]gmail[dot]com		 #
 #							 #
 # /*\ Special thanks to all friends and brothers /*\	 #

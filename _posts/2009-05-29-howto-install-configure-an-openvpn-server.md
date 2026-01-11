@@ -1,12 +1,22 @@
 ---
-title: "Howto Install & Configure an OpenVPN Server"
+title: Howto Install & Configure an OpenVPN Server
 date: 2009-05-29 13:59:57 -0500
-categories: ["Firewalls", "Linux Security", "Linux Services", "Networks", "Security"]
-tags: ["CA", "Certificate Authority", "IPSec", "iptables", "OpenSSL", "OpenVPN"]
-permalink: "/2009/05/29/howto-install-configure-an-openvpn-server/"
+categories:
+- Firewalls
+- Linux Security
+- Linux Services
+- Networks
+- Security
+tags:
+- ca
+- certificate-authority
+- ipsec
+- iptables
+- openssl
+- openvpn
+permalink: /2009/05/29/howto-install-configure-an-openvpn-server/
 reading_time: 4
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/firewall/openvpn.jpeg)

@@ -1,12 +1,39 @@
 ---
-title: "الجزء الخامس (1) من محاضرات HTID"
+title: الجزء الخامس (1) من محاضرات HTID
 date: 2012-12-07 03:31:50 -0500
-categories: ["Academia", "Exploitation", "PenTest", "Publications", "Vulnerability"]
-tags: ["ASLR", "Assembly", "Canaries", "Cookies", "CPU", "Debuggers", "Demo", "DEP", "Exploit", "Exploitation", "GDB", "Heap", "Immunity Debugger", "Memeory Management", "Memory Corruption", "Metasploit", "mona.py", "Registers", "Ret2libc", "ROP", "SafeSEH", "Stack", "Stack Gaurd"]
-permalink: "/2012/12/07/hacking-techniques-and-intrusion-detection-course-part-five-a/"
+categories:
+- Academia
+- Exploitation
+- PenTest
+- Publications
+- Vulnerability
+tags:
+- aslr
+- assembly
+- canaries
+- cookies
+- cpu
+- debuggers
+- demo
+- dep
+- exploit
+- exploitation
+- gdb
+- heap
+- immunity-debugger
+- memeory-management
+- memory-corruption
+- metasploit
+- monapy
+- registers
+- ret2libc
+- rop
+- safeseh
+- stack
+- stack-gaurd
+permalink: /2012/12/07/hacking-techniques-and-intrusion-detection-course-part-five-a/
 reading_time: 2
 ---
-
 في البداية أود أن أشكر أخي العزيز [شادي](http://www.shadinaif.com/) على مساعدتي في عمل هذه المادة بالتحديد … صراحة لم يكن لتخرج المادة بهذا الشكل لولا فضل الله ومن ثم شادي … ألف شكر شادي، وإن شاء الله بميزان حسناتك …
 
 الجزء الخامس معني بالـ  Software Exploitation سواءاً لينُكس أو ويندوز … بصراحة قمت بتقسيمه الى التالي:

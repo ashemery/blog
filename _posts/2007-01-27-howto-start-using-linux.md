@@ -16,8 +16,8 @@ reading_time: 1
 
 طبعا الفيديو يشرح باللغة الإنكليزية ويشرح الكثير من التفاصيل المهمة للمبتدئين … لتنزيل الشرح بالكامل أضغط [هنا](http://olymenu.com/Mirror/downloads/)
 
-وأيضا أرشح لك قراءة الموضوع [هذا](http://www.linuxac.org//index.php?option=com_content&task=view&id=17&Itemid=23)
+وأيضا أرشح لك قراءة الموضوع [هذا](https://www.linuxac.org//index.php?option=com_content&task=view&id=17&Itemid=23)
 
-والذي كتبته إدارة [مجتمع لينوكس العربي](http://www.linuxac.org/) بشكل مفصل ومجمع من عدة دروس مهمة ومفيدة كتبها محبي لينوكس العرب …
+والذي كتبته إدارة [مجتمع لينوكس العربي](https://www.linuxac.org/) بشكل مفصل ومجمع من عدة دروس مهمة ومفيدة كتبها محبي لينوكس العرب …
 
 أخوكم B!n@ry …

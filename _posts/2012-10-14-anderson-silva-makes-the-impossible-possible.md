@@ -1,12 +1,23 @@
 ---
-title: "Anderson Silva makes the Impossible Possible"
+title: Anderson Silva makes the Impossible Possible
 date: 2012-10-14 22:21:54 -0500
-categories: ["Sport"]
-tags: ["Anderson the spider Silva", "Anderson Silva", "Chael Sonnen", "KO", "MMA", "Stephen the american psycho Bonnar", "Steven Seagal", "TKO", "UFC", "UFC 153", "Vitor Belfort"]
-permalink: "/2012/10/14/anderson-silva-makes-the-impossible-possible/"
+categories:
+- Sport
+tags:
+- anderson-the-spider-silva
+- anderson-silva
+- chael-sonnen
+- ko
+- mma
+- stephen-the-american-psycho-bonnar
+- steven-seagal
+- tko
+- ufc
+- ufc-153
+- vitor-belfort
+permalink: /2012/10/14/anderson-silva-makes-the-impossible-possible/
 reading_time: 3
 ---
-
 ![](/assets/img/posts/2012/031_anderson_silva_gallery_post.0_cinema_1050.0.jpg)
 
 فجر اليوم شاهدنا بطولة UFC 153 في البرازيل في ريو دي جانيرو … وكان النزال الرئيسي للبطولة هو بين البرازيلي الخرافي [Anderson “The Spider” Silva](http://en.wikipedia.org/wiki/Anderson_Silva) وبين الأمريكي [Stephen “The American Psycho” Bonnar](http://en.wikipedia.org/wiki/Stephan_Bonnar) … ما يجعلني أقول إن Silva يجعل المستحيل ممكن هو الطريقة التي يفوز بها كل مرة على منافسيه !!! الآن يسجل أعلى سجل فوز في تاريخ بطولات الـ UFC كلها بـ 17 فوز متتالي بدون أي خسارة !!! شيء خرافي بصراحة … في كل نزال يقوم بسحق الخصم بطرق مختلفة … كل مرة تحاول أن تعرف كيف سيفوز بها على خصمه ومالذي سوف يقوم به لكننا نعجز عن ذلك … قبل كم سنة جلب للعمل معه بطل أفلام هوليود Steven Seagal المعروف بإمكانياته الفنية الرائعة في فنون القتال والحائز على أحزمة كثيرة في الآيكيدو … وقام بالتعلم منه على فنيات جديدة بتنا نراها في كل نزال … منها الـ Front Kick على وجه Vitor Belfort والذي أسقطته بالقاضية … والآخرى الرائعة كانت الـ Front Knee على صدر Chael Sonnen والذي قضت عليه كذلك … وبالأمس يعود ليفاجئنا بأسلوب خرافي آخر …

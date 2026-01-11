@@ -1,12 +1,17 @@
 ---
-title: "aria and netspeed Packages for Fedora 13"
+title: aria and netspeed Packages for Fedora 13
 date: 2010-05-29 21:47:23 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["aria", "download manager", "gnome-applet-netspeed", "netspeed"]
-permalink: "/2010/05/29/aria-and-netspeed-packages-for-fedora-13/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- aria
+- download-manager
+- gnome-applet-netspeed
+- netspeed
+permalink: /2010/05/29/aria-and-netspeed-packages-for-fedora-13/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2010/aria_thumb.png)

@@ -1,12 +1,16 @@
 ---
-title: "هجمات الـ Phishing مستمرة بالهجوم"
+title: هجمات الـ Phishing مستمرة بالهجوم
 date: 2012-10-29 10:28:10 -0500
-categories: ["Cybersecurity"]
-tags: ["PayPal", "Phishing", "SPAM", "هجمات"]
-permalink: "/2012/10/29/phishing-attacks-continue-striking/"
+categories:
+- Cybersecurity
+tags:
+- paypal
+- phishing
+- spam
+- هجمات
+permalink: /2012/10/29/phishing-attacks-continue-striking/
 reading_time: 2
 ---
-
 ![](/assets/img/posts/2012/phishers.png)
 
 أنظر الى الصورة بشكل جيد … وضعت الرابط الذي يتلاعب به الشخص المنفذ لهذا الهجوم في أسفل الصورة ووضعت حوله خط أحمر … عدد الهجمات من هذه النوعية Phishing في تزايد مستمر … هذه النوعية من الهجمات ظهرت منذ سنوات عديدة والى يومنا هذا هي موجودة وتتزايد بشكل كبير جداً … بحيث حتى باتت تستطيع أن تمر من خلال تقنيات الفلترة للبريد … هذه الصورة مأخوذة من بريدي والتي وصلتني الى صندوق الـ Inbox وليس الـ SPAM …

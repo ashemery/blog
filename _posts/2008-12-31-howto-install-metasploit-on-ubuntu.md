@@ -1,12 +1,25 @@
 ---
-title: "تنصيب 3.2 Metasploit على Ubuntu"
+title: تنصيب 3.2 Metasploit على Ubuntu
 date: 2008-12-31 15:04:33 -0500
-categories: ["Linux Security", "PenTest", "Security"]
-tags: ["exploits", "IDS Signatures", "Metasploit", "OpenSSL", "payloads", "Penetration Testing", "reconnaissance", "Ruby", "Ruby Gems", "Ruby Rails", "Ubuntu"]
-permalink: "/2008/12/31/howto-install-metasploit-on-ubuntu/"
+categories:
+- Linux Security
+- PenTest
+- Security
+tags:
+- exploits
+- ids-signatures
+- metasploit
+- openssl
+- payloads
+- penetration-testing
+- reconnaissance
+- ruby
+- ruby-gems
+- ruby-rails
+- ubuntu
+permalink: /2008/12/31/howto-install-metasploit-on-ubuntu/
 reading_time: 4
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2008/Metasploit_Logo.png)

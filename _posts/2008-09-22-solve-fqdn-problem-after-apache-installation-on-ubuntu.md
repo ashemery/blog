@@ -44,6 +44,6 @@ ServerName "localhost"
 
 ياله بالتوفيق لكم مع سيرفراتكم المحلية
 
-للنقاش في الموضوع: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=15443)
+للنقاش في الموضوع: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=15443)
 
 ودمتم بود …

@@ -14,6 +14,6 @@ reading_time: 1
 
 لمعرفة تفاصيل الدورة وباقي الأمور الأخرى قم بزيارة الموضوع التالي:
 
-[دورة مجتمع لينوكس العربي LinuxAC CLU الأولى](http://www.linuxac.org/forum/showthread.php?t=10250)
+[دورة مجتمع لينوكس العربي LinuxAC CLU الأولى](https://www.linuxac.org/forum/showthread.php?t=10250)
 
 ودمتم …

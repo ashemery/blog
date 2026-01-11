@@ -1,12 +1,18 @@
 ---
-title: "محاولة نقل طارق للعمل على Python3"
+title: محاولة نقل طارق للعمل على Python3
 date: 2011-12-01 03:25:16 -0500
-categories: ["Development", "PortKnocking"]
-tags: ["PATH", "Python3", "Scapy", "Tariq", "طارق"]
-permalink: "/2011/12/01/trying-to-migrate-tariq-to-python3/"
+categories:
+- Development
+- PortKnocking
+tags:
+- path
+- python3
+- scapy
+- tariq
+- طارق
+permalink: /2011/12/01/trying-to-migrate-tariq-to-python3/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أقوم حالياً بمحاولة نقل طارق للعمل من Python2x الى Python3 وأتمنى إن كان هناك من يستطيع أن يقوم بعمل تجارب معي حول ذلك … لقد قمت بتصحيح الكود ليتوافق مع Python3 ولكن هناك مشاكل صراحة … أول هذه المشاكل هي إنه scapy الذي يعتمد عليه طارق لا يعمل على Python3 وبالتالي عليك أن تعدل على Path للبايثون وتضيف له المسار الموجود فيه الموديول scapy … يمكن عمل ذلك بواسطة:

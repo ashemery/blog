@@ -18,14 +18,14 @@ reading_time: 2
 
 لقد تم اصدار نسختين من المجلة ، الاصدار الأول خاص بالطباعة وعلى ورق من قياس A4 وبجودة ودقة متناهية Press HQ Edition. حجم الملف 10-12 مجيا تقريبا. للتحميل:
 
-[رابط مباشر](http://www.linuxac.org/forum/magazine/LAC_magazine_Mar_Apr_2008HQ.pdf)
+[رابط مباشر](https://www.linuxac.org/forum/magazine/LAC_magazine_Mar_Apr_2008HQ.pdf)
 
 أما الاصدار الثاني فهو بدقة أقل وبالتالي حجم أقل ايضا. وهو مصمم لقراءته على شاشة الحاسوب بنمط الE-Book . وحجم الملف 3-4 ميجا تقريبا. للتحميل:
 
-[رابط مباشر](http://www.linuxac.org/forum/magazine/LAC_magazine_Mar_Apr2008.pdf)
+[رابط مباشر](https://www.linuxac.org/forum/magazine/LAC_magazine_Mar_Apr2008.pdf)
 
 نرجو أن ينال هذا العمل اعجابكم وتقديركم ،وننتظر أي اقتراحات من شأنها تطوير المجلة للأفضل، ونعتذر عن أي أخطاء قد ترد في مواضيع المجلة ، ونلقاكم في الاعداد القادمة بمشيئته تعالى.
 
 **ادارة مجتمع لينوكس العربي.**
 
-**[الخبر منقول من مجتمع لينوكس العربي](http://www.linuxac.org/forum/showthread.php?p=74963)**
+**[الخبر منقول من مجتمع لينوكس العربي](https://www.linuxac.org/forum/showthread.php?p=74963)**

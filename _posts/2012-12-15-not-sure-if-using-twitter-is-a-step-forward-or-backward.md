@@ -1,12 +1,16 @@
 ---
-title: "خطوة للأمام أم للخلف (إستعمال Twitter)؟!"
+title: خطوة للأمام أم للخلف (إستعمال Twitter)؟!
 date: 2012-12-15 23:40:45 -0500
-categories: ["Life", "z0ne"]
-tags: ["binaryz0ne", "Twitter", "خدمة"]
-permalink: "/2012/12/15/not-sure-if-using-twitter-is-a-step-forward-or-backward/"
+categories:
+- Life
+- z0ne
+tags:
+- binaryz0ne
+- twitter
+- خدمة
+permalink: /2012/12/15/not-sure-if-using-twitter-is-a-step-forward-or-backward/
 reading_time: 1
 ---
-
 [![](/assets/img/posts/2012/twitter-logo-cute-bird.jpg)](https://twitter.com/binaryz0ne)
 
 منذ فترة طويلة من الزمن وأفكر بإستعمال خدمة Twitter بالذات … وذلك بسبب كون العديد من الأخوة والأصدقاء دائماً يسألونني عنها، وعن سهولة المتابعة من خلالها … ولهذا صراحة قمت بعمل حساب عليه … أضطررت الى عمل حساب بإسم [binaryz0ne](https://twitter.com/binaryz0ne) وذلك لأنه يبدو هناك من سبقني للأسماء الأخرى … على كل حال اتمنى أن أستطيع أن أتواصل مع الجميع من خلال هذه الخدمة، وكذلك أن تكون خطوة جيدة نحو الأمام وليس خطوة سيئة تعيدني الى الخلف … سأحتاج الى بعض الوقت للتعود والتأقلم عليه وكذلك للتعرف على كيفية إستعماله …

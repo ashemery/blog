@@ -1,12 +1,23 @@
 ---
-title: "أختبر إمكانياتك في إدارة نظام التشغيل لينُكس وحل مشاكله (لأنظمة 32 بت)"
+title: أختبر إمكانياتك في إدارة نظام التشغيل لينُكس وحل مشاكله (لأنظمة 32 بت)
 date: 2012-08-08 12:38:52 -0500
-categories: ["Academia", "GNU/Linux", "Virtualization"]
-tags: ["7zip", "Bridge Mode", "CentOS", "Exam", "RAM", "Redhat", "Testing", "VirtualBox", "Virtualization"]
-permalink: "/2012/08/08/test-your-linux-configuration-and-troubleshooting-skills-32bit-test-version/"
+categories:
+- Academia
+- GNU/Linux
+- Virtualization
+tags:
+- 7zip
+- bridge-mode
+- centos
+- exam
+- ram
+- redhat
+- testing
+- virtualbox
+- virtualization
+permalink: /2012/08/08/test-your-linux-configuration-and-troubleshooting-skills-32bit-test-version/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أتمنى يكون الجميع بخير وبصحة وعافية، ومستمتعين بالأجواء الرمضانية …
@@ -21,4 +32,4 @@ reading_time: 3
 
 هذه النسخة الأولى من الإمتحان، سوف أقوم بزيادة صعوبة الاسئلة وعمل نسخة أخرى للإمتحانات الأخرى من شركة ريدهات لمن أراد التدرب. أنصح بتحميل النسخة وتجربتها، والتسلية فيها، صدقاً سترى إنها مسلية وكذلك ستستفيد من حجم المشاكل التي عملها في النظام. الإمتحان يفترض يتم حله بأقل من 3 ساعات، لكن لا أعلم لربما هنا من يستطيع حل جميع المشاكل والمطالب بأقل من ذلك بكثير (متأكد يوجد بيننا من يستطيع ذلك ) … ومن يريد النسخة 64 بت من الإختبار ما عليه إلا زيارة الموضوع التالي: ( [أضغط هنا](/assets/files/2012/test-your-linux-configuration-and-troubleshooting-skills.bin.bin) )
 
-لديك إستفسار أو نقاش؟ ضعه [هنا](http://www.linuxac.org/forum/showthread.php/59754-%D8%A3%D8%AE%D8%AA%D8%A8%D8%B1-%D8%A5%D9%85%D9%83%D8%A7%D9%86%D9%8A%D8%A7%D8%AA%D9%83-%D9%81%D9%8A-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%84%D9%8A%D9%86%D9%8F%D9%83%D8%B3-%D9%88%D8%AD%D9%84-%D9%85%D8%B4%D8%A7%D9%83%D9%84%D9%87-%28%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9-32-%D8%A8%D8%AA%29).
+لديك إستفسار أو نقاش؟ ضعه [هنا](https://www.linuxac.org/forum/showthread.php/59754-%D8%A3%D8%AE%D8%AA%D8%A8%D8%B1-%D8%A5%D9%85%D9%83%D8%A7%D9%86%D9%8A%D8%A7%D8%AA%D9%83-%D9%81%D9%8A-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%84%D9%8A%D9%86%D9%8F%D9%83%D8%B3-%D9%88%D8%AD%D9%84-%D9%85%D8%B4%D8%A7%D9%83%D9%84%D9%87-%28%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9-32-%D8%A8%D8%AA%29).

@@ -1,12 +1,15 @@
 ---
-title: "Setup 3G+ Network on Samsung Galaxy S"
+title: Setup 3G+ Network on Samsung Galaxy S
 date: 2010-11-26 07:35:17 -0500
-categories: ["Mobile", "Networks"]
-tags: ["3G+", "Samsung Galaxy S"]
-permalink: "/2010/11/26/setup-3g-network-on-samsung-galaxy-s/"
+categories:
+- Mobile
+- Networks
+tags:
+- 3g
+- samsung-galaxy-s
+permalink: /2010/11/26/setup-3g-network-on-samsung-galaxy-s/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 في الأردن تقوم شركة Orange بتغطية المملكة بخدمة الإتصال بالأنترنت من خلال شبكة 3G+ وهي الشركة الوحيدة التي تملك هذه التقنية في البلد … أي هي تقنية حصرية لـ Orange … إذا كنت من عملاء الشركة هذه القدامى تأكد من إن بطاقة الـ SIM الخاصة بك فيها إمكانية 3G+ وإذا لم تكن فقم بزيارة أحد معارضهم وأطلب تغييرها لواحدة في الخدمة … أما بالنسبة للعملاء الجدد مثل حالتي فبطاقتهم تأتي من الأساس قابلة لإستعمالها مع شبكة 3G+ …

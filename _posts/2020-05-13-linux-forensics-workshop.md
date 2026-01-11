@@ -1,12 +1,19 @@
 ---
-title: "Linux Forensics Workshop"
+title: Linux Forensics Workshop
 date: 2020-05-13 07:01:18 -0500
-categories: ["Forensics", "Investigations", "Workshops"]
-tags: ["Forensics", "Investigations", "Linux", "SAFCSP", "Workshop"]
-permalink: "/2020/05/13/linux-forensics-workshop/"
+categories:
+- Forensics
+- Investigations
+- Workshops
+tags:
+- forensics
+- investigations
+- linux
+- safcsp
+- workshop
+permalink: /2020/05/13/linux-forensics-workshop/
 reading_time: 1
 ---
-
 Hello,
 
 I’ve been invited by the Saudi Federation for Cyber Security and Programming ([SAFCSP](https://safcsp.org.sa/)) to do a Linux Forensics workshop during their series of Cybersecurity Nights. My session will be next Thursday, May 14th, 2020 at 10:00 PM (KSA time) and will be 3:00 PM (EST). If you’re interested in Linux Forensics or have the will to learn, please download the files found [here](https://mega.nz/folder/y6p3TBgK#poSAyKYAlIdayMCr9zGr7Q) and join me then.

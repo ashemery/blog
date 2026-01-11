@@ -1,12 +1,15 @@
 ---
-title: "حل مشكلة Can’t locate YAML/Syck.pm in @INC"
+title: حل مشكلة Can’t locate YAML/Syck.pm in @INC
 date: 2009-04-07 06:47:53 -0500
-categories: ["WHM/Cpanel"]
-tags: ["CPanel", "Perl Modules", "WHM"]
-permalink: "/2009/04/07/solution-for-cant-locate-yamlsyckpm-in-inc-error/"
+categories:
+- WHM/Cpanel
+tags:
+- cpanel
+- perl-modules
+- whm
+permalink: /2009/04/07/solution-for-cant-locate-yamlsyckpm-in-inc-error/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 اليوم على خادم لصديق كان فيه مشكلة وصلت له على البريد من قبل الـ cron تفيد بالتالي:

@@ -1,12 +1,21 @@
 ---
-title: "howto install an old perl module on whm/cpanel servers"
+title: howto install an old perl module on whm/cpanel servers
 date: 2009-12-31 07:38:09 -0500
-categories: ["GNU/Linux", "WHM/Cpanel"]
-tags: ["Carp", "cgi", "Clan", "CPanel", "make", "modules", "perl", "WHM"]
-permalink: "/2009/12/31/howto-install-an-old-perl-module-on-whmcpanel-servers/"
+categories:
+- GNU/Linux
+- WHM/Cpanel
+tags:
+- carp
+- cgi
+- clan
+- cpanel
+- make
+- modules
+- perl
+- whm
+permalink: /2009/12/31/howto-install-an-old-perl-module-on-whmcpanel-servers/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 قبل كم يوم كان عندي أحد سكربتات الـ cgi تحتاج الى perl module إسمه Carp::Clan بإصدار قديم … لانها غير راضية على العمل بالإصدار الجديد … ولست بخبير بأمور الـ cpanel ولهذا كان لابد من تركيبه بشكل يدوي … ولهذا هنا عملية تركيب هذه المكتبة بشكل يدوي … الأصدار الموجود مع الـ cpanel هو 6.04 حالياً وانا احتاج 6.00 … فأليكم ما عملت:
@@ -57,6 +66,6 @@ Appending installation info to /usr/lib64/perl5/5.8.8/x86_64-linux-thread-multi/
 
 وهكذا خلاص تم التركيب بنجاح والحمد لله … طبعا في لوحات cpanel وجدت بإنك قادر على فحص ملفات الـ cgi ومعرفة ماذا تحتاج من خلال أحد المزايا الموجودة في cpanel والتي تقول check for missing perl modules …
 
-إن كان لديك سؤال أو إستفسار؟ ضعه [هنا](http://www.linuxac.org/forum/linuxac78/thread34443.html) …
+إن كان لديك سؤال أو إستفسار؟ ضعه [هنا](https://www.linuxac.org/forum/linuxac78/thread34443.html) …
 
 دمتم بود …

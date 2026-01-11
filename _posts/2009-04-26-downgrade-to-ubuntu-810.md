@@ -1,12 +1,22 @@
 ---
-title: "Downgrade to Ubuntu 8.10"
+title: Downgrade to Ubuntu 8.10
 date: 2009-04-26 08:34:14 -0500
-categories: ["GNU/Linux", "Kernel"]
-tags: ["ATI Catalyst", "Compiz", "Downgrade", "Fedora", "Graphical Card", "Patch", "radeonhd", "Ubuntu", "Xorg"]
-permalink: "/2009/04/26/downgrade-to-ubuntu-810/"
+categories:
+- GNU/Linux
+- Kernel
+tags:
+- ati-catalyst
+- compiz
+- downgrade
+- fedora
+- graphical-card
+- patch
+- radeonhd
+- ubuntu
+- xorg
+permalink: /2009/04/26/downgrade-to-ubuntu-810/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 بعد يومين من الصراع ومن المحاولات في تشغيل بطاقة الشاشة Graphical Card على توزيعة أوبنتو Ubuntu 9.04 الجديدة … أضطررت الى عمل Downgrade الى توزيعة Ubuntu 8.10 الإصدارة الأقدم من الإصدارة الحالية لأوبنتو … بحثت كثيراً ووحاولت كثيراً أن أعمل turn around وأتحايل على المشكلة ولكن لم ينفع … نسخة الـ  1.6 Xorg والـ ATI Catalyst سواءاً 9.3 أو 9.4 الجدد لا يدعمون الكثير من البطاقات ويعتبرونها قديمة … وحتى التعاريف الـ open source مثل radeonhd وغيره لم ينفعوا أيضاً … ولكهم يشيرون إلى إنه لا يوجد هناك نوايا بالوقت الحالي لعمل مشغلات للأجهزة التي يعتبرونها هم قديمة !!!

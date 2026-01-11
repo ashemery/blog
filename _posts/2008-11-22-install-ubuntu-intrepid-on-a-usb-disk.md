@@ -88,7 +88,7 @@ fdisk /dev/sdb
 
 هكذا أنتهينا من عمل القسم الأول
 
-![](http://www.linuxac.org/forum/images/smiley/khaleje_thumpsup.gif)
+![](https://www.linuxac.org/forum/images/smiley/khaleje_thumpsup.gif)
 
 الآن لنعمل القسم الثاني الذي سيكون لتخزين البيانات نفذ التالي:
 

@@ -25,7 +25,6 @@ description: Between Teams of Red and Blue, I'm with the Purple Team
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://ashemery.github.io"
-baseurl: "/blog"
 
 github:
   username: ashemery # change to your GitHub username
@@ -37,7 +36,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Ali Hadi
-  email: dfir@____.com # change to your email address
+  # email: dfir@____.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
@@ -154,7 +153,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "/blog"
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -209,6 +208,12 @@ compress_html:
   ignore:
     envs: [development]
 
+# Custom
+include:
+  - assets/files
+  - assets/media
+
+
 exclude:
   - "*.gem"
   - "*.gemspec"
@@ -219,6 +224,10 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
+  - scripts/
+  - "*.csv"
+  - "*.tsv"
+
 
 jekyll-archives:
   enabled: [categories, tags]

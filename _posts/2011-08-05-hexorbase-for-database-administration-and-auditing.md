@@ -1,12 +1,30 @@
 ---
-title: "برنامج HexorBase لإدارة وتدقيق قواعد البيانات"
+title: برنامج HexorBase لإدارة وتدقيق قواعد البيانات
 date: 2011-08-05 01:11:19 -0500
-categories: ["Database", "Networks", "PenTest", "Security"]
-tags: ["Brute Force", "cracker", "ghost-phisher", "HexorBase", "MS SQL", "MSSQL", "mysql", "Oracle", "Penetration Testing", "PostgreSQL", "SQL", "SQLite", "wifi", "الشبكات اللاسلكية", "خوادم وهمية"]
-permalink: "/2011/08/05/hexorbase-for-database-administration-and-auditing/"
+categories:
+- Database
+- Networks
+- PenTest
+- Security
+tags:
+- brute-force
+- cracker
+- ghost-phisher
+- hexorbase
+- ms-sql
+- mssql
+- mysql
+- oracle
+- penetration-testing
+- postgresql
+- sql
+- sqlite
+- wifi
+- الشبكات اللاسلكية
+- خوادم وهمية
+permalink: /2011/08/05/hexorbase-for-database-administration-and-auditing/
 reading_time: 2
 ---
-
 قبل يومين قمت بترجبة برنامج HexorBase والذي هو عبارة عن برنامج لإدارة قواعد البيانات المختلفة: MySQL, PostgreSQL, MS SQL, Oracle, SQLite … وكذلك لعمل تدقيق (Audit) عليها …
 
 صراحة البرنامج رائع وبسيط في طريقة إستعماله وكذلك تنصيبه لا يحتاج الى الكثير … ممكن قراءة طريقة تنصيبه موجودة [هنا](http://code.google.com/p/hexorbase/) …

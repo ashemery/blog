@@ -1,12 +1,18 @@
 ---
-title: "مشكلة عند إستعمال أكثر من نظام بواسطة VirtualBox"
+title: مشكلة عند إستعمال أكثر من نظام بواسطة VirtualBox
 date: 2008-12-24 08:13:21 -0500
-categories: ["Virtualization"]
-tags: ["AMD", "Host Interface", "Intel", "NAT", "VirtualBox", "VMware"]
-permalink: "/2008/12/24/problem-when-using-more-than-one-image-with-virtualbox/"
+categories:
+- Virtualization
+tags:
+- amd
+- host-interface
+- intel
+- nat
+- virtualbox
+- vmware
+permalink: /2008/12/24/problem-when-using-more-than-one-image-with-virtualbox/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 قبل كم يوم تذكرت أن أكتب عن هذا الموضوع والذي صادفني كثيراً أثناء عملي على برنامج VirtualBox خاصة عندما أقوم بتشغيل أكثر من نظام في آن واحد … وأيضاً عندما يكون نوع أو طريقة تعامله مع كارت الشبكة من خلال Host Interface وليس NAT …

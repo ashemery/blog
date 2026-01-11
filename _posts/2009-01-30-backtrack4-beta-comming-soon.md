@@ -1,12 +1,16 @@
 ---
-title: "BackTrack4 beta قريبا تخرج من الفرن"
+title: BackTrack4 beta قريبا تخرج من الفرن
 date: 2009-01-30 23:28:03 -0500
-categories: ["PenTest", "Security"]
-tags: ["BackTrack", "BackTrack4", "Defcon"]
-permalink: "/2009/01/30/backtrack4-beta-comming-soon/"
+categories:
+- PenTest
+- Security
+tags:
+- backtrack
+- backtrack4
+- defcon
+permalink: /2009/01/30/backtrack4-beta-comming-soon/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 [![](http://binary-zone.com/images/pentest/backtrack4.jpg)](http://binary-zone.com/images/pentest/backtrack4.jpg)

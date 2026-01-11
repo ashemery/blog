@@ -1,12 +1,31 @@
 ---
-title: "عمل مختبر للتجارب بإستعمال VirtualBox"
+title: عمل مختبر للتجارب بإستعمال VirtualBox
 date: 2012-08-17 03:03:14 -0500
-categories: ["Firewalls", "GNU/Linux", "Linux Services", "Virtualization"]
-tags: ["CentOS", "chkconfig", "Extension Pack", "groupinstall", "iptables", "RAM", "RDP", "Remote RDP", "RPMFogre", "usermod", "VirtualBox", "Virtualization", "VMware", "VMware Server", "yum", "وKVM"]
-permalink: "/2012/08/17/creating-a-testing-lab-using-virtualbox/"
+categories:
+- Firewalls
+- GNU/Linux
+- Linux Services
+- Virtualization
+tags:
+- centos
+- chkconfig
+- extension-pack
+- groupinstall
+- iptables
+- ram
+- rdp
+- remote-rdp
+- rpmfogre
+- usermod
+- virtualbox
+- virtualization
+- vmware
+- vmware-server
+- yum
+- kvm
+permalink: /2012/08/17/creating-a-testing-lab-using-virtualbox/
 reading_time: 13
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 الكثير منا يتسائل كيف أقوم بعمل مختبر للتجارب … وأقصد هنا مختبر لتجربة الخدمات، تجربة البرامج، تجربة الشبكات، وكذلك تجربة الأمور الأمنية … الطرق عدة وكثيرة … سأوضح في هذا الموضوع الطريقة البسيطة التي أتبعها في عمل مختبري الخاص … أن تعمل مختبر خاص بك للتجارب سوف يسهل عليك فهم الكثير من الأمور التي ذكرتها … وذلك لأنه اليوم أفضل طرق التعليم، هي الطرق التي تقوم بتجربتها بنفسك … ولهذا لكي تجرب تحتاج الى بيئة عمل … إن كنت من ميسوري الحال، فيمكنك شراء خادم لكل نظام او أمر تود تجربته … ولكن لما الإسراف وهناك حلول رائعة اليوم تسهل عليك حتى عملية إدارة هذا الخادم والخدمات وأقصد هنا بالطرق التخيلية Virtualization … الكثير منا يملك اليوم أجهزة فاخرة وحديثة وذو إمكانيات أكبر من حاجياتنا الفعلية عليه … ولهذا إستغلال الجهاز بعمل مختبر تجارب عليه شيء رائع وسترى كم ستستفيد بعد ذلك في رحلة تعلمك … طبعاً إستعمالك للتخيلية Virtualization فوائد كثيرة ولكن لأكون صادق معكم لديها جوانب سلبية كذلك … كما هو حال أي شيء في حياتنا، لا يوجد شيء كامل (الكمال لله وحده) ولهذا أنت عليك أن تختار هل نذهب مع هذه الطريقة في بناء بيئة للتجربة أم نذهب للبحث عن طرق آخرى … على كل حال هذا الأمر والإختيار عائد لك، كل ما اتمناه هو إنك تُحسن الإختيار …
@@ -425,7 +444,7 @@ exit 0
 
 من قرأ الموضوع من البداية الى هذا السطر، وقام بإستعمال البرنامج التخيلي مثل VMWare Workstation فإنه يعلم بوجود خدمة عمل Groups حيث تستطيع تشغيل أكثر من نظام تخيلي في ضغطة واحدة من خلال جمعهم في مجموعة معينة … هذه الطريقة التي في هذا الموضوع تشبه تلك الطريقة … والفارق بسيط ويؤدي الى حد ما نفس الغرض …
 
-… [للنقاش هنا](http://www.linuxac.org/forum/showthread.php/59883-%D8%B9%D9%85%D9%84-%D9%85%D8%AE%D8%AA%D8%A8%D8%B1-%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A8-%D8%A8%D8%A5%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-VirtualBox) …
+… [للنقاش هنا](https://www.linuxac.org/forum/showthread.php/59883-%D8%B9%D9%85%D9%84-%D9%85%D8%AE%D8%AA%D8%A8%D8%B1-%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A8-%D8%A8%D8%A5%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-VirtualBox) …
 
 **المصادر:**
 

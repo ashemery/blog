@@ -1,12 +1,19 @@
 ---
-title: "Middle weight class swept clean"
+title: Middle weight class swept clean
 date: 2011-02-12 02:50:16 -0500
-categories: ["Sport"]
-tags: ["Anderson", "MMA", "Striker", "The Phoneme", "The Spider", "UFC", "Vitor"]
-permalink: "/2011/02/12/middle-weight-class-swept-clean/"
+categories:
+- Sport
+tags:
+- anderson
+- mma
+- striker
+- the-phoneme
+- the-spider
+- ufc
+- vitor
+permalink: /2011/02/12/middle-weight-class-swept-clean/
 reading_time: 5
 ---
-
 لسوء الحظ لم أجد الوقت سوى الآن لأكتب عن ما حدث في الأسبوع الماضي في UFC 126 والتي كان فيها نزالات قمة في الروعة … حيث شهدت البطولة هذه المرة نزالات قمة من حيث الأسماء ومن حيث طريقة إنهاء النزالات … أبرز نزال في هذه البطولة بدون أدنى شك هو الذي جرى بين [Anderson “The Spider” Silva](http://en.wikipedia.org/wiki/Anderson_Silva) وبين [Vitor “The Phoneme” Belfort](http://en.wikipedia.org/wiki/Vitor_Belfort) … كلا اللاعبين برازيليين اﻷصل وبالإضافة الى ذلك كانوا بالسابق يتمرنون في نفس النادي معاً … يعني لعبوا معاً نزالات تدريبية لحتى ملوا !!! هناك من كشف حول هذه النزالات التدريبية سراً لم يكن يعرفه العالم وذلك بإنه Vitor لم يسبق له حتى في نزال تدريبي أن فاز على Anderson وهذا ما زاد حدة وتوتر وقوة هذا النزال … طبعاً النزال خمس جولات كل جولة خمس دقائق وذلك على حزام الوزن المتوسط الذي يحمله Anderson حالياً بعد أن دافع عنه 7 مرات متتالية وهو رقم قياسي بحد ذاته … أيضاً في المقابلات الصحفية وعند التوزين قبل النزال قام Anderson بزيادة حدة وشدة النزال من خلال محاولة التلاعب بعقل خصمه وذلك عبر لبسه لقناع أبيض والوقوف بوجه خصمه !!!
 
 ![](/assets/img/posts/2011/silva-mask.jpg)

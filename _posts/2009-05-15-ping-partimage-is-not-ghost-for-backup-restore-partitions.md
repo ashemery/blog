@@ -1,12 +1,29 @@
 ---
-title: "PING – Partimage Is Not Ghost For Backup/Restore Partitions"
+title: PING – Partimage Is Not Ghost For Backup/Restore Partitions
 date: 2009-05-15 09:02:46 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["BartPE", "BIOS", "CD", "CLAM Anti-Virus", "DVD", "format", "FTP", "Ghost", "Ghostcast", "NFS", "open source", "partitions", "PING", "PXE/RIS", "SSHFS", "WinPE"]
-permalink: "/2009/05/15/ping-partimage-is-not-ghost-for-backup-restore-partitions/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- bartpe
+- bios
+- cd
+- clam-anti-virus
+- dvd
+- format
+- ftp
+- ghost
+- ghostcast
+- nfs
+- open-source
+- partitions
+- ping
+- pxeris
+- sshfs
+- winpe
+permalink: /2009/05/15/ping-partimage-is-not-ghost-for-backup-restore-partitions/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 أحد البرامج الرائعة التي وجدت الشركة الجديدة التي أعمل بها يستعملونها هو قرص [PING](http://ping.windowsdream.com/ping.html) والذي هو إختصار لـ Partimage Is Not Ghost … وظيفته هو لأخذ نسخة إحتياطية من الأنظمة التي على الجهاز بغض النظر عن نوعها (جنو/لينوكس، ويندوز، غيره) … البرنامج بديل رائع لكل من أستعمل برنامج Norton Ghost في السابق لعمل نسخ إحتياطية أو برنامج آخر … على الأقل هذا البرنامج هو Open Source وحر …

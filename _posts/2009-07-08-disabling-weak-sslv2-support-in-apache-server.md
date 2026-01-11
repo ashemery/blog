@@ -1,12 +1,23 @@
 ---
-title: "Disabling Weak SSLv2 Support in Apache Server"
+title: Disabling Weak SSLv2 Support in Apache Server
 date: 2009-07-08 01:47:35 -0500
-categories: ["Linux Security", "Linux Services", "PCI Compliance", "Security", "Web Security"]
-tags: ["PCI Compliance", "ssl", "SSLCipherSuite", "SSLProtocol", "SSLv2", "SSLv3", "TLSv1"]
-permalink: "/2009/07/08/disabling-weak-sslv2-support-in-apache-server/"
+categories:
+- Linux Security
+- Linux Services
+- PCI Compliance
+- Security
+- Web Security
+tags:
+- pci-compliance
+- ssl
+- sslciphersuite
+- sslprotocol
+- sslv2
+- sslv3
+- tlsv1
+permalink: /2009/07/08/disabling-weak-sslv2-support-in-apache-server/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 هذه واحدة من المشاكل التي وجدتها بعد الفحص الخارجي الذي قمت به من أجل متطلبات الـ [PCI Compliance](/assets/files/2009/pci-compliance-standards.bin.bin) الأسبوع الماضي … على الرغم من كون أغلب المتصفحات اليوم تقوم بإستعمال TLSv1 الأقوى و SSLv3 ولكن مع هذا يجب عمل تعطيل كامل لـ SSLv2 ولهذا ما لنا سوى تنفيذ الحلول :)

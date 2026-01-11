@@ -1,12 +1,30 @@
 ---
-title: "Farewell to “The Last Emperor” Fedor"
+title: Farewell to “The Last Emperor” Fedor
 date: 2012-06-22 15:17:38 -0500
-categories: ["Sport"]
-tags: ["Bas Rutten", "Bigfoot Silva", "Fabricio Werdum", "Fedor", "Fedor Emelianenko", "Mentaly", "Mike Tyson", "MMA", "Octagon", "Pedro Rizzo", "Putin", "Submission", "The Last Emperor", "بيليه", "دييغو ماردونا", "مايكل جوردان", "مايكل شوماخر", "محمد علي"]
-permalink: "/2012/06/22/farewell-to-the-last-emperor-fedor/"
+categories:
+- Sport
+tags:
+- bas-rutten
+- bigfoot-silva
+- fabricio-werdum
+- fedor
+- fedor-emelianenko
+- mentaly
+- mike-tyson
+- mma
+- octagon
+- pedro-rizzo
+- putin
+- submission
+- the-last-emperor
+- بيليه
+- دييغو ماردونا
+- مايكل جوردان
+- مايكل شوماخر
+- محمد علي
+permalink: /2012/06/22/farewell-to-the-last-emperor-fedor/
 reading_time: 5
 ---
-
 ![](/assets/img/posts/2012/fedor-emelianenko2.jpg)
 
 هكذا هي الحياة، لكل ما له بداية له نهاية … وبالأمس أعلن المقاتل الروسي [Fedor Emelianenko](http://en.wikipedia.org/wiki/Fedor_Emelianenko) عن إعتزاله اللعب في بطولات الـ MMA ([هنا](http://www.mmamania.com/2012/6/21/3108881/fedor-emelianenko-retirement-mma-tribute-heavyweight-emperor-) | [هنا](http://www.mmamania.com/2012/6/21/3108586/m-1-global-results-recap-fedor-emelianenko-knockout-video-pedro-rizzo-russia)) … ووضح بإن السبب يعود الى إن أبنتيه كبروا وحان الوقت ليكون والدهم بقربهم وليس في المخيمات التدريبية …

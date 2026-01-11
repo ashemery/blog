@@ -1,12 +1,19 @@
 ---
-title: "Paglo أول محرك بحث للـ IT"
+title: Paglo أول محرك بحث للـ IT
 date: 2009-01-16 13:35:17 -0500
-categories: ["Footprinting", "Networks", "PenTest", "Software/Tools"]
-tags: ["Crawler", "Data Gathering", "Footprinting", "Paglo"]
-permalink: "/2009/01/16/paglo-first-it-search-engine/"
+categories:
+- Footprinting
+- Networks
+- PenTest
+- Software/Tools
+tags:
+- crawler
+- data-gathering
+- footprinting
+- paglo
+permalink: /2009/01/16/paglo-first-it-search-engine/
 reading_time: 3
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 قبل اسبوع وصلني من خلال البريد إشعار وإعلان عن برنامج Paglo الجديد … فقمت بتحميله والعمل عليه قليلاً …

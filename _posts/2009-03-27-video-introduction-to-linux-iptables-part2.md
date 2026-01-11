@@ -9,7 +9,7 @@ reading_time: 2
 
 السلام عليكم ورحمة الله وبركاته
 
-![](http://www.binary-zone.com/wp-content/themes/pixeled/images/ads/netfilter.png)
+![](https://www.binary-zone.com/wp-content/themes/pixeled/images/ads/netfilter.png)
 
 الحمد لله قبل قليل أنهيت من تسجيل الدرس الثاني من دروس iptables التي بدأت في شرحها … في هذه الدروس ستجدون شرح عن أهم الخيارات المستعملة مع iptables لغرض عرض السلاسل chains وعرض القوانين rules التي بداخلها … وأيضاً الخيارات الأساسية في إضافة/حذف/تعديل على القوانين … وأيضاً كيفية بداية كتابة قوانين أساسية وبسيطة iptables basic rules … مثل إستعمال الـ ip address في الكتابة و البروتوكول والمنافذ ports وأيضاً بطاقات الشبكة interfaces … كل هذه ستجدونها بهذه الدروس … إن شاء الله تنال على رضاكم وإعجابكم …
 

@@ -1,12 +1,23 @@
 ---
-title: "GOADv2 in a VM"
+title: GOADv2 in a VM
 date: 2023-12-24 20:14:58 -0500
-categories: ["Exploitation", "Investigations", "PenTest", "Research", "Virtualization", "Vulnerability", "Windows"]
-tags: ["Active Directory", "Attack", "GOAD", "RedTeam", "Vulnerabilities"]
-permalink: "/2023/12/24/goadv2-in-a-vm/"
+categories:
+- Exploitation
+- Investigations
+- PenTest
+- Research
+- Virtualization
+- Vulnerability
+- Windows
+tags:
+- active-directory
+- attack
+- goad
+- redteam
+- vulnerabilities
+permalink: /2023/12/24/goadv2-in-a-vm/
 reading_time: 1
 ---
-
 Hello,
 
 I finally was able to play with the GOAD v2 project and configure it to run within a single VM using nested Virtualization.

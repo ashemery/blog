@@ -1,12 +1,25 @@
 ---
-title: "Howto config a VNC Server on Ubuntu"
+title: Howto config a VNC Server on Ubuntu
 date: 2009-05-13 20:26:54 -0500
-categories: ["GNU/Linux", "Linux Services", "Networks"]
-tags: ["gdm", "GNOME", "Google", "putty", "Remotely", "SSH Server", "Ubuntu", "Vimo", "VNC Server", "xdmcp", "Xinetd"]
-permalink: "/2009/05/13/howto-config-a-vnc-server-on-ubuntu/"
+categories:
+- GNU/Linux
+- Linux Services
+- Networks
+tags:
+- gdm
+- gnome
+- google
+- putty
+- remotely
+- ssh-server
+- ubuntu
+- vimo
+- vnc-server
+- xdmcp
+- xinetd
+permalink: /2009/05/13/howto-config-a-vnc-server-on-ubuntu/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 في عملي أحتجت الى عمل VNC Server وذلك للإتصال على الخوادم الموجودة من خلاله (رغبة المدير) … الذي كان يدير الخوادم بالشركة كان قد فعل إمكانية الإتصال بالخادم من خلال استعمال البرنامج الذي يأتي مع GNOME نفسه وأسمه على ما اذكر Vimo … لكن مشكلة إستعمال هذا البرنامج هو إنك يجب أن تقوم بعمل Login بشكل Locally لكي تتمكن من الدخول الى الخادم بشكل Remotely !!! هذه الطريقة لا تنفع إحتياجاتي لان لا أستطيع أن أقوم بالتحول من خادم الى آخر في كل مرة واقوم بتسجيل الدخول ومن ثم أدخل عليهم من حاسوبي !!!

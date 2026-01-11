@@ -1,12 +1,22 @@
 ---
-title: "Prevent Windows Reboots on Expired VMs"
+title: Prevent Windows Reboots on Expired VMs
 date: 2021-08-15 06:46:37 -0500
-categories: ["Cybersecurity", "Virtualization", "Windows"]
-tags: ["AdvancedRun", "PsExe", "regedit", "sc", "service", "SysInternals", "whoami", "WLMS"]
-permalink: "/2021/08/15/prevent-windows-reboots-on-expired-vms/"
+categories:
+- Cybersecurity
+- Virtualization
+- Windows
+tags:
+- advancedrun
+- psexe
+- regedit
+- sc
+- service
+- sysinternals
+- whoami
+- wlms
+permalink: /2021/08/15/prevent-windows-reboots-on-expired-vms/
 reading_time: 1
 ---
-
 Sometimes you have one of those VMs that you downloaded from Microsoft and then you used it for some testing. Now, after a certain amount of time, the free license given will expire and what will happen, is the VM will start to automatically shutdown I think after an hour. So how do we prevent this from happening?
 
 The solution is easy:

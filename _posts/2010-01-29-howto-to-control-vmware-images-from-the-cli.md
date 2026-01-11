@@ -1,12 +1,23 @@
 ---
-title: "Howto To control vmware images from the CLI"
+title: Howto To control vmware images from the CLI
 date: 2010-01-29 00:35:07 -0500
-categories: ["Virtualization"]
-tags: ["clone", "Images", "installtools", "register", "reset", "start", "stop", "unregister", "upgradevm", "vmrun", "VMware"]
-permalink: "/2010/01/29/howto-to-control-vmware-images-from-the-cli/"
+categories:
+- Virtualization
+tags:
+- clone
+- images
+- installtools
+- register
+- reset
+- start
+- stop
+- unregister
+- upgradevm
+- vmrun
+- vmware
+permalink: /2010/01/29/howto-to-control-vmware-images-from-the-cli/
 reading_time: 2
 ---
-
 ******السلام عليكم ورحمة الله وبركاته**
 
 ****أستعمل vmware كثيرا في عملي للتجارب وغيرها من الأمور … وفي الاسبوع الماضي بحثت عن طريقة التعامل مع الصور Images من خلال سطر الأوامر … يعني بدل من الدخول الى الخادم بواسطة المتصفح، أقوم بالتشغيل والإغلاق من خلال سطر الأوامر أو الطرفية … كل ذلك ممكن من خلال الأمر vmrun …
@@ -91,6 +102,6 @@ clone
 
 وهناك غيرهم … إن شاء الله تفيدكم …
 
-للنقاش: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?35549)
+للنقاش: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?35549)
 
 دمتم بود …

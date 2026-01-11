@@ -1,12 +1,20 @@
 ---
-title: "كتاب: OpenVPN: Building and Integrating Virtual Private Networks"
+title: 'كتاب: OpenVPN: Building and Integrating Virtual Private Networks'
 date: 2009-12-11 03:23:31 -0500
-categories: ["Books", "Firewalls", "Linux Security", "Linux Services", "Networks", "Security"]
-tags: ["OpenVPN", "Tunnel", "VPN"]
-permalink: "/2009/12/11/openvpn-building-and-integrating-virtual-private-networks-book/"
+categories:
+- Books
+- Firewalls
+- Linux Security
+- Linux Services
+- Networks
+- Security
+tags:
+- openvpn
+- tunnel
+- vpn
+permalink: /2009/12/11/openvpn-building-and-integrating-virtual-private-networks-book/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2009/openvpnbook.jpg)

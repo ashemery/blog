@@ -1,12 +1,19 @@
 ---
-title: "KeePassX – a One Stop Password db Manager"
+title: KeePassX – a One Stop Password db Manager
 date: 2009-05-16 11:39:19 -0500
-categories: ["Cybersecurity", "Software/Tools"]
-tags: ["aes", "GPL", "KeePassX", "KWallet", "Password", "PwManager"]
-permalink: "/2009/05/16/keepassx-a-one-stop-password-db-manager/"
+categories:
+- Cybersecurity
+- Software/Tools
+tags:
+- aes
+- gpl
+- keepassx
+- kwallet
+- password
+- pwmanager
+permalink: /2009/05/16/keepassx-a-one-stop-password-db-manager/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/kp_logo_main.png)

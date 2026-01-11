@@ -1,9 +1,14 @@
 ---
-title: "إختفاء العناوين IP Addresses الإضافية"
+title: إختفاء العناوين IP Addresses الإضافية
 date: 2010-01-23 15:50:42 -0500
-categories: ["Linux Services", "Networks", "WHM/Cpanel"]
-tags: ["ipaliases", "WHM/Cpanel"]
-permalink: "/2010/01/23/%25d8%25a5%25d8%25ae%25d8%25aa%25d9%2581%25d8%25a7%25d8%25a1-%25d8%25a7%25d9%2584%25d8%25b9%25d9%2586%25d8%25a7%25d9%2588%25d9%258a%25d9%2586-ip-addresses-%25d8%25a7%25d9%2584%25d8%25a5%25d8%25b6%25d8%25a7%25d9%2581%25d9%258a%25d8%25a9/"
+categories:
+- Linux Services
+- Networks
+- WHM/Cpanel
+tags:
+- ipaliases
+- whmcpanel
+permalink: /2010/01/23/%25d8%25a5%25d8%25ae%25d8%25aa%25d9%2581%25d8%25a7%25d8%25a1-%25d8%25a7%25d9%2584%25d8%25b9%25d9%2586%25d8%25a7%25d9%2588%25d9%258a%25d9%2586-ip-addresses-%25d8%25a7%25d9%2584%25d8%25a5%25d8%25b6%25d8%25a7%25d9%2581%25d9%258a%25d8%25a9/
 reading_time: 1
 ---
 السلام عليكم ورحمة الله وبركاته
@@ -24,6 +29,6 @@ vim /etc/ips
 
 وبعد ذلك خلاص قم بإضافة العناوين مرة أخرى …
 
-إن شاء الله ما تحصل معكم … للنقاش:  [أضغط هنا](http://www.linuxac.org/forum/showthread.php?35184)
+إن شاء الله ما تحصل معكم … للنقاش:  [أضغط هنا](https://www.linuxac.org/forum/showthread.php?35184)
 
 دمتم بود …

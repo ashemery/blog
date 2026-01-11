@@ -1,13 +1,15 @@
 ---
 title: Installing HDFS for Forensics Research
 date: 2019-05-01 10:10:59 -0500
-categories: ["Systems", "Academia"]
+categories:
+- Systems
+- Academia
 tags:
-- HDFS
-- Hive
-- Howto
-- Research
-- Publications
+- hdfs
+- hive
+- howto
+- research
+- publications
 permalink: /2019/05/01/installing-hdfs-for-forensics-research/
 reading_time: 2
 ---

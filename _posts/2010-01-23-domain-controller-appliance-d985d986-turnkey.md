@@ -1,9 +1,18 @@
 ---
-title: "Domain Controller Appliance من TurnKey"
+title: Domain Controller Appliance من TurnKey
 date: 2010-01-23 14:43:02 -0500
-categories: ["GNU/Linux", "Linux Services", "Networks", "Virtualization", "Windows"]
-tags: ["Active Directory", "AD", "Domain Controller Appliance", "TurnKey"]
-permalink: "/2010/01/23/domain-controller-appliance-%25d9%2585%25d9%2586-turnkey/"
+categories:
+- GNU/Linux
+- Linux Services
+- Networks
+- Virtualization
+- Windows
+tags:
+- active-directory
+- ad
+- domain-controller-appliance
+- turnkey
+permalink: /2010/01/23/domain-controller-appliance-%25d9%2585%25d9%2586-turnkey/
 reading_time: 1
 ---
 **السلام عليكم ورحمة الله وبركاته**
@@ -26,6 +35,6 @@ reading_time: 1
 
 لها العديد من المزايا وحجمها صغير جداً … قم بتحميل النسخة من [هنا](http://www.turnkeylinux.org/download?file=turnkey-domain-controller-2009.10-hardy-x86.iso) … او تحميل صورة تعمل على vmware من [هنا](http://www.turnkeylinux.org/download?file=turnkey-domain-controller-2009.10-hardy-x86.zip) …
 
-للمناقشة: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?35260)
+للمناقشة: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?35260)
 
 بالتوفيق …

@@ -1,12 +1,17 @@
 ---
-title: "BADr – Show them the real ShowTime 09"
+title: BADr – Show them the real ShowTime 09
 date: 2009-04-04 02:23:50 -0500
-categories: ["Sport"]
-tags: ["Badr Hari", "K-1", "MMA", "Remy Bonjasky", "Semmy Schilt"]
-permalink: "/2009/04/04/badr-show-them-the-real-showtime-09/"
+categories:
+- Sport
+tags:
+- badr-hari
+- k-1
+- mma
+- remy-bonjasky
+- semmy-schilt
+permalink: /2009/04/04/badr-show-them-the-real-showtime-09/
 reading_time: 4
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 كتبت أمس موضوع رياضي وبالخطأ حذفته :( كان عن ماردونا وعن كون خسارة الأرجنتين ليست بكذبة أبريل ::bgrim:: يالها من سداسية !!! المهم اليوم سأعود كالسابق للكتابة على ملف txt ومن ثم نقله للمدونة، خوفاً من تكرار نفس المشكلة ::sady::

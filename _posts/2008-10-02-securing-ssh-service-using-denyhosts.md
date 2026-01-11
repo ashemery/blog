@@ -12,9 +12,9 @@ reading_time: 8
 
 استكمالاً لما كتبته قبل فترة حول خدمة SSH في الموضوعين:
 
-[SSH ماهي؟ وكيفية إستعمالها؟ وطرق عمل Harden لها](http://www.linuxac.org/forum/showthread.php?t=15418)
+[SSH ماهي؟ وكيفية إستعمالها؟ وطرق عمل Harden لها](https://www.linuxac.org/forum/showthread.php?t=15418)
 
-[إستعمال sshguard للتصدي لهجمات Brute Force على خدمة SSH](http://www.linuxac.org/forum/showthread.php?t=14865)
+[إستعمال sshguard للتصدي لهجمات Brute Force على خدمة SSH](https://www.linuxac.org/forum/showthread.php?t=14865)
 
 وذكرت في آخر الموضوع بإني سأقوم بشرح طرق حماية هذه الخدمة بالتحديد. في نفس الموضوع ذكرت طرق عديدة لحماية الخدمة واليوم سنتكلم عن إضافة أخرى نضيفها لزيادة الحماية على خدمة SSH. الموضوع هذا يتحدث عن حماية SSH بواسطة [DenyHosts](http://denyhosts.sourceforge.net/).
 
@@ -247,7 +247,7 @@ chkconfig denyhosts on
 
 على توزيعات دبيان وأوبنتو، راجع الأمر update-rc.d أو راجع موضوع الأخ أبو عبد الرحمن (EXp1r3d):
 
-[HowTo : Control Startup Services](http://www.linuxac.org/forum/showthread.php?t=9516)
+[HowTo : Control Startup Services](https://www.linuxac.org/forum/showthread.php?t=9516)
 
 الآن الخدمة جاهزة، لنقوم بتشغيلها:
 
@@ -259,6 +259,6 @@ chkconfig denyhosts on
 
 الى هنا أنتهي من شرح إضافة الخدمة DenyHosts على الـ BOX عندك لحماية خدمة الـ SSH التي لديك، ومع هذه الإضافة اقول لك لازال هناك لدي المزيد
 
-للنقاش فيما جاء بهذا الموضوع، يرجى زيارة الموضوع التالي: [أضغط](http://www.linuxac.org/forum/showthread.php?t=15590)
+للنقاش فيما جاء بهذا الموضوع، يرجى زيارة الموضوع التالي: [أضغط](https://www.linuxac.org/forum/showthread.php?t=15590)
 
 دمتم بود …

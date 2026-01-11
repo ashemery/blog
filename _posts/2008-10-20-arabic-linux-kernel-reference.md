@@ -16,9 +16,9 @@ reading_time: 2
 
 الله يجزيك الخير يا أشرف على الكتاب فعلاً إنجاز كبير يحسب لك، وإن شاء الله كما قلت لك تنال عن كل حرف يقرأ منه ألف حسنة …
 
-لتحميل الكتاب: [أضغط هنا](/assets/files/2008/kernel.bin.bin-in-a-nutshell_arabic.pdf)
+لتحميل الكتاب: [أضغط هنا](/assets/files/2008/kernel-in-a-nutshell_arabic.pdf)
 
-لشكر الكاتب: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?t=16499)
+لشكر الكاتب: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?t=16499)
 
 أتمنى نشر الكتاب بأكبر قدر ممكن … ويمكنكم إستعمال البنر الدعائي الموجود في بداية الموضوع لغرض ذلك أيضاً …
 

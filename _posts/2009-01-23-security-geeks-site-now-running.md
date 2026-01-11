@@ -1,15 +1,19 @@
 ---
-title: "إفتتاح موقع Security Geeks"
+title: إفتتاح موقع Security Geeks
 date: 2009-01-23 03:04:17 -0500
-categories: ["News", "PenTest", "Security"]
-tags: ["Ethical Hackers", "Penetration Testers"]
-permalink: "/2009/01/23/security-geeks-site-now-running/"
+categories:
+- News
+- PenTest
+- Security
+tags:
+- ethical-hackers
+- penetration-testers
+permalink: /2009/01/23/security-geeks-site-now-running/
 reading_time: 3
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
-[![](http://www.binary-zone.com/wp-content/themes/pixeled/images/ads/sec-geeks.gif)](http://sec-geeks.com/)
+[![](https://www.binary-zone.com/wp-content/themes/pixeled/images/ads/sec-geeks.gif)](http://sec-geeks.com/)
 
 بالأمس ولله الحمد تم الإنتهاء من تجهيز وإفتتاح موقع [Security Geeks](http://sec-geeks.com/) والذي اسئل الله أن يوفق جميع من يهمه أمر هذا الموقع كل التوفيق والنجاح … الموقع ولله الحمد تكاتفت الكثير من الأيادي لإنشائه وجعله يكون اليوم حقيقة … إبتداءاً من الأخ صبري والذي قام بتجيهز الموقع بالعتاد اللازم … والأخ حاتم بتجهيز التصاميم اللازمة والأخ أحمد بتجيهز الموقع بالأدوات والتقنيات اللازمة … ولا أخفيكم بإن من بين الأيادي التي لن ينساها موقع [Security Geeks](http://sec-geeks.com/) هي يد الأخ أبو عمر صاحب شركة [modelayer](http://www.modelayer.com/) الرائدة اليوم في مجال الإستضافة وصاحب [معهد الحماية الأفضل](http://best-sec.com) والذي قام بإهدائي نسخة مرخصة لمدة عام كامل من منتديات [vBulletin](http://vBulletin.com) الشهيرة والتي يتم إستعمالها اليوم في موقع [Security Geeks](http://sec-geeks.com/) … جزاك الله ألف خير أخوي أبو عمر وعسى الله يعوضك أحسن منها وأن يكتب لك في كل حرف بالموقع من الحسنات ما لا تعد ولا تحصى … فبدون شك هذه النسخة ساعدت بشكل كبير في جعل الموقع ممكناً كخطوة أولى …
 

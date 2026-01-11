@@ -1,12 +1,19 @@
 ---
-title: "تشغيل خدمة atftpd بشكل صحيح"
+title: تشغيل خدمة atftpd بشكل صحيح
 date: 2011-07-25 03:09:36 -0500
-categories: ["Linux Services", "Networks"]
-tags: ["atftpd", "BackTrack5", "daemon", "default", "INETD", "tftpd"]
-permalink: "/2011/07/25/atftpd-default-options/"
+categories:
+- Linux Services
+- Networks
+tags:
+- atftpd
+- backtrack5
+- daemon
+- default
+- inetd
+- tftpd
+permalink: /2011/07/25/atftpd-default-options/
 reading_time: 1
 ---
-
 بعض الأحيان نحتاج الى خادم tftp لنقل بعض الملفات بين جهاز وآخر بغض النظر عن السبب في النقل … في توزيعة BackTrack5 حين تريد تشغيل الخدمة (طبعاً بعد تركيبها، لانها لا تأتي بشكل أساسي مع التوزيعة، والمقصود هنا خدمة atftpd) على سبيل المثال بالشكل التالي:
 
 ```
@@ -28,4 +35,4 @@ OPTIONS="--tftpd-timeout 300 --retry-timeout 5 --mcast-port 1758 --mcast-addr 23
 
 وبالتالي أمامك خيارين لحل المشكلة … إما تعمل حذف أو comment out لهذه السطور، وإما تقوم بتعديلها الى ما يناسب إحتياجاتك … أختر ما يناسبك من هذه الحلول …
 
-للتعليق، يرجى زيارة الموضوع التالي: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?52960)
+للتعليق، يرجى زيارة الموضوع التالي: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?52960)

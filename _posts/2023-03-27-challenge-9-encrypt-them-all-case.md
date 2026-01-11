@@ -1,12 +1,24 @@
 ---
-title: "Challenge #9 – Encrypt Them All Case"
+title: 'Challenge #9 – Encrypt Them All Case'
 date: 2023-03-27 04:29:48 -0500
-categories: ["Anti-Forensics", "Challenges", "DFIR", "Forensics", "Investigations", "Windows"]
-tags: ["aes", "anti-forensics", "bit-locker", "challenges", "DFIR", "gnupg", "Investigations"]
-permalink: "/2023/03/27/challenge-9-encrypt-them-all-case/"
+categories:
+- Anti-Forensics
+- Challenges
+- DFIR
+- Forensics
+- Investigations
+- Windows
+tags:
+- aes
+- anti-forensics
+- bit-locker
+- challenges
+- dfir
+- gnupg
+- investigations
+permalink: /2023/03/27/challenge-9-encrypt-them-all-case/
 reading_time: 2
 ---
-
 In this case you are required to decrypt all the data and files that have been encrypted using different crypto methods.
 
 E01 for the drive could be found: [here](https://archive.org/details/anti-forensics-case-2)

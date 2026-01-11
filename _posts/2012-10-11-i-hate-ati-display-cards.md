@@ -1,14 +1,16 @@
 ---
 title: كم أكره بطاقات الشاشة التي نوعها ATI
 date: 2012-10-11 20:24:17 -0500
-categories: ["Systems", "GNU/Linux"]
+categories:
+- Systems
+- GNU/Linux
 tags:
-- ATI
-- Debian
-- GNOME
-- Squeeze
+- ati
+- debian
+- gnome
+- squeeze
 - wheezy
-- Life
+- life
 permalink: /2012/10/11/i-hate-ati-display-cards/
 reading_time: 2
 ---

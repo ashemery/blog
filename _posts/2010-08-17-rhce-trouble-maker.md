@@ -1,9 +1,14 @@
 ---
-title: "تدرب لإمتحانات RHCE بإستعمالك لـ Trouble-Maker"
+title: تدرب لإمتحانات RHCE بإستعمالك لـ Trouble-Maker
 date: 2010-08-17 00:37:30 -0500
-categories: ["Development", "GNU/Linux", "Software/Tools"]
-tags: ["RHCE", "Trouble-Maker"]
-permalink: "/2010/08/17/%25d8%25aa%25d8%25af%25d8%25b1%25d8%25a8-%25d9%2584%25d8%25a5%25d9%2585%25d8%25aa%25d8%25ad%25d8%25a7%25d9%2586%25d8%25a7%25d8%25aa-rhce-%25d8%25a8%25d8%25a5%25d8%25b3%25d8%25aa%25d8%25b9%25d9%2585%25d8%25a7%25d9%2584%25d9%2583-%25d9%2584%25d9%2580-trouble-maker/"
+categories:
+- Development
+- GNU/Linux
+- Software/Tools
+tags:
+- rhce
+- trouble-maker
+permalink: /2010/08/17/%25d8%25aa%25d8%25af%25d8%25b1%25d8%25a8-%25d9%2584%25d8%25a5%25d9%2585%25d8%25aa%25d8%25ad%25d8%25a7%25d9%2586%25d8%25a7%25d8%25aa-rhce-%25d8%25a8%25d8%25a5%25d8%25b3%25d8%25aa%25d8%25b9%25d9%2585%25d8%25a7%25d9%2584%25d9%2583-%25d9%2584%25d9%2580-trouble-maker/
 reading_time: 1
 ---
 السلام عليكم ورحمة الله وبركاته

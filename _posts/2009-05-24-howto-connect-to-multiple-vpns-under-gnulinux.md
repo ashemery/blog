@@ -1,12 +1,20 @@
 ---
-title: "HOWTO Connect to Multiple VPN’s under GNU/Linux"
+title: HOWTO Connect to Multiple VPN’s under GNU/Linux
 date: 2009-05-24 10:16:43 -0500
-categories: ["Linux Security", "Networks", "Security"]
-tags: ["Network Manager", "OpenVPN", "svn", "TAP/TUN", "Virtual Network Device", "VPN"]
-permalink: "/2009/05/24/howto-connect-to-multiple-vpns-under-gnulinux/"
+categories:
+- Linux Security
+- Networks
+- Security
+tags:
+- network-manager
+- openvpn
+- svn
+- taptun
+- virtual-network-device
+- vpn
+permalink: /2009/05/24/howto-connect-to-multiple-vpns-under-gnulinux/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 في الموضوع السابق شرحت كيفية الإتصال بشبكة الـ VPN من داخل جنو/لينوكس والويندوز … الآن سنقوم بالتعرف على كيفية الإتصال بأكثر من شبكة VPN سواءاً على جنو/لينوكس أو الويندوز … عملية الإتصال لشبكة VPN أصلاً تتم من خلال عمل [TAP/TUN](http://vtun.sourceforge.net/tun/index.html)، طبعاً وهذا الجهاز التخيلي يقوم به بالجنو/لينوكس الـ Network Manager … ولكن للأسف Network Manager لا يستطيع عمل سوى واحد وبالتالي لا تستطيع أن تقوم بالإتصال بشبكتين VPN بمرة واحدة !!! طبعاً هي عبارة عن BUG ورأيت الكثيرين أخبروا جماعة جنوم عليها وبإذن الله يقومون بحلها … بحثت صراحة كثيراً لاعرف كيف يمكنني عمل هذا الـ Virtual Network Device المسمى TAP أو TUN ولكني لم اجد ذلك … حتى في [الموقع الرسمي](http://vtun.sourceforge.net/tun/index.html) لهم لم أجد معلومات كثيرة حوله بصراحة فقط مقارنة بسيطة بينهم وأمور بسيطة أخرى …

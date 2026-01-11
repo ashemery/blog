@@ -1,12 +1,42 @@
 ---
-title: "BackTrack5: Metasploit 4 with PostgreSQL"
+title: 'BackTrack5: Metasploit 4 with PostgreSQL'
 date: 2011-07-29 04:15:32 -0500
-categories: ["BackTrack", "Books", "Database", "Metasploit", "OSINT", "PenTest"]
-tags: ["BackTrack5", "CREATE", "Database", "db_autopwn", "db_connect", "db_disconnect", "db_driver", "db_export", "db_import", "db_nmap", "db_status", "grant", "Guide", "hosts", "imported", "Metasploit", "Metasploit 4", "Metasploit4", "nmap", "Penetration", "PostgreSQL", "Privileges", "Scan", "services", "Tester"]
-permalink: "/2011/07/29/backtrack5-metasploit-4-with-postgresql/"
+categories:
+- BackTrack
+- Books
+- Database
+- Metasploit
+- OSINT
+- PenTest
+tags:
+- backtrack5
+- create
+- database
+- db-autopwn
+- db-connect
+- db-disconnect
+- db-driver
+- db-export
+- db-import
+- db-nmap
+- db-status
+- grant
+- guide
+- hosts
+- imported
+- metasploit
+- metasploit-4
+- metasploit4
+- nmap
+- penetration
+- postgresql
+- privileges
+- scan
+- services
+- tester
+permalink: /2011/07/29/backtrack5-metasploit-4-with-postgresql/
 reading_time: 3
 ---
-
 يبدو إن هناك تغييرات عدة حصلت في Metasploit 4 ومن بينها طريقة التعامل مع قواعد البيانات … سأحاول في هذه التدوينة ان أللخص أهم الأمور، وكذلك بعض المشاكل التي قد تواجهك حين تود تشغيل القاعدة مع Metasploit على Backtrack5 … وكذلك ينصح مطوري Metasploit أن يتم إستعمال PostgreSQL بدلا من أي قاعدة بيانات أخرى …
 
 في البداية توزيعة Backtrack5 لا يأتي راكب عليها قاعدة البيانات PostgreSQL ولهذا علينا تركيبها … أمرها سهل جداً:
@@ -135,4 +165,4 @@ services -c info -p 22 -r tcp
 
 للأسف الكتاب [Metasploit: The Penetration Tester’s Guide](http://www.nostarch.com/metasploit.htm) لازال يشرح على الطريقة القديمة … وأقول للأسف لأنه برأيي كان ممكن يتم تأخير الكتاب بعض الشيء لحين صدور النسخة الرابعة بدل من إصدار الكتاب ومن ثم إصدار النسخة الرابعة بعده بحوالي أسبوع أو أقل … على كل حال كلامي هذا ليس للتقليل من الكتاب أو لكي لا تشتريه، ولكن لكي تحسب حسابك :)
 
-للنقاش والمساعدة يرجى زيارة الموضوع في مجتمع لينُكس العربي [هنا](http://www.linuxac.org/forum/showthread.php?53040) …
+للنقاش والمساعدة يرجى زيارة الموضوع في مجتمع لينُكس العربي [هنا](https://www.linuxac.org/forum/showthread.php?53040) …

@@ -1,12 +1,18 @@
 ---
-title: "HOWTO change nmap’s default host discovery ports"
+title: HOWTO change nmap’s default host discovery ports
 date: 2009-04-22 15:35:16 -0500
-categories: ["Firewalls", "Footprinting"]
-tags: ["Host Discovery", "nmap", "PROBE", "TCP", "UDP"]
-permalink: "/2009/04/22/howto-change-nmaps-default-host-discovery-ports/"
+categories:
+- Firewalls
+- Footprinting
+tags:
+- host-discovery
+- nmap
+- probe
+- tcp
+- udp
+permalink: /2009/04/22/howto-change-nmaps-default-host-discovery-ports/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 نحن نعلم بإنه nmap تسمح لك بتغيير المنافذ المراد إستعمالها في إكتشاف الأجهزة عندما نستعمل أحد طرق الـ Host Discovery بواسطة سطر الأوامر … مثلاً بالنسبة لإستعمال TCP SYN ستكون موجهة بالأساس الى المنفذ 80 … ولكن يمكن تغييرها مثلاً الى 110 من خلال الأمر التالي:

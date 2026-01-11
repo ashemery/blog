@@ -1,12 +1,17 @@
 ---
-title: "تشغيل الواجهة الرسومية لـ MSF 3.2 على Ubuntu"
+title: تشغيل الواجهة الرسومية لـ MSF 3.2 على Ubuntu
 date: 2008-12-31 23:47:01 -0500
-categories: ["Linux Security", "PenTest", "Security"]
-tags: ["Metasploit", "MSF", "Ubuntu"]
-permalink: "/2008/12/31/howto-run-msf-32-gui-on-ubuntu/"
+categories:
+- Linux Security
+- PenTest
+- Security
+tags:
+- metasploit
+- msf
+- ubuntu
+permalink: /2008/12/31/howto-run-msf-32-gui-on-ubuntu/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](/assets/img/posts/2008/msf3-gui-logo.png)

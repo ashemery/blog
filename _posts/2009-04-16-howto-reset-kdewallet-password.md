@@ -1,12 +1,20 @@
 ---
-title: "HOWTO reset kdewallet password"
+title: HOWTO reset kdewallet password
 date: 2009-04-16 10:21:45 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["Gaim", "KDE", "KDE4", "Kopete", "Pidgin", "Wallet", "WalletManager"]
-permalink: "/2009/04/16/howto-reset-kdewallet-password/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- gaim
+- kde
+- kde4
+- kopete
+- pidgin
+- wallet
+- walletmanager
+permalink: /2009/04/16/howto-reset-kdewallet-password/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 بصراحة مليت من كون كلماتك السرية على الجهاز معروفة بسبب Pidgin وما لقيت برنامج أفضل منه سوى Kopete … الجميل في Kopete بإنه يستعمل KDE Wallet لحفظ الكلمات السرية … وهذه الحافظة تقوم بتشفير الكلمات السرية هذه ولهذا هي في آمان ولله الحمد …

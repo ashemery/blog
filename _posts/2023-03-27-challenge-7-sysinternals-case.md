@@ -1,12 +1,23 @@
 ---
-title: "Challenge #7 – SysInternals Case"
+title: 'Challenge #7 – SysInternals Case'
 date: 2023-03-27 04:23:28 -0500
-categories: ["Challenges", "DFIR", "Forensics", "Investigations", "Malware"]
-tags: ["challenges", "DFIR", "Forensics", "investigaitons", "Malware", "SysInternals", "Windows Forensics"]
-permalink: "/2023/03/27/challenge-7-sysinternals-case/"
+categories:
+- Challenges
+- DFIR
+- Forensics
+- Investigations
+- Malware
+tags:
+- challenges
+- dfir
+- forensics
+- investigaitons
+- malware
+- sysinternals
+- windows-forensics
+permalink: /2023/03/27/challenge-7-sysinternals-case/
 reading_time: 1
 ---
-
 The user downloaded what they thought was the SysInternals tool suite, double-clicked it, but the tools did not open and were not accessible. Since that time, the user has noticed that the system has “slowed down” and become less and less responsive.
 
 – Goal is to determine what happened, and when.

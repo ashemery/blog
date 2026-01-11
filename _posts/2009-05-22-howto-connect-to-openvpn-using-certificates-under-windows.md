@@ -1,12 +1,33 @@
 ---
-title: "Howto Connect to OpenVPN using Certificates under Windows"
+title: Howto Connect to OpenVPN using Certificates under Windows
 date: 2009-05-22 00:34:45 -0500
-categories: ["Networks", "Security", "Windows"]
-tags: ["Appliance", "certificates", "cisco", "cmd", "crt", "csr", "Firewalls", "GNU/Linux", "IPSec", "Key", "L2TP", "OpenVPN", "ovpn", "PING", "PPTP", "pre-shared key", "Ubuntu", "Verisign", "VPN"]
-permalink: "/2009/05/22/howto-connect-to-openvpn-using-certificates-under-windows/"
+categories:
+- Networks
+- Security
+- Windows
+tags:
+- appliance
+- certificates
+- cisco
+- cmd
+- crt
+- csr
+- firewalls
+- gnulinux
+- ipsec
+- key
+- l2tp
+- openvpn
+- ovpn
+- ping
+- pptp
+- pre-shared-key
+- ubuntu
+- verisign
+- vpn
+permalink: /2009/05/22/howto-connect-to-openvpn-using-certificates-under-windows/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 هذا الأسبوع كان كل شغلي على IPSec والـ VPN’s … بصراحة تعقدت من كثر الخيارات والإختلافات بأنواعهم وطرق الحماية التي يقدمها كل نوع … قرأت عن مختلف البروتوكولات PPTP و L2TP والقليل عن النوع الخاص بشركة cisco … جميع ما تعلمته وطبقته بإذن الله سأبدأ بالكتابة عنه بالتدريج حبة حبة … سأبدأ بطرق الإتصال بهذه الأنواع من الخوادم أو الـ Hardware وبالأخير إن شاء الله سأشرح طريقة تركيب [OpenVPN](http://openvpn.org) لمن لا يملكها من الأساس … وكيفية عمل تقوية لها وغيرها من الأمور التي ربما يستفيد منها أحد …

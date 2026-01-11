@@ -1,12 +1,20 @@
 ---
-title: "0day – إستعمال PS3 لإختراق SSL"
+title: 0day – إستعمال PS3 لإختراق SSL
 date: 2008-12-31 18:37:35 -0500
-categories: ["News", "Security"]
-tags: ["CA", "certificates", "cluster", "digital signatures", "md5", "PlayStation", "ssl"]
-permalink: "/2008/12/31/playstation-3-used-to-hack-ssl/"
+categories:
+- News
+- Security
+tags:
+- ca
+- certificates
+- cluster
+- digital-signatures
+- md5
+- playstation
+- ssl
+permalink: /2008/12/31/playstation-3-used-to-hack-ssl/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/pentest/ps3rack.jpg)

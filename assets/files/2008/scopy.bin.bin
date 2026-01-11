@@ -1,0 +1,125 @@
+#!/bin/bash
+#########################################################################
+#					   			 	#
+# 		B!n@ry SCP Script :-D				 	#
+#					   			 	#
+# 	1- Copies Files to a remote host using Secure Copy	 	#
+#	2- Copies Directories to a remote host using Secure Copy 	#
+#					  			 	#					
+# Back2Track, as I always say: Linux rul3z ...			 	#
+# 			   Binary@linuxac.org			 	#
+#					   			 	#
+#	Directory Copy by: DarkLinux@linuxac.org		 	#
+#					   			 	#
+#########################################################################
+# Howto use:							 	#
+# ----------						 	 	#
+# 1- Add scopy to ~/HOME/bin					 	#
+# 2- Run chmod u+x scopy					 	#
+# 3- Open ~/HOME/.bashrc and ADD PATH=~/HOME/bin:$PATH	 	 	#
+# 4- If you do not want to logout run source ~/HOME/.bashrc	 	#
+#    Note: If you logout no need for previous step		 	#
+# 5- run from Terminal by printing scopy			 	#
+#########################################################################
+
+# Destination Info Reader function
+function readinfo()
+{
+	# Read Remote Username used for Connection
+	echo; echo;
+	echo "Please Enter Remote Username used for Connection: ";
+	read RUSER;
+
+	# Read Destination Host Domain/IP
+	echo; echo;
+	echo "Please Enter Destination HOST Name/IP: ";
+	echo "Examples are:";
+	echo "1- Using a Domain: www.example.com";
+	echo "2- Using an IP: 212.22.22.33";
+	read RDEST;
+};
+
+function menu()
+{ 
+  clear;
+  echo "#############################################################################";
+  echo "##	      		     						   ";
+  echo "##	Hello $(logname)					           ";
+  echo "##	      		     						   ";
+  echo "##	What do u want to copy a File or Dir?       			   ";
+  echo "##	      		     						   ";
+  echo "##	(1) Copy a single file       					   ";
+  echo "##	(2) Copy a complete Directory     				   ";
+  echo "##	(3) Exit	     						   ";
+  echo "##	      		     						   ";
+  echo "#############################################################################";
+  echo;
+  read CHOICE;
+  case $CHOICE in
+	1) copyfile; break;;
+	2) copydirectory; break;;
+	3) exit 0;;
+	*) echo; echo; echo "Sorry, no such Choice available !!!"; 
+	   echo "Please try again"; sleep 3; menu;;
+  esac;
+};
+
+
+# Copy File function
+function copyfile()
+{
+	# Read file to transfer
+	echo;
+	echo "Please Enter FILE NAME: ";
+	read FILENAME;
+
+	#Check if file exists
+	if test -f $FILENAME
+	then
+		readinfo;		
+		scp $FILENAME $RUSER@$RDEST:/home/$RUSER/;
+		echo; echo;
+		echo "File Successfully Copied !!!";
+		sleep 3;
+		menu;
+	else
+		echo; echo;
+		echo "Sorry, no such FILE !!!";
+		echo "Please try agian";		
+		sleep 3;
+		menu;
+	fi;
+};
+
+# Copy Directory function
+function copydirectory()
+{
+	# Read directory to transfer
+	echo;
+	echo "Please Enter Directory NAME: ";
+	read DIRNAME;
+
+	#Check if Directory exists
+	if test -d $DIRNAME
+	then
+		readinfo;
+		scp -r $DIRNAME $RUSER@$RDEST:/home/$RUSER/;
+		echo; echo;
+		echo "Directory Successfully Copied !!!";
+		sleep 3;
+		menu;
+	else
+		echo; echo;
+		echo "Sorry, no such Directory !!!";
+		echo "Please try agian";		
+		sleep 3;
+		menu;
+	fi;
+};
+
+# B!n@ry SCP Copy Main Menu
+while true; do
+  menu;
+done;
+
+exit 0;

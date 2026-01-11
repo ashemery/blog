@@ -1,12 +1,17 @@
 ---
-title: "Fedor vs Hendo – Legends Collide"
+title: Fedor vs Hendo – Legends Collide
 date: 2011-07-27 03:15:39 -0500
-categories: ["Sport"]
-tags: ["Fedor", "Fedor Emelianenko", "Hendo", "MMA", "Strikeforce"]
-permalink: "/2011/07/27/fedor-vs-hendo-legends-collide/"
+categories:
+- Sport
+tags:
+- fedor
+- fedor-emelianenko
+- hendo
+- mma
+- strikeforce
+permalink: /2011/07/27/fedor-vs-hendo-legends-collide/
 reading_time: 2
 ---
-
 ![](/assets/img/posts/2011/Fedor.Hendo.Legends.jpg)
 
 مضى وقت طويل على آخر مرة كتبت فيها عن فنون القتال والـ MMA ولهذا قلت نكتب عن الحدث الكبير يوم السبت القادم 30-7-2011 حيث سيلتقي عملاقان وأسطورتان من عمالقة وأساطير فنون القتال أو MMA في بطولة [Strikeforce](http://en.wikipedia.org/wiki/Strikeforce:_Fedor_vs._Henderson) … وهما الروسي Fedor Emelianenko والأمريكي Dan Henderson …

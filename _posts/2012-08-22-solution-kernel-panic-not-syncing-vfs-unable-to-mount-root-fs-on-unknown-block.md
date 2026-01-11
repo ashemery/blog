@@ -1,12 +1,32 @@
 ---
-title: "Solution: kernel panic-not syncing: VFS: unable to mount root fs on unknown block"
+title: 'Solution: kernel panic-not syncing: VFS: unable to mount root fs on unknown block'
 date: 2012-08-22 02:09:23 -0500
-categories: ["GNU/Linux", "Kernel", "Virtualization"]
-tags: ["bin", "Boot", "Controller", "dmesg", "hd", "IDE", "ISO", "Kernel", "mount", "panic", "SATA", "sd", "storage", "VBoxManage", "VDI", "VirtualBox", "vmdk", "VMware"]
-permalink: "/2012/08/22/solution-kernel-panic-not-syncing-vfs-unable-to-mount-root-fs-on-unknown-block/"
+categories:
+- GNU/Linux
+- Kernel
+- Virtualization
+tags:
+- bin
+- boot
+- controller
+- dmesg
+- hd
+- ide
+- iso
+- kernel
+- mount
+- panic
+- sata
+- sd
+- storage
+- vboxmanage
+- vdi
+- virtualbox
+- vmdk
+- vmware
+permalink: /2012/08/22/solution-kernel-panic-not-syncing-vfs-unable-to-mount-root-fs-on-unknown-block/
 reading_time: 3
 ---
-
 من باب توثيق العمل ولكي أتذكر في حالة حصلت معي نفس الحالة مرة أخرى أود أن أوثق حل لهذه المشكلة التي ظهرت لي. كنت قد جلبت نسخة نظام تخيلي لكن يعمل على بيئة عمل VMware وأنا لا استعمل هذه البيئة بل أستعمل Virtualbox … فأردت تحويل النظام الى النظام الذي يتعامل معه Virtualbox وهو VDI … قمت بتحويل الملف الذي إمتداده vmdk الى bin من خلال:
 
 ```
@@ -52,4 +72,4 @@ mount /dev/sda1 /mnt
 
 وهكذا ولله الحمد عاد يعمل مرة أخرى ولكن ببيئة عمل Virtualbox … أتمنى تفيد هذه التدوينة أحد، كما سوف تفيدني بالمستقبل من دون شك كوني كثير النسيان :)
 
-للنقاش: [هنا](http://www.linuxac.org/forum/showthread.php/59926-kernel-panic-not-syncing-VFS-unable-to-mount-root-fs-on-unknown-block)
+للنقاش: [هنا](https://www.linuxac.org/forum/showthread.php/59926-kernel-panic-not-syncing-VFS-unable-to-mount-root-fs-on-unknown-block)

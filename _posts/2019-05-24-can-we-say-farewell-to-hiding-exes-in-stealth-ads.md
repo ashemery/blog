@@ -1,12 +1,23 @@
 ---
-title: "Can We Say Farewell to Hiding Malicious EXEs in Stealth ADS"
+title: Can We Say Farewell to Hiding Malicious EXEs in Stealth ADS
 date: 2019-05-24 08:07:17 -0500
-categories: ["AntiX", "Forensics", "Malware", "Metasploit", "Windows"]
-tags: ["ads", "anti-forensics", "anti-virus", "AV", "meterpreter", "reverse shell", "stealth"]
-permalink: "/2019/05/24/can-we-say-farewell-to-hiding-exes-in-stealth-ads/"
+categories:
+- AntiX
+- Forensics
+- Malware
+- Metasploit
+- Windows
+tags:
+- ads
+- anti-forensics
+- anti-virus
+- av
+- meterpreter
+- reverse-shell
+- stealth
+permalink: /2019/05/24/can-we-say-farewell-to-hiding-exes-in-stealth-ads/
 reading_time: 4
 ---
-
 One of my current students asked if using Stealth Alternate Data Streams (ADS), could bypass AVs? Therefore, I wanted to prove that for the student by doing a simple experiment. What was done is the following:
 
 1. Turned off Windows Defender on my Windows System (used for testing)

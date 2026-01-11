@@ -1,12 +1,20 @@
 ---
-title: "udev: renamed network interface eth0 to eth3"
+title: 'udev: renamed network interface eth0 to eth3'
 date: 2012-08-29 16:28:01 -0500
-categories: ["GNU/Linux", "Networks", "Virtualization"]
-tags: ["dmesg", "eth0", "interface", "network", "persistent-net.rules", "udev"]
-permalink: "/2012/08/29/udev-renamed-network-interface-eth0-to-eth3/"
+categories:
+- GNU/Linux
+- Networks
+- Virtualization
+tags:
+- dmesg
+- eth0
+- interface
+- network
+- persistent-netrules
+- udev
+permalink: /2012/08/29/udev-renamed-network-interface-eth0-to-eth3/
 reading_time: 2
 ---
-
 أحد الانظمة التخيلية لدي حين أردت تشغيل الشبكة عليه، لم يستطع. حين بحثت من خلال:
 
 ```

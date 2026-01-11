@@ -1,12 +1,24 @@
 ---
-title: "ما بعد تنصيب Debian 6 Squeeze"
+title: ما بعد تنصيب Debian 6 Squeeze
 date: 2012-10-12 12:19:36 -0500
-categories: ["GNU/Linux", "Software/Tools"]
-tags: ["Debian", "Debian6", "FFMPEG", "install", "opera", "Pidgin", "skype", "Squeeze", "update", "upgrade", "VideoLAN"]
-permalink: "/2012/10/12/after-installing-debian-6-squeeze/"
+categories:
+- GNU/Linux
+- Software/Tools
+tags:
+- debian
+- debian6
+- ffmpeg
+- install
+- opera
+- pidgin
+- skype
+- squeeze
+- update
+- upgrade
+- videolan
+permalink: /2012/10/12/after-installing-debian-6-squeeze/
 reading_time: 2
 ---
-
 بالنسبة لي بعد أن قمت بتنصيب التوزيعة قمت بإضافة المستودعات التي أحتاجها … وبالنسبة لي هذه هي المستودعات التي أفضلها بصراحة … غيري لربما يفضل مستودعات آخرى لكن أنا أستعمل المستودعات التالية: قم بتحميلها من [هنا](/assets/files/2012/debian6-source.list) …
 
 بعد ذلك كل الذي عليك عمله هو إضافتهم الى مستودعاتك أو تبديلهم بمستودعاتك وعمل:
@@ -39,4 +51,4 @@ apt-get install vlc*
 
 لديك برنامج آخر تحتاجه؟ كل ما عليك فعله هو تنصيبه :)
 
-للنقاش: [هنا](www.linuxac.org/forum/threads/60740-ما-بعد-تنصيب-Debian-6-Sque)
+للنقاش: [هنا](https://www.linuxac.org/forum/threads/60740-ما-بعد-تنصيب-Debian-6-Sque)

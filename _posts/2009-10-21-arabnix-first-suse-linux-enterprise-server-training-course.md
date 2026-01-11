@@ -1,12 +1,16 @@
 ---
-title: "Arabnix تقوم بأول دورة SUSE Linux Enterprise Server"
+title: Arabnix تقوم بأول دورة SUSE Linux Enterprise Server
 date: 2009-10-21 02:04:43 -0500
-categories: ["Arabnix", "Companies", "GNU/Linux", "Life"]
-tags: ["SLES"]
-permalink: "/2009/10/21/arabnix-first-suse-linux-enterprise-server-training-course/"
+categories:
+- Arabnix
+- Companies
+- GNU/Linux
+- Life
+tags:
+- sles
+permalink: /2009/10/21/arabnix-first-suse-linux-enterprise-server-training-course/
 reading_time: 3
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 صحيح إن التدوين عن هذا الأمر جاء متأخراً بعض الشيء حيث إن عرب نيكس تقوم بإعطاء هذه الدورة منذ بداية شهر 10-2009 ولله الحمد، إلا إن ضيق وقتي هو ما جعلني لا أدون ولا أعمل شيء ولكن هناك أمور أخرى غير الدورة هي التي جعلتني أكتب للامانة … يعني أمور أستفزتني للكتابة … لكن إستفزاز من النوع الجيد :)

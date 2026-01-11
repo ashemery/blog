@@ -12,7 +12,7 @@ reading_time: 2
 
 صورة الغلاف
 
-[![](http://www.binary-zone.com/wp-content/uploads/2008/12/cover6-212x300.jpg)](http://www.binary-zone.com/wp-content/uploads/2008/12/cover6.jpg)
+[![](https://www.binary-zone.com/assets/legacy/wp-uploads/2008/12/cover6-212x300.jpg)](https://www.binary-zone.com/assets/legacy/wp-uploads/2008/12/cover6.jpg)
 
 نوصي باستخدام برنامج Adobe Reader أو KPDF لقراءة المجلة للحصول على أفضل جودة أثناء التصفح.
 
@@ -30,6 +30,6 @@ reading_time: 2
 
 ونعتذر عن أي أخطاء قد ترد في مواضيع المجلة وذلك لضيق الوقت لدينا وكثرة الأعباء الملقاة على عاتقنا ، كما أود شكر جميع القائمين على إعداد وتطوير المجلة من كتاب ومحررين ومدققين ، ونلقاكم في الاعداد القادمة بإذن الله تعالى.
 
-الأعدادا السابقة —> [هنا](http://www.linuxac.org/forum/showthread.php?t=17984)
+الأعدادا السابقة —> [هنا](https://www.linuxac.org/forum/showthread.php?t=17984)
 
 **إدارة مجتمع لينوكس العربي.**

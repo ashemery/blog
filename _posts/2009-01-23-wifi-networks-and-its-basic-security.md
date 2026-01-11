@@ -1,12 +1,28 @@
 ---
-title: "الشبكات اللاسلكية وأساسيات حمايتها"
+title: الشبكات اللاسلكية وأساسيات حمايتها
 date: 2009-01-23 13:39:56 -0500
-categories: ["Networks", "Security"]
-tags: ["Access Point", "aircrack", "bruteforce", "coWPAtty", "Intrusion Detection System", "MAC", "Passphrase", "Router", "Spoof", "SSID", "Streaming", "tkip", "WEP", "wifi", "WPA-PSK"]
-permalink: "/2009/01/23/wifi-networks-and-its-basic-security/"
+categories:
+- Networks
+- Security
+tags:
+- access-point
+- aircrack
+- bruteforce
+- cowpatty
+- intrusion-detection-system
+- mac
+- passphrase
+- router
+- spoof
+- ssid
+- streaming
+- tkip
+- wep
+- wifi
+- wpa-psk
+permalink: /2009/01/23/wifi-networks-and-its-basic-security/
 reading_time: 9
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
 ![](/assets/img/posts/2009/WLanSecurity-1.jpg)

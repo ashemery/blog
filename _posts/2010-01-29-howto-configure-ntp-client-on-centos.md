@@ -1,15 +1,24 @@
 ---
-title: "Howto configure NTP Client on CentOS"
+title: Howto configure NTP Client on CentOS
 date: 2010-01-29 00:41:08 -0500
-categories: ["Linux Services", "Networks"]
-tags: ["CentOS", "Client", "ntp", "NTP Server", "ntpd", "ntpdate", "ntpq", "pgrep"]
-permalink: "/2010/01/29/howto-configure-ntp-client-on-centos/"
+categories:
+- Linux Services
+- Networks
+tags:
+- centos
+- client
+- ntp
+- ntp-server
+- ntpd
+- ntpdate
+- ntpq
+- pgrep
+permalink: /2010/01/29/howto-configure-ntp-client-on-centos/
 reading_time: 2
 ---
-
 **السلام عليكم ورحمة الله وبركاته**
 
-من متطلبات الـ [PCI Compliance](../category/pci-compliance/) إنه يكون التوقيت موحد لجميع الخوادم … ولهذا كان يجب ان نضيف خوادم NTP … في هذا الموضوع سأشرح طريقة إضافة الأجهزة الى خادم الـ NTP … لانني نسيت بصراحة اكتب خطوات إعدادا الخادم …
+من متطلبات الـ [PCI Compliance](/categories/pci-compliance/) إنه يكون التوقيت موحد لجميع الخوادم … ولهذا كان يجب ان نضيف خوادم NTP … في هذا الموضوع سأشرح طريقة إضافة الأجهزة الى خادم الـ NTP … لانني نسيت بصراحة اكتب خطوات إعدادا الخادم …
 
 لنتأكد هل الخادم يستعمل ntp ام لا:
 
@@ -104,6 +113,6 @@ ntpdate 192.168.1.50
 man ntpdate
 ```
 
-للنقاش: [أضغط هنا](http://www.linuxac.org/forum/showthread.php?35553)
+للنقاش: [أضغط هنا](https://www.linuxac.org/forum/showthread.php?35553)
 
 موفقين إن شاء الله …

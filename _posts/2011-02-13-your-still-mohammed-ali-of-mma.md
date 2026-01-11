@@ -1,12 +1,16 @@
 ---
-title: "Your still Mohammed Ali of MMA"
+title: Your still Mohammed Ali of MMA
 date: 2011-02-13 21:26:07 -0500
-categories: ["Sport"]
-tags: ["Fedor", "Fedor Emelianenko", "MMA", "UFC"]
-permalink: "/2011/02/13/your-still-mohammed-ali-of-mma/"
+categories:
+- Sport
+tags:
+- fedor
+- fedor-emelianenko
+- mma
+- ufc
+permalink: /2011/02/13/your-still-mohammed-ali-of-mma/
 reading_time: 3
 ---
-
 ![](/assets/img/posts/2011/fedor-bigfoot-0.jpg)
 
 هذه الحياة كل يوم تعلمنا بإنها ليست مثالية ولا وجود لأي شيء كامل فيها !!! فالكمال لله وحده سبحانه وتعالى … ولا يوجد فيها من هو الأقوى أو الأفضل، فهناك دائماً من هو أقوى وأفضل منه … الروسي [Fedor “The Last Emperor” Emelianenko](http://en.wikipedia.org/wiki/Fedor_Emelianenko) خسر صباح هذا اليوم للمرة الثانية على التوالي … الرجل قدم جولة أولى رائعة وفاز بنقاطها، ولكن في الجولة الثانية أستطاع خصمه العملاق البرازيلي [Anotnio “Bigfoot” Silva](http://en.wikipedia.org/wiki/Antonio_Silva_%28fighter%29) من إسقاطه على الأرض وإستنزاف قوة خصمه من خلال لكمه بعدة طرق أبرزها طريقة المطرقة !!! حاول Fedor أن يفلت من قبضة العملاق البرازيلي، ولكن ضخامة اللاعب ووزنه الكبير حال دون ذلك … حاول كذلك Fedor أن يقوم بـ Leg Lock ومن ثم عمل Submission له ولكن فشلت المحاولة كذلك … أنتهت الجولة الثانية وكانت عين Fedor قد أغلقت بسبب التورم الكبير فيها وبالتالي أصبح معدوم الرؤيا في عينه وكون قوانين الـ MMA ليست كالملاكمة، فلم يتم فتحها له وبالتالي خسر Fedor على أثر Doctor Stopage وبالتالي تسجلت للعملاق Bigfoot نتيجة TKO :(

@@ -1,12 +1,19 @@
 ---
-title: "Forensic Analysis: Creating User GUI vs CLI"
+title: 'Forensic Analysis: Creating User GUI vs CLI'
 date: 2015-01-07 19:32:01 -0500
-categories: ["Forensics", "Windows"]
-tags: ["Analysis", "Forensics", "Prefetch", "Shellbags", "User", "Windows"]
-permalink: "/2015/01/07/forensic-analysis-creating-user-gui-vs-cli/"
+categories:
+- Forensics
+- Windows
+tags:
+- analysis
+- forensics
+- prefetch
+- shellbags
+- user
+- windows
+permalink: /2015/01/07/forensic-analysis-creating-user-gui-vs-cli/
 reading_time: 5
 ---
-
 Hello,
 
 This is my first forensic analysis post in English; as I’m sure you noticed by now that all of it is in Arabic; so excuse me for my bad English :)

@@ -1,12 +1,34 @@
 ---
-title: "Open Source Security Information Management"
+title: Open Source Security Information Management
 date: 2009-06-20 09:00:23 -0500
-categories: ["Footprinting", "Linux Security", "Linux Services", "Networks", "PenTest", "Security"]
-tags: ["ArpWatch", "Assets", "BSD", "GPL", "IPS", "Nagios", "Nessus", "OCS-NG", "Osiris", "OSSEC", "OSSIM", "p0f", "Pads", "Security Professional", "SNORT", "Spade", "tcptrack"]
-permalink: "/2009/06/20/open-source-security-information-management/"
+categories:
+- Footprinting
+- Linux Security
+- Linux Services
+- Networks
+- PenTest
+- Security
+tags:
+- arpwatch
+- assets
+- bsd
+- gpl
+- ips
+- nagios
+- nessus
+- ocs-ng
+- osiris
+- ossec
+- ossim
+- p0f
+- pads
+- security-professional
+- snort
+- spade
+- tcptrack
+permalink: /2009/06/20/open-source-security-information-management/
 reading_time: 5
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 ![](http://binary-zone.com/images/security/ossim/logo-hdr.png)

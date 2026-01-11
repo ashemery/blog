@@ -1,0 +1,30 @@
+#!/bin/bash
+#################################################################
+#					   		      	#
+# 		B!n@ry kapache Kill Apache2 Process Script :-D	#
+#					   		      	#
+#					   		      	#
+# 	1- Kills Apache Process				      	#
+#							      	#
+# Back2Track, as I always say: Linux rul3z ...	       	      	#
+# 				Binary@linuxac.org   	      	#
+#					   		      	#
+#################################################################
+# Howto use:						      	#
+# ----------						      	#
+# 1- Add kapache to ~/HOME/bin				      	#
+# 2- Run chmod u+x kapache				      	#
+# 3- Open ~/HOME/.bashrc and ADD PATH=~/HOME/bin:$PATH	      	#
+# 4- If you do not want to logout run source ~/HOME/.bashrc   	#
+#    Note: If you logout no need for previous step	      	#
+# 5- run from Terminal by printing kapache		      	#
+#################################################################
+
+ps -C apache2 -o pid= > PROCESSIDLIST;
+PIDKILLLIST=`cat PROCESSIDLIST`
+
+for i in $PIDKILLLIST; do
+kill -9 $i;
+done;
+
+exit 0;
