@@ -1,7 +1,7 @@
 ---
 title: "KeePassX – a One Stop Password db Manager"
 date: 2009-05-16 11:39:19 -0500
-categories: ["Security", "Software/Tools"]
+categories: ["Cybersecurity", "Software/Tools"]
 tags: ["aes", "GPL", "KeePassX", "KWallet", "Password", "PwManager"]
 permalink: "/2009/05/16/keepassx-a-one-stop-password-db-manager/"
 reading_time: 3

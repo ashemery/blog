@@ -1,7 +1,7 @@
 ---
 title: "Prevent Windows Reboots on Expired VMs"
 date: 2021-08-15 06:46:37 -0500
-categories: ["Security", "Virtualization", "Windows"]
+categories: ["Cybersecurity", "Virtualization", "Windows"]
 tags: ["AdvancedRun", "PsExe", "regedit", "sc", "service", "SysInternals", "whoami", "WLMS"]
 permalink: "/2021/08/15/prevent-windows-reboots-on-expired-vms/"
 reading_time: 1

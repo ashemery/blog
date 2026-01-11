@@ -1,8 +1,7 @@
 ---
 title: "Simple Conficker Scanner v2"
 date: 2009-04-18 11:19:11 -0500
-categories: ["Security"]
-tags: ["Conficker", "Honeynet", "Python", "Scanner"]
+categories: ["Cybersecurity"]tags: ["Conficker", "Honeynet", "Python", "Scanner"]
 permalink: "/2009/04/18/simple-conficker-scanner-v2/"
 reading_time: 1
 ---

@@ -1,8 +1,7 @@
 ---
 title: "إضافات جيدة لحماية مدونتك"
 date: 2008-10-08 12:05:23 -0500
-categories: ["Security"]
-permalink: "/2008/10/08/good-plugins-to-secure-your-blog/"
+categories: ["Cybersecurity"]permalink: "/2008/10/08/good-plugins-to-secure-your-blog/"
 reading_time: 2
 ---
 
