@@ -22,16 +22,11 @@ wp_type: "page"
 
 ---
 
-
-
-**NOTE: This is an old page and has not been updated in years, therefore I removed most of it. If you want to know more about whoami? Check my bio [here](http://bit.ly/2MwoBOF).**
+**NOTE: This is an old page and has not been updated in years, therefore I removed most of it. If you want to know more about whoami? Check my bio [here]([http://bit.ly/2MwoBOF](https://www.ashemery.com/bio.html)).**
 
 ---
 
-
-
 ## Education:
-
 
   - PhD, research was on a new Port Knocking Technique called [Tariq](http://code.google.com/p/tariq). (Scapy)
   - MS, research was on Software Maintenance using a new Plugin Engine technique. (C++)
@@ -42,9 +37,7 @@ wp_type: "page"
 
 
 ## Current Job:
-
-
-    - Professor by day for both Computer and Digital Forensics and Cybersecurity programs at Champlain College and Cybersecurity researcher and an investigator by night.
+    - Incident Response Consultant.
 
 ---
 
@@ -52,12 +45,9 @@ wp_type: "page"
 
 ## Certificates:
 
-
 Has been removed, check my professional website…
 
 ---
-
-
 
 ## Contributions and Achievements:
 
@@ -84,49 +74,36 @@ Has been removed, check my professional website…
 
 ---
 
-
-
 ## Training Courses Taken:
-
 
 Has been removed, check my professional website…
 
 ---
 
-
-
 ## Scientific Hobbies: (check my [bio](https://www.ashemery.com/bio.html))
 
-
       - A computer addict, who just can’t leave his desk.
-
-
       - Reading about Digital Forensic, Incident Response, Malware, Offensive Security, and Coding (but not good at it!).
 
 
 
 ---
 
-
-
 ## Sports:
 
-
-        - Trained Kickboxing for more than two years under the coach Omar Enayah (Holds Blackbelts in the follwoing: Kickboxing “5″, Mauy Thai “1″, Ji Jitsu “1″, Seylat “1″, Arabic Sword Fighter, and Qoowat Al-Rami “5 Qabtha”),
-        - Left training for around two years, then got back to work, but as a Mauy Thai and Brazilian Jiu-Jitsu practitioner, under the same coach Omar Enayah,
-        - A big fan of MMA and combat competitions (UFC, K-1, Strikeforce, DREAM, PRIDE),
-        - Best fighter of all time: Fedor Emelianenko (MMA)
-        - Other favorite fighters: Khabib Nurmagomedov, Justin Gaethje, Frankie Edgar, Carlos Condit, and Khamzat Chimaev (all MMA) and Badr Hari (K-1),
-        - Favorite fighting style is: Muay Thai,
-        - Might be the biggest Real Madrid Football Club fan in the Middle East!
-        - Used to present my University in Billiard competitions.
+  - Trained Kickboxing for more than two years under the coach Omar Enayah (Holds Blackbelts in the follwoing: Kickboxing “5″, Mauy Thai “1″, Ji Jitsu “1″, Seylat “1″, Arabic Sword Fighter, and Qoowat Al-Rami “5 Qabtha”),
+  - Left training for around two years, then got back to work, but as a Mauy Thai and Brazilian Jiu-Jitsu practitioner, under the same coach Omar Enayah,
+  - A big fan of MMA and combat competitions (UFC, K-1, Strikeforce, DREAM, PRIDE),
+  - Best fighter of all time: Fedor Emelianenko (MMA)
+  - Other favorite fighters: Khabib Nurmagomedov, Justin Gaethje, Frankie Edgar, Carlos Condit, and Khamzat Chimaev (all MMA) and Badr Hari (K-1),
+  - Favorite fighting style is: Muay Thai,
+  - Might be the biggest Real Madrid Football Club fan in the Middle East!
+  - Used to present my University in Billiard competitions.
 
 ---
 
 
-
 ## Social Activities:
-
 
           - Meeting new friends.
           - My Twitter [B!n@ry](https://twitter.com/binaryz0ne).
