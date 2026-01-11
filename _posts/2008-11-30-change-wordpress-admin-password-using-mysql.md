@@ -1,12 +1,15 @@
 ---
-title: "تعديل كلمة السر الخاصة بمدونتك من خلال MySQL"
+title: تعديل كلمة السر الخاصة بمدونتك من خلال MySQL
 date: 2008-11-30 14:05:06 -0500
-categories: ["Database", "Webapp"]
-tags: ["mysql", "recovery", "wordpress"]
-permalink: "/2008/11/30/change-wordpress-admin-password-using-mysql/"
+categories: ["Cybersecurity", "Database"]
+tags:
+- mysql
+- recovery
+- wordpress
+- Webapp
+permalink: /2008/11/30/change-wordpress-admin-password-using-mysql/
 reading_time: 2
 ---
-
 ****
 
 **السلام عليكم ورحمة الله وبركاته**

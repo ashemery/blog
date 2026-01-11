@@ -1,7 +1,8 @@
 ---
 title: "How to Sniff/Monitor a Switched Network"
 date: 2008-12-03 12:39:52 -0500
-categories: ["Cybersecurity"]tags: ["IDS", "monitor", "network", "sniff", "switched", "tap"]
+categories: ["Cybersecurity"]
+tags: ["IDS", "monitor", "network", "sniff", "switched", "tap"]
 permalink: "/2008/12/03/how-to-sniff-monitor-a-switched-network/"
 reading_time: 5
 ---

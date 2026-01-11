@@ -1,11 +1,10 @@
 ---
-title: "PowerTOP برنامج توفير الطاقة"
+title: PowerTOP برنامج توفير الطاقة
 date: 2008-01-11 13:47:36 -0500
-categories: ["Software/Tools"]
-permalink: "/2008/01/11/minimizing-power-consumption-using-powertop/"
+categories: ["Tools", "Software/Tools"]
+permalink: /2008/01/11/minimizing-power-consumption-using-powertop/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته ..
 
 يقوم هذا البرنامج بالبحث عن البرامج التي تعمل بشكل غير إعتيادي أثناء كون جهازك في وضعية عدم الإستعمال أو السبات أي Idle … من ميزات البرنامج هو:

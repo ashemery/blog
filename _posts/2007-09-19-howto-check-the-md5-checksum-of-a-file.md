@@ -1,11 +1,10 @@
 ---
-title: "كيفية فحص ملف الــ MD5 checksum"
+title: كيفية فحص ملف الــ MD5 checksum
 date: 2007-09-19 23:02:52 -0500
-categories: ["Snippets"]
-permalink: "/2007/09/19/howto-check-the-md5-checksum-of-a-file/"
+categories: ["Tools", "Snippets"]
+permalink: /2007/09/19/howto-check-the-md5-checksum-of-a-file/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته …
 
 لنفرض قمت بتنزيل توزيعة لينوكس من الأنترنت وتريد تتأكد من سلامت تنزيلها … كل ما عليك فعله هو:

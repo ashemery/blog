@@ -1,12 +1,16 @@
 ---
-title: "Installing HDFS for Forensics Research"
+title: Installing HDFS for Forensics Research
 date: 2019-05-01 10:10:59 -0500
-categories: ["Academia", "HDFS", "Publications", "Research"]
-tags: ["HDFS", "Hive", "Howto", "Research"]
-permalink: "/2019/05/01/installing-hdfs-for-forensics-research/"
+categories: ["Systems", "Academia"]
+tags:
+- HDFS
+- Hive
+- Howto
+- Research
+- Publications
+permalink: /2019/05/01/installing-hdfs-for-forensics-research/
 reading_time: 2
 ---
-
 It sure has been a long time since I last wrote anything here, so I remembered there was a blog that is either dead or is about to die :)
 
 Anyway, just wanted to say “hi” to everyone out there and let them know the blog is not dead, I will be sharing some of the work I have been doing, as soon as I can. For now, just wanted to share a couple of documents for those interested in working on HDFS.

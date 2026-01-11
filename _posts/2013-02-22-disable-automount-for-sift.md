@@ -1,12 +1,24 @@
 ---
-title: "Disable Automount for SIFT"
+title: Disable Automount for SIFT
 date: 2013-02-22 13:06:39 -0500
-categories: ["Forensics", "GNU/Linux"]
-tags: ["Automount", "Computer Forensics", "Digital Forensics", "Disable", "gconftool-2", "mount", "SANS", "SANS Investigation Forensic Toolkit", "SIFT", "USB", "VirtualBox", "VMware"]
-permalink: "/2013/02/22/disable-automount-for-sift/"
+categories: ["DFIR", "Forensics"]
+tags:
+- Automount
+- Computer Forensics
+- Digital Forensics
+- Disable
+- gconftool-2
+- mount
+- SANS
+- SANS Investigation Forensic Toolkit
+- SIFT
+- USB
+- VirtualBox
+- VMware
+- GNU/Linux
+permalink: /2013/02/22/disable-automount-for-sift/
 reading_time: 1
 ---
-
 مشكلة بسيطة في إستعمال SANS Investigation Forensic Toolkit أو ما يسمى SIFT تكمن في عمل ربط mount للأجهزة الخارجية مثل USB بشكل تلقائي وهذا أمر سيء في مجال الـ Digital Forensics ولهذا لحل هذه المشكلة، كل ما عليك فعله هو:
 
 ```

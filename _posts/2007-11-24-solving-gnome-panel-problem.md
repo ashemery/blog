@@ -1,11 +1,10 @@
 ---
-title: "تحديث Gnome Panel"
+title: تحديث Gnome Panel
 date: 2007-11-24 10:24:43 -0500
-categories: ["Snippets"]
-permalink: "/2007/11/24/solving-gnome-panel-problem/"
+categories: ["Tools", "Snippets"]
+permalink: /2007/11/24/solving-gnome-panel-problem/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته …
 
 بعض الأحيان تحصل عندك مشاكل في الـ GNOME Panel وأقصد التي في الصورة:

@@ -1,7 +1,8 @@
 ---
 title: "هجمات الـ Phishing مستمرة بالهجوم"
 date: 2012-10-29 10:28:10 -0500
-categories: ["Cybersecurity"]tags: ["PayPal", "Phishing", "SPAM", "هجمات"]
+categories: ["Cybersecurity"]
+tags: ["PayPal", "Phishing", "SPAM", "هجمات"]
 permalink: "/2012/10/29/phishing-attacks-continue-striking/"
 reading_time: 2
 ---

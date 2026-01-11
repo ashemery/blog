@@ -1,11 +1,10 @@
 ---
-title: "تحذير أمني خاص بمستخدمي المسنجر Pidgin"
+title: تحذير أمني خاص بمستخدمي المسنجر Pidgin
 date: 2007-11-23 04:55:15 -0500
-categories: ["Linux Security"]
-permalink: "/2007/11/23/security-alert-to-pidgin-users/"
+categories: ["Cybersecurity", "Linux Security"]
+permalink: /2007/11/23/security-alert-to-pidgin-users/
 reading_time: 2
 ---
-
 السلام عليكم ورحمة الله وبركاته …
 
 أود أن حذر مستخدمي البرنامج Pidgin بإن هناك أمر يبدو نساه مطوري هذا البرنامج … حيث جميع كلماتك السرية الخاصة بالبروتوكولات MSN و Yahoo و Google وغيرها يتم تخزينها في الملف التالي:

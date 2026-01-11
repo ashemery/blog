@@ -1,12 +1,12 @@
 ---
-title: "Kyrgyzstan وقف النت فيها بسبب DDoS Attack"
+title: Kyrgyzstan وقف النت فيها بسبب DDoS Attack
 date: 2009-01-31 03:25:23 -0500
-categories: ["News"]
-tags: ["DDoS Attack"]
-permalink: "/2009/01/31/all-kyrgyzstan-down-because-of-ddos-attack/"
+categories: ["Community", "News"]
+tags:
+- DDoS Attack
+permalink: /2009/01/31/all-kyrgyzstan-down-because-of-ddos-attack/
 reading_time: 1
 ---
-
 السلام عليكم ورحمة الله وبركاته
 
 صراحة هذا الخبر عجبني … يعني متخيلين أنتو دولة بالكامل (Kyrgyzstan) يقف النت عنها؟ ::22

@@ -1,12 +1,24 @@
 ---
-title: "Memory Forensics – RansomCare Investigation Case 1"
+title: Memory Forensics – RansomCare Investigation Case 1
 date: 2023-05-21 21:23:38 -0500
-categories: ["Anti-Forensics", "Challenges", "Cyber 5W", "DFIR", "Forensics", "Investigations", "Malware"]
-tags: ["anti-forensics", "Case Study", "Challenge", "DFIR", "Investigation", "Malware", "memory forensics", "RansomCare", "Ransomware"]
-permalink: "/2023/05/21/memory-forensics-ransomcare-investigation-case-1/"
+categories: ["DFIR", "Anti-Forensics"]
+tags:
+- anti-forensics
+- Case Study
+- Challenge
+- DFIR
+- Investigation
+- Malware
+- memory forensics
+- RansomCare
+- Ransomware
+- Challenges
+- Cyber 5W
+- Forensics
+- Investigations
+permalink: /2023/05/21/memory-forensics-ransomcare-investigation-case-1/
 reading_time: 1
 ---
-
 In this case you are required analyze a memory dump of a Windows 10 system that has been hit with [RansomCare](https://www.advemu.com/).
 
 - E01 for the Memory Dump could be found: here
